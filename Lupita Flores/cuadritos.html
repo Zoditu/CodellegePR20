@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cuadritos</title>
+    <style>
+        html, body{
+            position: relative;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        *{
+            box-sizing: border-box;
+        }
+        
+        .inline-block { display: inline-block;}
+
+        /*
+        
+        .float-left { float: left;}
+        .float-right{ float: right;}
+        .clear{ clear: both;}
+
+        .table {display: table;}
+        .table-cell {display: table-cell;}
+        .vertical-align-middle {vertical-align: middle;}
+        .w100 {width: 100%;}
+        .h100 {height: 100%;}
+
+        .table-row {display: table-row;}
+        .text-center{text-align: center;}
+        */
+
+        .cuadrito-azul {
+            width:6rem;
+            height:6rem;
+            position: absolute;
+            background: blue;
+            transition: background 0.3s, border-radius 1s;
+        }
+
+        .cuadrito-azul:hover{
+            border-radius: 0;
+            background: dimgray;
+            transition: background 0.3s, border-radius 1s;
+            z-index: 9999;
+        }
+
+        .cuadrito-negro{
+            width:6rem;
+            height:6rem;
+            position: absolute;
+            background: black;
+            bottom: 3rem;
+            top: 3rem;
+            left: 3rem;
+            transition: background 0.3s, border-radius 1s;
+
+        }
+
+        .cuadrito-negro:hover{
+            border-radius: 0;
+            background: dimgray;
+            transition: background 0.3s, border-radius 1s;
+            z-index: 9999;
+        }
+
+        .cuadrito-verde{
+            width:6rem;
+            height:6rem;
+            position: absolute;
+            background: green;
+            bottom: 3rem;
+            top: 3rem;
+            left: 3rem;
+            transition: background 0.3s, border-radius 1s;
+
+        }
+
+        .cuadrito-verde:hover{
+            border-radius: 0;
+            background: dimgray;
+            transition: background 0.3s, border-radius 1s;
+            z-index: 9999;
+        }
+
+        .cuadrito-morado{
+            width:6rem;
+            height:6rem;
+            position: absolute;
+            background: purple;
+            bottom: 3rem;
+            top: 3rem;
+            left: 3rem;
+            transition: background 0.3s, border-radius 1s;
+
+        }
+
+        .cuadrito-morado:hover{
+            border-radius: 0;
+            background: dimgray;
+            transition: background 0.3s, border-radius 1s;
+            z-index: 9999;
+        }
+
+        .circulo{
+            
+            width:1rem;
+            height:1rem;
+            border-radius:100%;
+            position: absolute;
+            background:red;
+            top: calc(6rem-1rem/2);
+            left: calc(6rem-1rem/2) ;
+            
+
+        }
+
+        
+
+    </style>
+</head>
+<body>
+    <div class="">
+        <div class="">
+            <div class="inline-block cuadrito-azul">
+                <div class="inline-block"></div>
+                <div class="">
+                    <div class="inline-block cuadrito-negro">
+                        <div class="inline-block circulo"></div> 
+                        <div class="">
+                            <div class="inline-block cuadrito-verde">
+                                <div class="inline-block circulo"></div> 
+                                <div class="">
+                                    <div class="inline-block cuadrito-morado">
+                                        <div class="inline-block circulo"></div>   
+                            </div>  
+                    </div> 
+            </div>
+
+        </div>
+    </div>
+    
+</body>
+</html>
