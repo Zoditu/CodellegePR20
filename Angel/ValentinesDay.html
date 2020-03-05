@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Valentines Day</title>
+    <style>
+    html, body{
+    margin: 0rem;
+    padding: 0%;
+    width: 100%;
+    height: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black;
+    background: black;
+    }
+
+    .cuadro{
+        height: 20rem;
+        width: 20rem;
+        background: beige;
+        border: 2px solid lightcoral;
+        position: absolute;
+        text-align: center;
+        margin-top: 5rem;
+        margin-left: 25rem;
+    }
+
+    .cuadro2{
+        height: 20rem;
+        width: 20rem;
+        background: beige;
+        border: 2px solid lightcoral;
+        position: absolute;
+        text-align: center;
+        transform-origin: 0% 100%;
+        transform: rotate(0deg);
+        transition: 1.5s;
+        margin-top: 5rem;
+        margin-left: 25rem;
+    }
+    
+    /* El signo + entre una clase y otra, denota que la clase de la derecha será a la que se le aplique la clase de la izquierda (ENSEGUIDA)
+    El signo ~ entre una clase y otra , denota que la clase de la derecha se aplica en la clase de la izquierda (Sin importar donde esté) */
+
+    .cuadro2:hover{
+        transition: 1.5s;
+        transform: rotate(-40deg) translateX(-17rem) translateY(6rem);
+        transform-origin: 0% 100%;
+    }
+    </style>
+</head>
+<body>
+    <header></header>
+    <main class="container w-100 h-100 bg-danger" style="text-align: center;">
+    <div class="cuadro" style="font-size: 3rem">
+        <div class="d-table w-100 h-100">
+        <div class="d-table-cell align-middle" style="padding-left: 5rem;">Hola, buenos días xd</div>
+        </div>
+    </div>
+    <div class="cuadro2" style="font-size: 2.5rem;">
+        <div class="d-table w-100 h-100">
+        <div class="d-table-cell align-middle">Feliz Día de San Valentín</div>
+        </div>
+    </div>
+    </main>
+    <footer></footer>
+</body>
+</html>
