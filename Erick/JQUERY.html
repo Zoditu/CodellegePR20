@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>jquery</title>
+
+    <script>
+    function EventoSubmit(event){
+      event.preventDefault();
+      console.log(event);
+    }
+
+    </script>
+<style>
+
+  .b1{
+    border-radius: 10%;
+    margin-left: 1rem;
+  }
+  .i1{
+    margin: 1rem;
+  }
+</style>
+  </head>
+  <body>
+    <form  onsubmit="EventoSubmit(event);">
+      <input class="i1" type="text" placeholder="Nombre"><br>
+      <input class="i1" type="password" placeholder="Contraseña"><br>
+      <button class="b1" onclick="alert('click');">ingresar
+      </button>
+    </form>
+    <main id="container">
+
+    </main>
+  </body>
+</html>
