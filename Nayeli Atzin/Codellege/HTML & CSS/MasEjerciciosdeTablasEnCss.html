@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Tablas </title>
+    <style>
+        body, html{
+            width: 100%;
+            height: 100%;
+            background: black;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 2rem;
+        }
+       .tabla{
+        display: table;
+        border: 1px solid black;
+        width: 70%;
+        height: 100%;
+        padding: 1rem;
+        padding-top: 1rem;
+        padding-left: 13rem;
+        text-align: center;
+        }
+        .fila{
+         display: table-row;
+         padding: 5rem;
+        }
+        .col{
+        display: table-cell;
+        padding: 3px;
+        }
+        .red{
+            background: red;
+            color: white;
+        }
+        .green{
+            background: green;
+            color: white;
+        }
+        .blue{
+            background: blue;
+            color: white;
+        }
+        .gray{
+            background: #D8D8D8;
+        }
+        .lightgray{
+            background: #E8E8E8;
+        }
+        
+     </style>
+</head>
+</head>
+<body>
+    <main class="tables">
+
+        <!-- Tabla Roja -->
+        <section class="Rojo">
+
+            <div class="tabla">
+
+                <!-- Header -->
+                <div class="fila red">
+                  <div class="col"> <b> Name </b> </div>
+                  <div class="col"> <b> Age </b> </div>
+                  <div class="col"> <b> Occupation </b> </div>
+                  <div class="col"> <b> Location </b></div>
+                </div>
+
+                <!-- Fila No.1 -->
+                <div class="fila">
+                  <div class="col lightgray">Luke Peters</div>
+                  <div class="col lightgray"> 25 </div>
+                  <div class="col lightgray"> Freelance Web Developer</div>
+                  <div class="col lightgray"> Brookline, MA</div>
+                </div>
+
+                <!-- Fila No.2 -->
+                <div class="fila">
+                  <div class="col gray"> Joseph Smith</div>
+                  <div class="col gray"> 27 </div>
+                  <div class="col gray">Project Manager</div>
+                  <div class="col gray"> Somerville, MA</div>
+                </div>
+
+                <!-- Fila No.3 -->
+                <div class="fila">
+                    <div class="col lightgray"> Maxwell Johnson</div>
+                    <div class="col lightgray"> 26 </div>
+                    <div class="col lightgray"> UX Architect & Designer </div>
+                    <div class="col lightgray"> Arlington, MA</div>
+                </div>
+
+                <!-- Fila No. 4 -->
+                <div class="fila">
+                    <div class="col gray"> Harry Harrison </div>
+                    <div class="col gray"> 25 </div>
+                    <div class="col gray"> Front-End Developer </div>
+                    <div class="col gray"> Boston, MA</div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Tabla Verde -->
+        <section class="Verde">
+
+            <div class="tabla">
+
+                <!-- Header -->
+                <div class="fila green">
+                    <div class="col"> <b> Product </b> </div>
+                    <div class="col"> <b> Unit Price</b> </div>
+                    <div class="col"> <b> Quantity </b></div>
+                    <div class="col"> <b> Date Sold</b></div>
+                    <div class="col"> <b> Status</b> </div>
+                </div>
+
+                <!-- Fila No.1 -->
+                <div class="fila">
+                    <div class="col lightgray"> Solid oak work table</div>
+                    <div class="col lightgray"> $800 </div>
+                    <div class="col lightgray"> 0 </div>
+                    <div class="col lightgray"> 03/15/2014</div>
+                    <div class="col lightgray"> Waiting for Pickup</div>
+                </div>
+
+                <!-- Fila No.2 -->
+                <div class="fila"> 
+                    <div class="col gray"> Leather iPhone wallet </div>
+                    <div class="col gray"> $45 </div>
+                    <div class="col gray"> 120 </div>
+                    <div class="col gray"> 02/28/2014 </div>
+                    <div class="col gray"> In Transit</div>
+                </div>
+
+                <!-- Fila No.3 -->
+                <div class="fila">
+                    <div class="col lightgray"> 27" Apple Thunderbolt displays</div>
+                    <div class="col lightgray"> $1000</div>
+                    <div class="col lightgray"> 25 </div>
+                    <div class="col lightgray">02/10/2014</div>
+                    <div class="col lightgray"> Delivered</div>
+                </div>
+
+
+                <!-- Fila No.4 -->
+                <div class="fila">
+                    <div class="col gray"> Bose studio headphones</div>
+                    <div class="col gray"> $60 </div>
+                    <div class="col gray"> 90 </div>
+                    <div class="col gray"> 01/14/2014</div>
+                    <div class="col gray"> Delivered</div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Tabla Azul -->
+        <section class="Azul">
+
+            <div class="tabla">
+
+
+                <!-- Header -->
+                <div class="fila blue">
+                    <div class="col"> <b> Username </b> </div>
+                    <div class="col"> <b> Email</b> </div>
+                    <div class="col"> <b> Password </b></div>
+                    <div class="col"> <b> Active</b> </div>
+                </div>
+
+                <!-- Fila No.1 -->
+                <div class="fila">
+                    <div class="col lightgray"> ninjatug </div>
+                    <div class="col lightgray"> misterninja@hotmail.com</div>
+                    <div class="col lightgray"> ***************</div>
+                    <div class="col lightgray"> Yes </div>
+                </div>
+
+                <!-- Fila No.2 -->
+                <div class="fila">
+                    <div class="col gray"> jsmith41</div>
+                    <div class="col gray"> joseph.smith@hotmail.com</div>
+                    <div class="col gray">****************</div>
+                    <div class="col gray"> No </div>
+                </div>
+
+                <!-- Fila No.3 -->
+                <div class="fila">
+                    <div class="col lightgray"> 1337haxr15 </div>
+                    <div class="col lightgray"> hackerdude1000@aot.com</div>
+                    <div class="col lightgray">*************</div>
+                    <div class="col lightgray"> Yes </div>
+                </div>
+
+                <!-- Fila No.4 -->
+                <div class="fila">
+                    <div class="col gray"> hairyharry19 </div>
+                    <div class="col gray"> harryharry@gmail.com</div>
+                    <div class="col gray"> *************</div>
+                    <div class="col gray"> Yes </div>
+                </div>
+
+
+
+
+
+            </div>
+
+
+        </section>
+
+    </main>
+</body>
+</html>

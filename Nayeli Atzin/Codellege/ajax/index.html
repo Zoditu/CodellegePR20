@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="jquery-3.4.1.js"></script>
+    <script>
+        $(function(){ //OnLoad
+        var ajax = new XMLHttpRequest;
+        console.log(ajax.readyState);
+        ajax.onreadystatechange = function()
+        { //this-> hace referencia al objeto, en este caso es ajax(variable)
+            if(this.readyState === 4) // Ya terminó...
+            {
+                if(this.status === 200) // Todo salió bien...
+                {
+                    var json = JSON.parse(this.responseText);
+                    var alumnos = json.alumnos;
+                    $.each(alumnos, function(i,alumno) {
+                        $(document.body).append('<h1>' + alumno.nombre + '</h1>');
+                    }); 
+                }
+            }
+        };
+        ajax.open('GET','http://localhost:8080/javascript/alumnos.json', true);
+        ajax.send();
+        });
+    </script>
+     <title> AJAX </title>
+</head>
+<body>
+    
+</body>
+</html>
