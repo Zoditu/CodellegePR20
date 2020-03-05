@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="alumnos.js"></script>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <script>
+
+        window.onload = function(event){
+            /* var h1_titulo = document.getElementById('titulo');
+            h1_titulo.innerHTML = 'OTRO TEXTO'; */
+            /* var anchors = document.getElementsByTagName('a'); */
+            var main = document.getElementById('contenedor');
+            for(var i = 0; i < alumnos.length; i++)
+            {
+                /* var anchor = anchors[i];
+                var href = anchor.getAttribute('href');
+                anchor.setAttribute('href', 'http://algo.com'); //cambiar link de los enlaces en tiempo real
+                console.log(href); */
+                /* var tarjeta = document.getElementById('titulo')
+                tarjeta.innerHTML += '<h1 onclick= "algo(\'A\')"><h1>'  */
+                //tarjeta.innerHTML += 'hola' R: hola esto debe desaperecer
+                var alumno = alumnos [i];
+                main.innerHTML += 
+                '<div class="alumno relative">' +
+                    '<img class="img">' + alumno.img + '<img>'+
+                    '<aside class="infcump">' +
+                        '<h3 class="nomper">' + alumno.nombre +' ' + alumno.apellidoPaterno + ' ' +alumno.apellidoMaterno + '</h3>'+
+
+                        '<h4 class="fechacumple">' + alumno.fechaNac +'</h4>'+
+
+                        '<p class="regfav">' + alumno.regFav+'</p>' +
+
+                    '</aside>'+
+                '</div>';
+                
+                /* console.log(alumno.nombre); */
+            }
+        };
+
+        
+    </script>
+</head>
+<body>
+    <main id="contenedor">
+        <section class="acumple">
+            <h2>Cumple años alumnos:</h2>
+            <div class="alumno relative">
+                <img src="" alt="" class="img">
+                <aside>
+                    <h3 class="nomper"></h3>
+                    <h4 class="fechacumple"></h4>
+                    <p class="regfav"></p>
+                </aside>
+            </div>
+        </section>
+    </main>
+   <!--  <div id="tarjeta">
+        <h1>esto debe de desapercer</h1>
+    </div> -->
+    <!-- <h1 id="titulo">HOLA</h1>
+    <a href="http://google.com"></a>
+    <a href="http://microsoft.com"></a>
+    <a href="http://bing.com"></a> -->
+</body>
+</html>

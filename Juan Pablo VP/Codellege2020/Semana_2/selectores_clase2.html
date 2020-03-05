@@ -1,0 +1,73 @@
+<!--
+    Coordenadas de un objeto
+    Eplicación de:
+        -margin
+        -padding
+        -border
+    Selector comodín
+    Dos selectores en un regla CSS
+    Unidades Relativas
+        -%
+        -vh
+        -vw
+        -em
+        -rem
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Selectores Clase 2</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        html, body{
+            margin:0;
+            padding:0;
+            width: 100%;
+            height: 100%;
+        }
+        .titulo{
+            color: dimgray;
+            font-size: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .cuadro{
+            border: 2px solid black;
+            width: 20vw;
+            height: 20vw;
+            background: brown;
+            float:left;
+        }
+        .clear{
+            clear: both;
+        }
+        .rem{
+            font-size: 1rem;
+        }
+        .em {
+            font-size: 1em;
+        }
+    </style>
+</head>
+<body>
+    <header class="titulo">
+    </header>
+    <main>
+        <section>
+          <div class="cuadro"></div>
+          <!--<div class="cuadro"></div>
+        <div class="clear"></div>-->
+        <!--<div class="em">Soy EM
+            <br>
+            <div class="em">Soy EM</div>
+        </div>
+        <div class="rem">Soy REM
+            <br>
+            <div class="rem">Soy REM</div>
+        </div>-->
+        </section>
+    </main>
+</body>
+</html>

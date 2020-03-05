@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../libs/jquery-3.4.1.js"></script>
+    <title>Document</title>
+    <style>
+        html,body{
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        *{box-sizing: border-box;}
+        .cuadro{
+            width: 20%;
+            height: 20%;
+        }
+        .morado{
+            background-color: purple; 
+        }
+        .negro{
+            background-color: black;
+        }
+    </style>
+    <script>
+/*         function A (callback)
+        {
+            var documento = null;
+            setTimeout( function()
+            { 
+                var error = false;
+                documento = 'Hola, soy un documento '
+                callback( documento, error);
+                documento = 'Documento';
+                console.log('Ya fue llamado el callback');
+                console.log('Documento ' + documento);
+            }, 4500 );
+            console.log('Esto es asíncrono... Y está esperando al Callback');
+            console.log('Documento ' + documento);
+        }
+
+        A( function(result,error){ console.log('Documento: ' + result);}); */
+
+
+        //CALLBACK
+        /* $(function(){
+            var h1_A = $('#A').html('Hola!');
+        }); */
+
+        $(function(){
+            $('.cuadro').removeClass('negro').addClass('morado');
+        });
+    </script>
+</head>
+<body>
+    <h1 id="A"></h1>
+
+    <div class="cuadro negro"></div>
+    <div class="cuadro negro"></div>
+    <div class="cuadro negro"></div>
+</body>
+</html>
