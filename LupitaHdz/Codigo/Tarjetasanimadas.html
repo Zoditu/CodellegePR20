@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>TarjetaAnimada</title>
+    <style>
+        html, body{
+            width: 100%;
+            height: 100%;
+            background:white;
+            position: relative;
+        }
+        .tarjeta{   
+           width: 35rem;
+           height: 40rem;
+           border-radius: 1rem;
+           position: relative;
+           border: .2rem solid rgb(87, 87, 230);
+           background:pink;
+           left: calc(50% - 40rem/2);
+           margin-top: 2rem;  
+        }
+        .t1{
+            width: 25rem;
+            height:20rem;
+            border: .2rem solid rgb(87, 87, 230);
+            background: rgb(190, 188, 190);
+            position: absolute;
+            left: calc(50% - 25rem/2);
+            margin-top: 2rem;
+            transform: rotate(0deg);
+            transform-origin: 20% 100%;
+            transition: transform 1s;
+          
+        }
+        .t1:hover{
+            transform: rotate(-125deg);
+            transform-origin: 20% 100%;
+            transition: transform 1s;
+        }
+        .fd{
+            font-size: 5rem;
+            font-style: italic; 
+            color: rgb(35, 117, 223);
+            text-align: center;
+            
+        }
+        .t2{
+            width: 25rem;
+            height: 20rem;
+            border: .2rem solid rgb(87, 87, 230);
+            background: purple;
+            position: absolute;
+            left: calc(50% - 25rem/2);
+            margin-top: 2rem;
+        }
+          
+        .imagen{
+            width:20rem;
+            height: 15rem;
+            padding:0;
+            margin: 0;
+        }
+
+    </style>
+</head>
+<body>
+    <header></header>
+    <main class="conteiner tarjeta">
+        <header>
+            <div class="t2"><div class="fd"></div></div>
+            <div class="t1 "><div class="fd">Feliz Día</div></div>
+            
+        </header>
+    </main>
+    <footer></footer>    
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arregloa-Objetos</title>
+    <script>
+        var objeto={
+            "0":1  //key unico
+        }
+        var array=['A','B', 'C', 'D', 'E','F','G','H'];
+        //          0   1    2
+        //var otro=new Array(5);
+        //console.log(objeto["0"]);
+        //array.push('D'); // para poner un elemento cuando no sabes el indice 
+        //array.pop(); // es un metodo de las pila. LIFO para eliminar el ultimo elemento. Colas->Deqeue
+        //array[50]='E';
+        //array.push('F');
+       // array=array.slice(0, 4) // todos los metodos de javascript se deben reasignar. slice-> es para cortar el arreglo (0,4)<-rango
+        //array=array.concat(['F']);
+        array=array.slice(0,3).concat(array.slice(4,array.length));
+
+        console.log(array);
+        function x()
+        {
+            console.log('Esto son los pasos de la funcion');
+            var valor=10 + 2 - 4;
+            return valor;
+        }
+        var valor=x();
+        console.log(valor);
+        
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables with display</title>
+    <style>
+         html, body {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background:url(universe.jpeg);
+            width: 100%;
+        }  
+        div{
+            height: 40px;
+            vertical-align: bottom;
+            text-align: left;
+        }
+        .tablegen{
+            display: table;
+            width: 70%;
+            /*border:.1rem solid black;*/
+            background: white;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+            line-height: 2rem;            
+        }
+        .fila{
+            display: table-row;
+            text-align: center;
+            padding-left: 0.5rem;
+                
+        }
+        .columna{
+            display:table-cell;
+            /*border: .1rem solid black; */
+            padding-left: 0.5rem; 
+        }
+        colgroup{
+            display: table-column-group;
+        }
+        .textp{
+            font-size: 1rem;
+
+        }
+        .titulorojo{
+            background: red;
+            color: white;
+        }
+        .tituloverde{
+            background: green;
+            color: white;
+        }
+        .tituloazul{
+            background: blue;
+            color: white;
+        }
+        .grayline{
+            background: lightgrey;
+        } 
+    </style>  
+</head>
+<body>
+    <section>
+        <div class="tablegen">
+            <div class="fila titulorojo">
+                <div class="columna"><b> Name</b></div>
+                <div class="columna"><b>Age</b> </div>
+                <div class="columna"><b>Occupation</b> </div>
+                <div class="columna"><b>Location</b></div>
+            </div>
+            <div class="fila">
+                <div class="columna">Luke Peters</div>
+                <div class="columna">25</div>
+                <div class="columna">Freelance Web Developer</div>
+                <div class="columna">Brookline, MA</div>
+            </div>
+            <div class="fila grayline">
+                <div class="columna">Joseph Smith</div>
+                <div class="columna">27</div>
+                <div class="columna">Project Manager</div>
+                <div class="columna">Somerville, MA</div>
+            </div>
+            <div class="fila">
+                <div class="columna">Maxwell Johnson</div>
+                <div class="columna">26</div>
+                <div class="columna">UX Architect & Designer</div>
+                <div class="columna">Arlington, MA</div>
+            </div>
+            <div class="fila grayline">
+                <div class="columna">Harry Harrison</div>
+                <div class="columna">26</div>
+                <div class="columna">Front-End Developer</div>
+                <div class="columna">Boston, MA</div>
+            </div>
+        
+        </div>
+    </section>    
+    <section>
+        <div class="tablegen">
+            <div class="fila tituloverde">
+                <div class="columna"><b> Product</b></div>
+                <div class="columna"><b>Unit Price</b> </div>
+                <div class="columna"><b>Quantity</b> </div>
+                <div class="columna"><b>Date Sold</b></div>
+                <div class="columna"><b>Status</b></div>
+            </div>
+            <div class="fila">
+                <div class="columna">Solid oak work table</div>
+                <div class="columna">$800</div>
+                <div class="columna">10</div>
+                <div class="columna">03/15/2014</div>
+                <div class="columna">Waiting for Pickup</div>
+            </div>
+            <div class="fila grayline">
+                <div class="columna">Leather iPhone wallet</div>
+                <div class="columna">$45</div>
+                <div class="columna">120</div>
+                <div class="columna">02/28/2014</div>
+                <div class="columna">In transit</div>
+            </div>
+            <div class="fila">
+                <div class="columna">27 Apple Thunderbolt displays</div>
+                <div class="columna">$1000</div>
+                <div class="columna">25</div>
+                <div class="columna">02/10/2014</div>
+                <div class="columna">Delivered</div>
+            </div>
+            <div class="fila grayline">
+                <div class="columna">Bose studio headphones</div>
+                <div class="columna">$60</div>
+                <div class="columna">90</div>
+                <div class="columna">01/14/2014</div>
+                <div class="columna">Delivered</div>
+            </div>
+        
+        </div>
+    </section>    
+    <section>
+        <div class="tablegen">
+            <div class="fila tituloazul">
+                <div class="columna"><b>Username</b></div>
+                <div class="columna"><b>Email</b> </div>
+                <div class="columna"><b>Password</b> </div>
+                <div class="columna"><b>Active</b></div>
+            </div>
+            <div class="fila">
+                <div class="columna">ninjalug</div>
+                <div class="columna">misteminja@hotmail.com</div>
+                <div class="columna">************</div>
+                <div class="columna">Yes</div>
+            </div>
+            <div class="fila grayline">
+                <div class="columna">jsmith41</div>
+                <div class="columna">joseph.smith@gmail.com</div>
+                <div class="columna">************</div>
+                <div class="columna">No</div>
+            </div>
+            <div class="fila">
+                <div class="columna">1337hax0r15</div>
+                <div class="columna">hackerdude1000@aol.com</div>
+                <div class="columna">************</div>
+                <div class="columna">Yes</div>
+            </div>
+            <div class="fila grayline">
+                <div class="columna">hairyharry19</div>
+                <div class="columna">harryharry@gmail.com</div>
+                <div class="columna">************</div>
+                <div class="columna">Yes</div>
+            </div>
+        
+        </div>
+</body>
+</html>
