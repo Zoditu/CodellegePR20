@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formularios</title>
+</head>
+<body>
+    <form action="" method="get">
+        <label>Nombre: </label>
+        <input type="text" name="user" required>
+        <br>
+        <label>Password:</label>
+        <input type="password" name="password" required>
+        <br>
+        <label>Sexo</label>
+        <input type="radio" name="sex" value="hombre" required>Hombre
+        <input type="radio" name="sex" value="hombre" required>Mujer
+        <br>
+        <label>Mayor de edad:</label>
+        <input type="checkbox" name="adult">
+        <br>
+        <textarea required>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et animi possimus illum cumque repellendus ipsam eum fuga, magnam odit dolore veniam maiores odio unde ullam beatae qui impedit blanditiis. Inventore!</textarea>
+        <br>
+        <label>Estado Civil:</label>
+        <select name="edoCivil">
+            <option value="soltero">Soltero</option>
+            <option value="casado">Casado</option>
+            <option value="unionLibre">Unión Libre</option>
+            <option value="divorciado">Divorciado</option>
+        </select>
+        <input type="number" name="numero" id="" min="0" max="110" required>
+        <input type="submit" value="CLICK">       
+    </form>
+    <button>CLICK</button>
+</body>
+</html>

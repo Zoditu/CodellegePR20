@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style>
+        html, body{
+            width: 100%;
+            height: 100%;
+        }
+        .n{
+            font-weight: bold;
+        }
+        .esquina{
+            width: 2rem;
+            height: 2rem;
+            position: absolute;
+           
+        }
+        .derecha{
+            border-top: 0.2rem solid gray;
+            border-right: 0.2rem solid gray;
+            right: 1.5rem;
+            top: 1.5rem;
+        }
+        .izquierda{
+            border-bottom: 0.2rem solid gray;
+            border-left: 0.2rem solid gray;
+            left: 1.5rem;
+            bottom: 1.5rem;
+        }
+        .borde{
+            border: solid 0.2rem black;
+        }
+        .redondo{
+            border-radius: 100%;
+        }
+        .padding{
+            padding: 1.5rem;
+        }
+        .redondeado{
+            border-radius: 2rem;
+            z-index: 100;
+        }
+        .negro{
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <main class="container bg-danger borde redondeado bg-light">
+        <div class="row">
+            <div class="col-5  position-relative padding">
+                <figure class="figure">
+                    <img class="rouded borde redondo" src="https://lh3.googleusercontent.com/a-/AAuE7mCTOF50LO5J2PZvWsW0imbjVTaS9peeOzRkFhTgRdw=s96-cc-rg" alt="Gca Juan">
+                    <figcaption class="figure-caption negro"> Juan Pablo Javier García Castillo</figcaption>
+                </figure>
+                <div class="esquina izquierda"></div>
+            </div>
+
+            <div class="col-7 position-relative padding">
+                <div class="esquina derecha"></div>
+                <h1>Codellege</h1>
+                <p>
+                    <span class="n">Fecha de nacimiento:</span> 07/06/1999 <br>
+                    <span class="n">Edad:</span> 20 años <br>
+                    <span class="n">Fecha de ingreso:</span> 27/01/2020 <br>
+                    <span class="n">Generación:</span> Primavera 2020 <br>
+                    <span class="n">Horario: </span> Matutino <br>
+                    <span class="n">Tipo de sangre: </span> O+ <br>
+                </p>
+                <img class="rounded float-right borde" src="https://upload.wikimedia.org/wikipedia/he/2/23/Qr_%D7%A7%D7%95%D7%93.JPG" alt="QR">
+            </div>
+            
+
+        </div>
+
+    </main>
+</body>
+</html>

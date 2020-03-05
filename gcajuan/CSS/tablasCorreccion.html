@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas</title>
+    <style>
+        html, body{
+            width: 100%;
+            background: rgb(19, 14, 29);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .tablaPrincipal{
+            position: fixed;
+            width: 95%;
+            height: 100%;
+            display: inline-table;
+            vertical-align: center;
+            border-spacing: 0.2rem 1rem;
+            /*border: 10px solid red;*/
+        }
+        .tabla{
+            vertical-align: middle;
+            background: white;
+            border-spacing: 0 0;
+            align-self: center;
+            width: 90%;
+            margin-left: 5%;
+            margin-right: 5%;
+            display: inline-table;
+            vertical-align: center;
+            font-size: 1.2rem;
+            margin-top: 3rem;
+            margin-bottom: 1rem;
+
+        }
+        .fila{
+            display:table-row;
+        }
+        .columna{
+            padding: 0.3rem;
+            width: auto;
+            display: table-cell;
+            vertical-align: middle;
+        }
+        .encabezado{
+            display: table-header-group;
+            color:white;
+
+        }
+        .azul{
+            background: rgb(40, 40, 247);;
+        }
+        .rojo{
+            background-color: red;
+        }
+        .morado{
+            background-color: purple;
+        }
+        .gris{
+            background-color: whitesmoke;
+        }
+        .columnaPrincipal{
+            display: table-cell;
+            /*border: 10px solid green; */
+        }
+        .centrado{
+            vertical-align: middle;
+        }
+        .abajo{
+            vertical-align: bottom;
+        }
+        .arriba{
+            vertical-align: top;
+        }
+        .main{
+            vertical-align: center;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+
+                    <div class="tabla">
+                        <div class="encabezado rojo">
+                            <p class="columna">Name</p>
+                            <p class="columna">Age</p>
+                            <p class="columna">Occupation</p>
+                            <p class="columna">Location</p>
+                        </div>
+                        <div class="fila">
+                            <p class="columna">Luke Peters</p>
+                            <p class="columna">25</p>
+                            <p class="columna">Freelance Web Developer</p>
+                            <p class="columna">Brookline, MA</p>
+                        </div> 
+                        <div class="fila gris">
+                            <p class="columna">Joseph Smith</p>
+                            <p class="columna">27</p>
+                            <p class="columna">Project Manager</p>
+                            <p class="columna">Somerville, MA</p>
+                        </div>   
+                        <div class="fila">
+                            <p class="columna">Maxwell Johnson</p>
+                            <p class="columna">26</p>
+                            <p class="columna">UX Architect & Designer</p>
+                            <p class="columna">Arlington, MA</p>
+                        </div> 
+                        <div class="fila gris">
+                            <p class="columna">Harry Harrison</p>
+                            <p class="columna">25</p>
+                            <p class="columna">Front-End Developer</p>
+                            <p class="columna">Boston, MA</p>
+                        </div> 
+                    </div>
+            
+                    <div class="tabla">
+                        <div class="encabezado morado">
+                            <p class="columna">Product</p>
+                            <p class="columna">Unit Price</p>
+                            <p class="columna">Quantity</p>
+                            <p class="columna">Date Sold</p>
+                            <p class="columna">Status</p>
+                        </div>
+                        <div class="fila">
+                            <p class="columna">Solid oak work table</p>
+                            <p class="columna">$800</p>
+                            <p class="columna">10</p>
+                            <p class="columna">03/15/2014</p>
+                            <p class="columna">Waiting por Pickup</p>
+                        </div>
+                        <div class="fila gris">
+                            <p class="columna">Leather iPhone wallet</p>
+                            <p class="columna">$45</p>
+                            <p class="columna">120</p>
+                            <p class="columna">02/28/2014</p>
+                            <p class="columna">In Transit</p>
+                        </div>
+                        <div class="fila">
+                            <p class="columna">27" Apple Thunderbolt </p>
+                            <p class="columna">$1000</p>
+                            <p class="columna">25</p>
+                            <p class="columna">02/10/2014</p>
+                            <p class="columna">Delivered</p>
+                        </div>
+                        <div class="fila gris">
+                            <p class="columna">Bose studio headphones</p>
+                            <p class="columna">$800</p>
+                            <p class="columna">10</p>
+                            <p class="columna">03/15/2014</p>
+                            <p class="columna">Delivered</p>
+                        </div>
+                    </div>                
+
+                    <div class="tabla">
+                        <div class="encabezado azul">
+                            <p class="columna">Username</p>
+                            <p class="columna">Email</p>
+                            <p class="columna">Password</p>
+                            <p class="columna">Active</p>
+                        </div>
+                        <div class="fila">
+                            <p class="columna">ninjalug</p>
+                            <p class="columna">misterninja@hotmail.com</p>
+                            <p class="columna">************</p>
+                            <p class="columna">Yes</p>
+                        </div>
+                        <div class="fila gris">
+                            <p class="columna">jsmith41</p>
+                            <p class="columna">joseph.smith@gmail.com</p>
+                            <p class="columna">************</p>
+                            <p class="columna">No</p>
+                        </div>
+                        <div class="fila">
+                            <p class="columna">1337hax0r15</p>
+                            <p class="columna">hackerdude1000@aol.com</p>
+                            <p class="columna">************</p>
+                            <p class="columna">Yes</p>
+                        </div>
+                        <div class="fila gris">
+                            <p class="columna">hairyharry19</p>
+                            <p class="columna">harryharry@gmial.com</p>
+                            <p class="columna">************</p>
+                            <p class="columna">Yes</p>
+                        </div>
+                    </div>
+          
+</body>
+</html>
