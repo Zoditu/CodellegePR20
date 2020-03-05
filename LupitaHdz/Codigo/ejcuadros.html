@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <script src="libs/jquery-3.4.1.js"></script>
+     <link rel="stylesheet" href="style4cuadro.css">
+    <title>Cuadros</title>
+    <!-- <script>
+        var maxLeft = null;
+        var  maxTop = null;
+        var width = null;
+        var height = null;
+        var distanciaX = -15;
+        var distanciaY=-15;
+        $(function() {
+            var bolita = $('#bolita');
+            width = bolita.outerWidth();
+            height = bolita.outerHeight();
+            maxLeft = $(window).innerWidth() - width;
+            maxTop = $(window).innerHeight() - height;
+
+            setInterval(function(){ 
+                var left = parseInt(bolita.css( 'left' ) );
+                var top = parseInt( bolita.css('top'));
+                if( left >= maxLeft || left <= 0)
+                {
+                    left = left <= 0 ? 0: maxLeft;
+                    distanciaX *= -1;
+                    onLeftBounce( bolita, function(bolita){
+                        if( left <= 0)
+                        {
+                            bolita.css('background', 'red');
+                        }
+                        else
+                        {
+                            bolita.css( 'background', 'green');
+                        }
+
+                    });
+                }
+                if( top >= maxTop || top <= 0)
+                {
+                    top = top <=0 ? 0 : maxTop;
+                    distanciaY *=-1;
+                    onTopBounce( bolita, function( bolita){
+                        if( top <= 0)
+                        {
+                            bolita.css('background', 'blue');
+                        }
+                        else
+                        {
+                            bolita.css( 'background', 'purple');
+                        }
+
+                    });
+                }
+                bolita.css('left', left + distanciaX + 'px');
+                bolita.css( 'top', top + distanciaY + 'px')
+            }, 1000/60);
+        });
+        $(window).on('resize', function( event ){
+            maxLeft = this.innerWidth - width;
+            maxTop = this.innerHeight - height;
+            
+        });
+        function onTopBounce( bolita, callback )
+        {
+            callback( bolita );
+
+        }
+
+        function onLeftBounce( bolita, callback )
+        {
+            callback( bolita );
+
+        }
+        
+
+    </script> -->
+</head>
+<body>
+    <!-- <div id="bolita" class="bolita"></div>
+     -->
+        <div class="cuadro"></div>
+        <div class="cuadro pos2"></div>
+        <div class="cuadro pos3 "></div> 
+        <div class="cuadro pos4 "></div>
+ 
+</body>
+</html>

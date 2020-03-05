@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TPtable</title>
+    <style>
+         html, body {
+            color: white;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }  
+        .card{
+            width: 35rem;
+            height: 20rem;
+            background: darkblue;
+            border-radius: 1.5rem;
+            box-shadow: 1.25rem 0.75rem 3rem 0.1rem  dimgrey; 
+            background: url('ST.jpg');
+            background-size: 100% 100%;
+            position: relative;
+            margin: 2rem;
+        }
+        .card2{
+            width: 35rem;
+            height: 20rem;
+            border-radius: 1.5rem;
+            box-shadow: 1.25rem 0.75rem 3rem 0.1rem  dimgrey; 
+            background: url('ST.jpg');
+            background-size: 100% 100%;
+            position: relative;
+            margin: 2rem;
+        }
+        .line{
+            background: white;
+            width: 8rem;
+            height: 0.6rem;
+            position: absolute;
+            left: calc(50% - 8rem/2);
+        }
+        .top{
+            top:0;
+        }
+        .bottom{
+            bottom:0;
+        }
+        .line2{
+            background: white;
+            width: 0.6rem;
+            height: 8rem;
+            position: absolute;
+            top:calc(50% - 8rem/2);    
+        }
+        .right{
+            right: 0;
+        }
+        .left{
+            left: 0;
+        }
+        div{
+            height: 50px;
+            vertical-align: bottom;
+            text-align: center;
+        }
+
+        .tablegen{
+            display: table;
+            width: 100%;
+            /*border:.1rem solid black;*/
+        }
+        .fila{
+            display: table-row;
+            text-align: center;
+                
+        }
+        .columna{
+            display:table-cell;
+            /*border: .1rem solid black;*/
+           
+        }
+        .logo{
+           height: 8rem;
+        }
+        .imagen{
+            height: 2.5rem;
+        }
+        .text{
+            text-align: left;
+        }
+        a{
+            color: white;
+        }
+        .logpos{
+           height: 15rem;
+           text-align: center;
+           padding-top: 2rem;
+        }
+     
+    </style>
+</head>
+<body>
+    <section class="card">
+        <div class="line top"></div>
+        <div class="line bottom"></div>
+    <div class="tablegen">
+        <div class="fila">
+            <div class="columna"><img src="KRen.png" alt="logo" class="logo"></div>
+            <div class="columna"><img src="EM.png" class="imagen"></div>
+            <div class="columna text">lupitahdzs94@outlook.com</div>
+        </div>
+        <div class="fila">
+            <div class="columna">Guadalupe Hernández </div>  
+            <div class="columna"><img src="phone.png" class="imagen"></div>
+            <div class="columna text">8114884385</div>    
+        </div>
+        <div class="fila">
+            <div class="columna">Lic. en Matemáticas</div>
+                <div class="columna"><img src="homeee.png" class="imagen"></div>
+                <div class="columna text">San Nicolás de los Garza, NL</div>
+        </div>
+        <div class="fila">
+            <div class="columna"></div>
+            <div class="columna"><img src="web.png"  class="imagen"></div>
+            <div class="columna text"> <a href="https://www.starwars.com/"> www.starwars.com</a></div>
+        </div>
+    </div>
+    </section>
+    <section class="card2">
+        <div class="line2 right"></div>
+        <div class="line2 left"></div>
+        <div class="tablegen">
+            <div class="fila">
+                <div class="columna "><img src="KRen.png" alt="logo" class="logpos"></div>
+            </div>
+        </div>
+    </section>   
+</body>
+</html>
