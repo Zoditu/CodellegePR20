@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tablero de Ajedrez </title>
+    <!-- INICIO DEL ESTILO -->
+    <style>
+        html, body{
+            margin: 0px;
+            padding: 0px;
+            width: 100%;
+            height: 100%;
+        }
+
+        .blanco{
+            background: white;
+            float: left;
+        }
+
+        .negro{
+            background: black;
+            float: left;
+        }
+        
+        .square{
+            width: 12.5%;
+            height: 12.5%;
+            position: relative;
+        }
+        .clear{
+            clear: both;
+        }
+        .circle{
+            width: 50%;
+            height: 50%;
+            border: 0.2rem solid white;
+            border-radius: 100rem;
+            
+            position: absolute;
+            left: calc( 50% - 50%/2);
+            top: calc( 50% - 50%/2);
+        }
+
+        .torres{
+            background-color:blue;
+        }
+
+        .piezas{
+            background-color: red;
+        }
+    
+    </style>
+</head>
+<body>
+        <!-- Primer Fila-->
+        <div class="square blanco">
+            <div class="circle torres"></div>
+        </div>
+        <div class="square negro "></div>
+        <div class="square blanco"></div>
+        <div class="square negro"></div>
+        <div class="square blanco"></div>
+        <div class="square negro"></div>
+        <div class="square blanco"></div>
+        <div class="square negro">
+            <div class="circle torres"></div>
+        </div>
+
+        <!-- Segunda Fila-->
+        <div class="square negro">
+            <div class="circle piezas"></div>
+        </div>
+        <div class="square blanco ">
+            <div class="circle piezas"></div>
+        </div>
+        <div class="square negro">
+            <div class="circle piezas"></div>
+        </div>
+        <div class="square blanco">
+            <div class="circle piezas"></div>
+        </div>
+        <div class="square negro">
+            <div class="circle piezas"></div>
+        </div>
+        <div class="square blanco">
+            <div class="circle piezas"></div>
+        </div>
+        <div class="square negro">
+            <div class="circle piezas"></div>
+        </div>
+        <div class="square blanco">
+            <div class="circle piezas"></div>
+        </div>
+
+        <!-- Tercera Fila-->
+        <div class="square blanco"></div>
+        <div class="square negro "></div>
+        <div class="square blanco"></div>
+        <div class="square negro"></div>
+        <div class="square blanco"></div>
+        <div class="square negro"></div>
+        <div class="square blanco"></div>
+        <div class="square negro"></div>
+
+        <!-- Cuarta Fila-->
+        <div class="square negro"></div>
+        <div class="square blanco "></div>
+        <div class="square negro"></div>
+        <div class="square blanco"></div>
+        <div class="square negro"></div>
+        <div class="square blanco"></div>
+        <div class="square negro"></div>
+        <div class="square blanco"></div>
+
+        <!-- Quinta Fila-->
+        <div class="square blanco"></div>
+        <div class="square negro "></div>
+        <div class="square blanco"></div>
+        <div class="square negro"></div>
+        <div class="square blanco"></div>
+        <div class="square negro"></div>
+        <div class="square blanco"></div>
+        <div class="square negro"></div>
+
+         <!-- Sexta Fila-->
+         <div class="square negro"></div>
+         <div class="square blanco "></div>
+         <div class="square negro"></div>
+         <div class="square blanco"></div>
+         <div class="square negro"></div>
+         <div class="square blanco"></div>
+         <div class="square negro"></div>
+         <div class="square blanco"></div>
+
+         <!-- Septima Fila-->
+        <div class="square blanco">
+            <div class="circle piezas"></div>
+        </div>
+        <div class="square negro ">
+            <div class="circle piezas"></div>
+        </div>
+        <div class="square blanco">
+            <div class="circle piezas"></div>
+        </div>
+        <div class="square negro">
+            <div class="circle piezas"></div>
+        </div>
+        <div class="square blanco">
+            <div class="circle piezas"></div>
+        </div>
+        <div class="square negro">
+            <div class="circle piezas"></div>
+        </div>
+        <div class="square blanco">
+            <div class="circle piezas"></div>
+        </div>
+        <div class="square negro">
+            <div class="circle piezas"></div>
+        </div>
+
+        <!-- Octava Fila-->
+        <div class="square negro">
+            <div class="circle torres"></div>
+        </div>
+        <div class="square blanco "></div>
+        <div class="square negro"></div>
+        <div class="square blanco"></div>
+        <div class="square negro"></div>
+        <div class="square blanco"></div>
+        <div class="square negro"></div>
+        <div class="square blanco">
+            <div class="circle torres"></div>
+        </div>
+        
+
+        
+</body>
+</html>

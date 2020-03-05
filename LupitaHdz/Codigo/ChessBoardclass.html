@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>ChessBoard</title>
+    <style>
+        html, body {
+            margin:0;
+            padding:0;
+            width: 100%;
+            height: 100%;
+            
+        }
+
+        * {
+            box-sizing: border-box; 
+        }
+        .cuadro{
+            border: 2px solid black;
+            width: 12.3%;
+            height: 12.3%;
+            position: relative;
+        }
+        .negro{
+            background: black;
+            float: left;
+            }
+        .blanco{
+            background: white;
+            float: left;
+        }
+        .rook1{
+            width: 50%;
+            height: 50%;
+            border: 0.2rem solid red;
+            border-radius: 100rem;
+            
+            position: absolute;
+            left: calc(50% - 50%/2);
+            top: calc(50% - 50%/2);
+
+        }
+        .knight1{
+            width: 50%;
+            height: 50%;
+            border: 0.2rem solid grey;
+            border-radius: 100rem;
+            
+            position: absolute;
+            left: calc(50% - 50%/2);
+            top: calc(50% - 50%/2);
+        }
+        .bishop1{
+            width: 50%;
+            height: 50%;
+            border: 0.2rem solid green;
+            border-radius: 100rem;
+            
+            position: absolute;
+            left: calc(50% - 50%/2);
+            top: calc(50% - 50%/2);
+        }
+        .king1{
+            width: 50%;
+            height: 50%;
+            border: 0.2rem solid rgb(146, 146, 12);
+            border-radius: 100rem;
+            
+            position: absolute;
+            left: calc(50% - 50%/2);
+            top: calc(50% - 50%/2);
+        }
+        .queen1{
+            width: 50%;
+            height: 50%;
+            border: 0.2rem solid deeppink;
+            border-radius: 100rem;
+            
+            position: absolute;
+            left: calc(50% - 50%/2);
+            top: calc(50% - 50%/2);
+        }
+        .pawn1{
+            width: 50%;
+            height: 50%;
+            border: 0.2rem solid orange;
+            border-radius: 100rem;
+            
+            position: absolute;
+            left: calc(50% - 50%/2);
+            top: calc(50% - 50%/2);
+        }
+        /*
+        .rook2{
+            width: 50%;
+            height: 50%;
+            border: 0.2rem solid rgb(161, 95, 95);
+            border-radius: 100rem;
+            
+            position: absolute;
+            left: calc(50% - 50%/2);
+            top: calc(50% - 50%/2);
+
+        }
+        .knight2{
+            width: 50%;
+            height: 50%;
+            border: 0.2rem solid rgb(80, 71, 71);
+            border-radius: 100rem;
+            
+            position: absolute;
+            left: calc(50% - 50%/2);
+            top: calc(50% - 50%/2);
+        }
+        .bishop2{
+            width: 50%;
+            height: 50%;
+            border: 0.2rem solid rgb(43, 70, 43);
+            border-radius: 100rem;
+            
+            position: absolute;
+            left: calc(50% - 50%/2);
+            top: calc(50% - 50%/2);
+        }
+        .king2{
+            width: 50%;
+            height: 50%;
+            border: 0.2rem solid rgb(216, 216, 138);
+            border-radius: 100rem;
+            
+            position: absolute;
+            left: calc(50% - 50%/2);
+            top: calc(50% - 50%/2);
+        }
+        .queen2{
+            width: 50%;
+            height: 50%;
+            border: 0.2rem solid rgb(107, 13, 63);
+            border-radius: 100rem;
+            
+            position: absolute;
+            left: calc(50% - 50%/2);
+            top: calc(50% - 50%/2);
+        }
+        .pawn2{
+            width: 50%;
+            height: 50%;
+            border: 0.2rem solid rgb(75, 51, 6);
+            border-radius: 100rem;
+            
+            position: absolute;
+            left: calc(50% - 50%/2);
+            top: calc(50% - 50%/2);
+        }
+        */
+        .clear{
+            clear: both;
+        }
+        </style>
+        
+        
+
+</head>
+<body>
+        
+        <div class="cuadro negro">
+            <div class="rook"></div>
+
+        </div>  
+        <div class="cuadro blanco">
+            <div class="knight"></div>
+        </div>
+        <div class="cuadro negro">
+            <div class="bishop"></div>
+        </div>
+        <div class="cuadro blanco">
+            <div class="king"></div>
+        </div>
+        <div class="cuadro negro">
+            <div class="queen"></div>
+        </div>
+        <div class="cuadro blanco">
+            <div class="bishop"></div>
+        </div>
+        <div class="cuadro negro">
+            <div class="knight"></div>
+        </div>
+        <div class="cuadro blanco">
+            <div class="rook"></div>
+        </div>
+        <div class="clear"></div>
+        <div class="cuadro blanco">
+            <div class="pawn"></div>
+        </div>
+        <div class="cuadro negro">
+            <div class="pawn"></div>
+        </div>
+        <div class="cuadro blanco">
+            <div class="pawn"></div>
+        </div>
+        <div class="cuadro negro">
+            <div class="pawn"></div>
+        </div>
+        <div class="cuadro blanco">
+            <div class="pawn"></div>
+        </div>
+        <div class="cuadro negro">
+            <div class="pawn"></div>
+        </div>
+        <div class="cuadro blanco">
+            <div class="pawn"></div>
+        </div>
+        <div class="cuadro negro">
+            <div class="pawn"></div>
+        </div>
+        <div class="clear"></div>
+        <div class="cuadro negro"></div>  
+        <div class="cuadro blanco"></div>
+        <div class="cuadro negro"></div>
+        <div class="cuadro blanco"></div>
+        <div class="cuadro negro"></div>
+        <div class="cuadro blanco"></div>
+        <div class="cuadro negro"></div>
+        <div class="cuadro blanco"></div>
+        <div class="clear"></div>
+        <div class="cuadro blanco"></div>
+        <div class="cuadro negro"></div>
+        <div class="cuadro blanco"></div>
+        <div class="cuadro negro"></div>
+        <div class="cuadro blanco"></div>
+        <div class="cuadro negro"></div>
+        <div class="cuadro blanco"></div>
+        <div class="cuadro negro"></div>
+        <div class="clear"></div>
+        <div class="cuadro negro"></div>  
+        <div class="cuadro blanco"></div>
+        <div class="cuadro negro"></div>
+        <div class="cuadro blanco"></div>
+        <div class="cuadro negro"></div>
+        <div class="cuadro blanco"></div>
+        <div class="cuadro negro"></div>
+        <div class="cuadro blanco"></div>
+        <div class="clear"></div>
+        <div class="cuadro blanco"></div>
+        <div class="cuadro negro"></div>
+        <div class="cuadro blanco"></div>
+        <div class="cuadro negro"></div>
+        <div class="cuadro blanco"></div>
+        <div class="cuadro negro"></div>
+        <div class="cuadro blanco"></div>
+        <div class="cuadro negro"></div>
+        <div class="clear"></div>
+        <div class="cuadro negro"></div>  
+        <div class="cuadro blanco"></div>
+        <div class="cuadro negro"></div>
+        <div class="cuadro blanco"></div>
+        <div class="cuadro negro"></div>
+        <div class="cuadro blanco"></div>
+        <div class="cuadro negro"></div>
+        <div class="cuadro blanco"></div>
+        <div class="clear"></div>
+        <div class="cuadro blanco"></div>
+        <div class="cuadro negro"></div>
+        <div class="cuadro blanco"></div>
+        <div class="cuadro negro"></div>
+        <div class="cuadro blanco"></div>
+        <div class="cuadro negro"></div>
+        <div class="cuadro blanco"></div>
+        <div class="cuadro negro"></div>
+   
+</body>
+</html>

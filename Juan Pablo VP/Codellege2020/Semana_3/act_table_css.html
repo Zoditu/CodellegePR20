@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas</title>
+    <style>
+         *{
+            box-sizing: border-box;
+        }
+        /* html, body{
+            margin: 0;
+            padding:0;
+            width: 100%;
+            height: 100%;
+            font-family: 'Lato', sans-serif;
+        }  */
+        /*----------GENERAL TABLES ----------*/
+        .main{
+            line-height: 2.5rem;
+            align-items: center;
+            vertical-align: middle;
+        } 
+        .table{
+            display: table;
+            width: 80%;
+            height: 20%;
+            text-align: center;
+            line-height: 2rem;
+            
+        }
+        .table1{
+            left: calc(50% - 50%/2);
+            position: relative;
+            margin-bottom: 2rem;
+            margin-top: 2rem;
+        }
+        .table2{
+            margin-bottom: 2rem;
+            margin-top: 2rem;
+            left: calc(50% - 50%/2);
+            position: relative;
+        }
+        .table3{
+            margin-bottom: 2rem;
+            margin-top: 2rem;
+            left: calc(50% - 50%/2);
+            position: relative;
+        }
+        /* thead color */
+        .trowh.tb1{
+            background-color: brown;
+            color: white;
+        }
+        .trowh.tb2{
+            background-color: blue;
+            color: white;
+        }
+        .trowh.tb3{
+            background-color: green;
+            color: white;
+        }
+        /*Rows & Cells*/
+        .gray{
+            background-color: rgba(202, 202, 202, 0.897);
+        }
+        .trowh{
+            display: table-header-group;
+            background-color: brown;
+
+        }
+        .trow{
+            display: table-row;
+            width:20%;
+        }
+        .tcell{
+            display: table-cell;
+        }
+    </style>
+</head>
+<body>
+    <main class="table">
+    <section class="table table1">
+        <div class="trowh tb1">
+            <div class="tcell">Name</div>
+            <div class="tcell">Age</div>
+            <div class="tcell">Occupation</div>
+            <div class="tcell">Location</div>
+        </div>
+        <div class="trow white">
+            <div class="tcell ">Luke Peters</div>
+            <div class="tcell">25</div>
+            <div class="tcell">Freelance Web DEveloper</div>
+            <div class="tcell">Brockline, MA</div>
+        </div>
+        <div class="trow gray">
+            <div class="tcell">Joseph Smith</div>
+            <div class="tcell">27</div>
+            <div class="tcell">Project Manager</div>
+            <div class="tcell">Somerville, MA</div>
+        </div>
+        <div class="trow white">
+            <div class="tcell">Maxwell Johnson</div>
+            <div class="tcell">26</div>
+            <div class="tcell">UX Architect & Designer</div>
+            <div class="tcell">Arlington, MA</div>
+        </div>
+        <div class="trow gray">
+            <div class="tcell">Harry Harrison</div>
+            <div class="tcell">25</div>
+            <div class="tcell">Front-End Developer</div>
+            <div class="tcell">Boston, MA</div>
+        </div>
+    </section>
+    
+    <section class="table table2">
+        <div class="trowh tb2">
+            <div class="tcell">Product</div>
+            <div class="tcell">Unit Price</div>
+            <div class="tcell">Quantity</div>
+            <div class="tcell">Date Sold</div>
+            <div class="tcell">Status</div>
+        </div>
+        <div class="trow white">
+            <div class="tcell">Solid oak table</div>
+            <div class="tcell">$800</div>
+            <div class="tcell">10</div>
+            <div class="tcell">03/15/2014</div>
+            <div class="tcell">Waiting for Pickup</div>
+        </div>
+        <div class="trow gray">
+            <div class="tcell">Leather iPhone wallet</div>
+            <div class="tcell">$45</div>
+            <div class="tcell">120</div>
+            <div class="tcell">02/10/2014</div>
+            <div class="tcell">In Transit</div>
+        </div>
+        <div class="trow white">
+            <div class="tcell">27th Apple Thunerboit displays</div>
+            <div class="tcell">$1000</div>
+            <div class="tcell">25</div>
+            <div class="tcell">02/10/2014</div>
+            <div class="tcell">Delivered</div>
+        </div>
+        <div class="trow gray">
+            <div class="tcell">Bose studio headphones</div>
+            <div class="tcell">$60</div>
+            <div class="tcell">90</div>
+            <div class="tcell">01/14/2014</div>
+            <div class="tcell">Delivered</div>
+        </div>
+    </section>
+    <section class="table table3">
+        <div class="trowh tb3">
+            <div class="tcell">Username</div>
+            <div class="tcell">Email</div>
+            <div class="tcell">Password</div>
+            <div class="tcell">Active</div>
+        </div>
+        <div class="trow white">
+            <div class="tcell">ninjalug</div>
+            <div class="tcell">misterninja@hotmail.com</div>
+            <div class="tcell">*********</div>
+            <div class="tcell">Yes</div>
+        </div>
+        <div class="trow gray">
+            <div class="tcell">jsmith41</div>
+            <div class="tcell">joseph.smith@gmail.com</div>
+            <div class="tcell">*******</div>
+            <div class="tcell">No</div>
+        </div>
+        <div class="trow white">
+            <div class="tcell">1337hax0r15</div>
+            <div class="tcell">hackerdude1000@aol.com</div>
+            <div class="tcell">******</div>
+            <div class="tcell">Yes</div>
+        </div>
+        <div class="trow gray">
+            <div class="tcell">hairyharry19</div>
+            <div class="tcell">harryharry@gmail.com</div>
+            <div class="tcell">*********</div>
+            <div class="tcell">Yes</div>
+        </div>
+    </section>
+</main>
+</body>
+</html>

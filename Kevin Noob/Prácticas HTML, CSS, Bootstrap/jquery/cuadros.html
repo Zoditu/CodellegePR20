@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        html, body{
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+        }
+
+        *{
+            box-sizing: border-box;
+        }
+
+        .cuadro{
+            float: left;
+            height: 20%;
+            width: 20%;
+        }
+
+        .negro{
+            background-color: black;
+        }
+
+        .blanco{
+            background: white;
+        }
+
+        .morado{
+            background: purple;
+        }
+
+        .clear{
+            clear: left;
+        }
+
+        .block{
+            display: block;
+        }
+
+        h1{
+            text-align: center;
+            font-size: 3em;
+        }
+
+        h2{
+            padding-left: 4%;
+            font-size: 2rem;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        section{
+            color: rgb(93, 130, 252);
+            background-color: #f1fcfc;
+            float: left;
+            border-radius: 9%;
+            margin-left: 2%;
+            margin-top: 2%;
+            border: 2px outset #40e0d0;
+            width: 46vw;
+            height: 40vh;
+        }
+
+        .divTxt{
+            float: left;
+            width: 60%;
+            height: 100%;
+        }
+
+        .divImg{
+            float:left;
+            width:40%;
+            height:100%;
+        }
+        article{
+            float: left;
+            position: relative;
+        }
+
+        img{
+            border: 1px #40e0d0;
+            border-radius: 10%;
+            height: 100%;
+            width: 100%;
+        }
+
+
+        .texto{
+            margin:0;
+            padding:0;
+            padding-top: 1%;
+            text-align: center;
+        }
+
+        .txtDer{
+            padding-right: 5%;
+            text-align: end;
+        }
+
+        .txtIzq{
+            padding-left: 2%;
+            text-align: left;
+        }
+
+        .descripcion{
+            padding-left: 2%;
+            text-align: left;
+            width: 98%;
+            height: 58%;
+            overflow: scroll;
+            overflow-x: hidden;
+            overflow-y: auto;
+        }
+
+        .apodo{
+            font-style: italic;
+            padding-bottom: 2%;
+        }
+
+        .clear{
+            clear:left;
+        }
+
+    </style>
+
+    <script src="libs/jquery-3.4.1.js"></script>
+
+    <script>
+
+        // $(function(){
+        //     var main = $('#container');
+        //     main.css( 'height', '100%'); //Asignado atributo, valor
+        //     for(var i = 0; i < 25; i++ ){
+        //         main.append(
+        //             '<div onclick="alert(\'Indice :\' + ' + i + ')"' + 
+        //             ' class= "cuadro ' + (i % 2 == 0? 'negro' : 'blanco') + '"></div>');
+        //     }
+        // });
+
+        function CambiarColor( cuadro ){
+            //Pasamos el parámetro como un elemento jquery
+            // $(cuadro).removeClass('negro').addClass('morado');
+            console.log(event.target);
+            $(event.target).removeClass('negro').addClass('morado');
+        }
+
+        function GenerarTarjeta( e ){
+            e.preventDefault();
+            var form = e.target;
+
+            var nombre = $(form.elements[0]).val(); //Extraer el valor con jQuery
+            var aPaterno = form.elements[1].value; //Extraer el valor con JS nativo
+            var aMaterno = form.elements[2].value;
+            var fecha = form.elements[3].value;
+            var regalos = $(form.elements[4]).val();
+
+            // console.log(nombre.value);
+            // console.log(aPaterno.value);
+            // console.log(aMaterno.value);
+            // console.log(fecha.value);
+            // console.log($(regalos).val());
+            var tarjeta = '';
+
+            tarjeta += '<section><div class="divImg"><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fih1.redbubble.net%2Fimage.661566904.1775%2Fraf%2C360x360%2C075%2Ct%2Cfafafa%3Aca443f4786.jpg&f=1&nofb=1" alt=""></div><div class="divTxt"><h3 class="texto">'+ nombre + '' + '</h3><p class="texto apodo">' + nombre + '</p><p class="texto txtDer">'+
+                fecha + '</p><p class="texto txtIzq">Regalos:</p><p class="texto descripcion">'+ regalos +'</p></div></section>';
+
+            $('#contenedor').append(tarjeta)
+        }
+
+    </script>
+
+</head>
+<body>
+    <!-- <main id="container"></main>
+    <div class="cuadro negro" onclick="CambiarColor(event)"></div>
+    <div class="cuadro negro"></div> -->
+
+    <form onsubmit="GenerarTarjeta(event)">
+        <label for="">Nombre:</label><input type="text" name="" id="">
+        <div></div>
+        <label for="">Apellido Paterno:</label><input type="text" name="" id="">
+        <div></div>
+        <label for="">Apellido Materno</label><input type="text" name="" id="">
+        <div></div>
+        <label for="">Fecha Nacimiento</label><input type="date" name="" id="">
+        <div></div>
+        <label for="">Regalos</label>
+        <div></div>
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+        <div></div>
+        <button onclick="">Agregar información</button>
+    </form>
+
+    <div id="contenedor"></div>
+</body>
+</html>

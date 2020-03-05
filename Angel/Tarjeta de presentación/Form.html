@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+    html, body{
+        color: darkgray;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin: 0%;
+        padding: 0%;
+        background: url(NewBG.jpg);
+        background-position: 100%;
+        background-repeat:inherit;
+    }
+
+    .card{
+        width: 25rem; height: 35rem;
+        border-radius: 1.5rem;
+        background: url('otro.jpg');
+        background-size: 100% 100%;
+        position: relative;
+        left: 35%;
+    }
+
+    .position{
+        margin: 0;
+    }
+
+    .top{
+        top: 0rem;
+    }
+
+    .bottom{
+        bottom: 0rem;
+    }
+    
+    .login{
+        padding-top: 5rem;
+        padding-left: 4rem;
+    }
+
+    .signIn{
+        font-size: large;
+        position: relative;
+        padding-left: 4rem;
+        display: inline-block;
+    }
+
+    a{
+        text-decoration: none;
+        padding-bottom: 0.3rem;
+        color: white;
+    }
+
+    a:hover{
+        text-decoration: none;
+        border-bottom: 0.1rem solid grey;
+    }
+
+    .signUp{
+        font-size: large;
+        padding-top: 0rem;
+        padding-left: 1rem;
+        position: relative;
+    }
+    
+    .labelText{
+        text-align: left;
+        padding-left: 4rem;
+    }
+
+    .input{
+        text-align: start;
+        padding-left: 1rem;
+        padding-right: 5rem;
+        border-radius: 1.5rem;
+        margin-left: 4rem;
+        background-color: rgb(82, 111, 121);
+    }
+    
+    .switch{
+        position: relative;
+        display: inline-block;
+        width: 3rem; height: 3rem;
+        margin-left: 2.5rem;
+    }
+    
+    .buttonSignIn{
+        position: relative;
+        display: inline-block;
+        width: 20rem; height: 2rem;
+        margin-left: 2.5rem;
+        border-radius: 2rem;
+        background-color: blue;
+    }
+
+    #bT{
+        font-size: large;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: white;
+    }
+
+    .hr{
+        margin-top: 3rem;
+        margin-left: 3rem;
+        margin-right: 3rem;
+        margin-bottom: 0rem;
+        border-radius: 0.2rem;
+        color: gray;
+    }
+
+    .passwordText{
+        margin-left: 8rem;
+        text-align: center;
+        color: darkgray;
+    }
+    </style>
+    </head>
+
+<body>
+    <form>
+    <div>
+    <section class="card">
+        <div class="line top"></div>
+        <div class="line bottom"></div>
+        <div class="login"></div>
+        <a class="signIn"> Sign In </a>
+        <a class="signUp"> Sign Up </a>
+        <br><br><br><br>
+        <div class="labelText"> Username </div>
+        <input type="text" name="user" class="input" required>
+        <br>
+        <br>
+        <br>
+        <div class="labelText"> Password </div>
+        <input type="password" name="password" class="input" required>
+        <br><br><br>
+        <div class="switch">
+            <input type="checkbox">
+            <span class="slider round"></span>
+        </div>
+        Keep me signed in
+        <br><br>
+        <button class="buttonSignIn" type="submit"><a id="bT"> Sign In </a></button>
+        <br>
+        <hr class="hr"></hr>
+        <br>
+        <a class="passwordText"> Forgot your password? </a>
+    </section>
+</div>
+</form>
+</body>
+</html>

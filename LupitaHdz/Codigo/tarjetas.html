@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Tarjetas</title>
+    <style>
+        html, body {
+            margin:0;
+            padding:0;
+            width: 100%;
+            height: 100%;   
+        }
+
+        * {
+            box-sizing: border-box; 
+        }
+        .rectangulo{
+            border: 2px solid black;
+            width: 30%;
+            height: 25%;
+            position: relative;
+        }
+        .cuadro{
+            width: 35%;
+            height: 100%;
+            /*border: 0.2rem solid gray;*/
+            
+            position: absolute;  
+        }
+        
+        /* p {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 15px;
+            height: 50px;
+            overflow: auto;
+            text-align: center;
+        }*/
+        .texto{
+            width: 65%;
+            height: 60%;
+           /* border: 0.2rem solid gray;*/
+            position: absolute; 
+            margin-left: 35%;
+            top: calc(80% - 80%/2);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 15px;
+            overflow: auto;
+            text-align: center;
+        }
+        .datos{
+            width: 65%;
+            height: 40%;
+            /*border: 0.2rem solid pink;*/
+            margin-left: 35%;
+            position: absolute; 
+        }
+        .tx{
+            
+            font-size: 20px;
+            text-align:center;
+            overflow: hidden;
+
+        }
+        footer{
+            text-align: right;
+            font-size: 15px;
+        }
+      
+        img.foto{
+            float: left;
+            width: 100%;
+            height: 100%;   
+            position: absolute;
+        }
+        
+    </style>
+
+</head>
+<body>
+   
+        <div class="rectangulo">
+            
+            <div class="cuadro">
+                <img src="https://piece-hunter.ch/media/image/8e/c9/b8/x_gent80646-1_800x800.jpg" alt="Kylo Ren" class="foto">
+            </div>
+            <div class="texto">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam placeat aut, odio neque autem modi exercitationem illum facere excepturi in libero dolore vero consequatur officia dolorum aliquam omnis recusandae quaerat?
+            </div>
+            <div class="datos tx">
+                Nombre: Guadalupe Hernandez Sanchez 
+                <footer>6 Febrero 2020</footer> 
+            </div>
+
+        </div>
+  
+
+    
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Función Objeto</title>
+    <script>
+      
+        function Obj(nomCompleto){
+            console.log(nomCompleto);
+        }
+        function curso(){
+            console.log('Codellege');
+        }
+        
+        function Habilidad(x){
+            cuadrado= Math.pow(x,2);
+            console.log(cuadrado);
+            return cuadrado;
+        }
+        
+        function LetraColor(letra){
+            if(letra=='A'){
+                console.log('Verde')
+            }
+            else{
+                console.log(false)
+            }
+            if(letra=='C'){
+                console.log('Gris')
+            }
+            else{
+                console.log(false)
+            }
+            if(letra=='F'){
+                console.log('Crying for respect')
+            }
+            else{
+                console.log(false)
+            }
+        }
+
+      
+        function condicion(min){
+            if((min=='Y' || min=='X')){
+                console.log('Soy una condicion')
+            }
+            else{
+                console.log(false)
+            }
+            if(min=='y'|| min=='x'){
+                console.log('si es minuscula')
+            }
+            else{
+                console.log(false)
+            }
+        }
+
+       Obj('Gpe Hdz Schz');
+       curso();
+       Habilidad(4);
+       LetraColor('F')
+       condicion('Y')
+   
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

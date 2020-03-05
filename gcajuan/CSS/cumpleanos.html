@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cumpleaños</title>
+    <style>
+        html, body{
+           margin: 0;
+           padding: 0;
+           width: 100%;
+           height: 100%;
+           background: rgb(238, 243, 237);
+       }
+
+       *{
+           box-sizing: border-box;
+       }
+
+       .principal{
+            border-bottom: 2px solid black;
+            height: 4rem;
+            position: sticky;
+            width: 100%;
+            background: lightblue;
+            left: 0;
+            top:0;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            text-align: center;
+       }
+
+       .principal h1{
+           margin-top: 0;
+       }
+
+       main{
+           background: rgb(238, 243, 237);
+       }
+
+       .profesores{
+           margin: 0 auto;
+           border-bottom: 2px solid black;
+       }
+
+       .profesores h1{
+           margin-top: 0;
+           margin-bottom: 0;
+       }
+
+       .profesores h2{
+           margin-top: 1px;
+       }
+
+       .imagen{
+            border: 5px solid black;
+            padding: 5px;
+            margin-top: 9%;
+            margin-left: 11px;
+            height: 65%;
+            width: 33%;
+            vertical-align: middle;
+            border-radius: 15px;
+            float: left;
+        }
+
+        .fecha{
+            text-align: right;
+            padding-right: 5px;
+        }
+
+        .info{
+            padding-left: 5px;
+            width: 65%;
+            height: 100%;
+            float: right;
+            text-align: center;
+            overflow: hidden;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .tarjeta{
+            width: 600px;
+            height: 300px;
+            border: 5px solid black;
+            margin: 5px;
+            margin-left: 20px;
+            margin-right: 15px;
+            margin-top: 8px;
+            float: left;
+            border-radius: 25px;
+            background-color: rgb(255, 254, 253);
+            box-shadow: 7px 5px 7px grey;
+        }
+
+        .descripcion{
+            overflow-y: scroll;
+            text-align: left;
+            height: 130px;
+            padding-left: 5px;
+            margin-right: 1px;
+            
+        }
+
+        .clear{
+              clear: both;
+              margin-bottom: 20px;
+        }
+
+        section{
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            margin-top: 0px;
+        }
+        footer{
+            text-align: center;
+            padding: 10px;
+        }
+        .titulo{
+            padding-left: 5px;
+            padding-right: 15px;
+            border-bottom-right-radius: 100px;
+            border-bottom: 5px solid black;
+            border-right: 5px ridge black;
+            background-color: rgb(20, 20, 20);
+            color: aliceblue;
+            box-shadow: 0px 3px 3px black;
+        }
+        section h1{
+            padding-top: 0;
+            margin-top: 0px;
+            margin-bottom: 5px
+        }
+
+        .margenExtra{
+            padding-bottom: 15px;
+        }
+   </style>
+</head>
+<body>
+    <header class="principal">
+        <h1>¡Cumpleaños!</h1>
+    </header>
+    <main>
+        <section class="profesores">
+            <h1 class="margenExtra"><span class="titulo">Cumpleaños Profesores:</span></h1>
+            <div class="tarjeta">
+                <div class="imagen">
+                    Imagen
+                </div>
+                <div class="info">
+                    <h1>Kevin Martín del Campo Fernández</h1>
+                    <h2>Kevin</h2>
+                    <p class="fecha">14 abril 1995</p>
+                    <div class="descripcion">
+                        <p>Regalos:</p>
+                        <ul>
+                            <li>Marcadores</li>
+                            <li>Borradores</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="tarjeta">
+                <div class="imagen">
+    
+                </div>
+                <div class="info">
+                    <h1>Juan Pablo Javier García Castillo</h1>
+                    <h2>Gca Juan</h2>
+                    <p class="fecha">7 junio 1999</p>
+                    <p class="descripcion">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta eveniet sit non atque cupiditate, beatae deserunt, laboriosam dolorem iste expedita ipsam autem aspernatur aperiam qui nihil in fugiat? Beatae, cumque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur dolorem nulla non laborum commodi accusamus numquam laboriosam placeat praesentium ducimus iste explicabo, minus quam, repudiandae vitae inventore nostrum cupiditate. Dolorem.
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates, facere iure laboriosam dolores totam labore similique veniam dicta provident numquam tempore modi doloremque corrupti vero earum soluta! Facilis, cupiditate. Alias.
+                    </p>
+                </div>
+            </div>
+            <div class="tarjeta">
+                <div class="imagen">
+    
+                </div>
+                <div class="info">
+                    <h1>Juan Pablo Javier García Castillo</h1>
+                    <h2>Gca Juan</h2>
+                    <p class="fecha">7 junio 1999</p>
+                    <p class="descripcion">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta eveniet sit non atque cupiditate, beatae deserunt, laboriosam dolorem iste expedita ipsam autem aspernatur aperiam qui nihil in fugiat? Beatae, cumque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur dolorem nulla non laborum commodi accusamus numquam laboriosam placeat praesentium ducimus iste explicabo, minus quam, repudiandae vitae inventore nostrum cupiditate. Dolorem.
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates, facere iure laboriosam dolores totam labore similique veniam dicta provident numquam tempore modi doloremque corrupti vero earum soluta! Facilis, cupiditate. Alias.
+                    </p>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </section>
+        <section class="alumnos">
+            <h1 class="margenExtra"><span class="titulo">Cumpleaños alumnos:</span></h1>
+            <div class="tarjeta">
+                <div class="imagen">
+    
+                </div>
+                <div class="info">
+                    <h1>Elisa Paola Juárez Avila</h1>
+                    <h2>Elisa</h2>
+                    <p class="fecha">20 de mayo</p>
+                    <div class="descripcion">
+                        <p>Regalos:</p>
+                        <ul>
+                            <li>Boleto para concierto</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tarjeta">
+                <div class="imagen">
+    
+                </div>
+                <div class="info">
+                    <h1>Enrique Alejandro Castro González</h1>
+                    <h2>Quique</h2>
+                    <p class="fecha">7 de junio</p>
+                    <div class="descripcion">
+                        <p>Regalos:</p>
+                        <ul>
+                            <li>Cualquier cosa de arduino.</li>
+                            <li>Ropa de marca laxmi o estilo parecida</li>
+                            <li>Ropa de tigres</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tarjeta">
+                <div class="imagen">
+    
+                </div>
+                <div class="info">
+                    <h1>Darío André Alfaro Hernández</h1>
+                    <h2>Darío</h2>
+                    <p class="fecha">21 de febrero</p>
+                    <div class="descripcion">
+                        <p>Regalos:</p>
+                        <ul>
+                            <li>Airpods</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tarjeta">
+                <div class="imagen">
+    
+                </div>
+                <div class="info">
+                    <h1>Kevin Fernando Navarro Garza</h1>
+                    <h2>Kevin N.</h2>
+                    <p class="fecha">13 de noviembre</p>
+                    <div class="descripcion">
+                        <p>Regalos:</p>
+                        <ul>
+                            <li>Predator Helios 700.</li>
+                            <li>Libro de sudokus.</li>
+                            <li>Algo de lego 🤷🏾‍♂️.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tarjeta">
+                <div class="imagen">
+    
+                </div>
+                <div class="info">
+                    <h1>Guadalupe Hernández Sánchez</h1>
+                    <h2>Lupita</h2>
+                    <p class="fecha">21 de octubre</p>
+                    <div class="descripcion">
+                        <p>Regalos:</p>
+                        <ul>
+                            <li>Algo de:
+                                <ul>
+                                    <li>Avengers</li>
+                                    <li>Harry Potter</li>
+                                    <li>Star Wars</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tarjeta">
+                <div class="imagen">
+    
+                </div>
+                <div class="info">
+                    <h1>Juan Pablo Villanueva Pámanes</h1>
+                    <h2>JP</h2>
+                    <p class="fecha">14 de octubre</p>
+                    <div class="descripcion">
+                        <p>Regalos:</p>
+                        <ul>
+                            <li>Una tira de luces led</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tarjeta">
+                <div class="imagen">
+    
+                </div>
+                <div class="info">
+                    <h1>Ángel Aldair Bárcenas Mora</h1>
+                    <h2>Bárcenas</h2>
+                    <p class="fecha">21 de julio</p>
+                    <div class="descripcion">
+                        <p>Regalo:</p>
+                        <ul>
+                            <li>Un bugatti, pero si no les alcanza con unos audifonos se hace.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tarjeta">
+                <div class="imagen">
+    
+                </div>
+                <div class="info">
+                    <h1>Nayeli Atzin Huerta Castañeda</h1>
+                    <h2>Nayeli</h2>
+                    <p class="fecha">25 de agosto</p>
+                    <div class="descripcion">
+                        <p>Regalos:</p>
+                        <ul>
+                            <li>Un libro, el que sea :P.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tarjeta">
+                <div class="imagen">
+    
+                </div>
+                <div class="info">
+                    <h1>Guadalupe Limón Flores</h1>
+                    <h2>Gudu</h2>
+                    <p class="fecha">6 de octubre</p>
+                    <div class="descripcion">
+                        <p>Regalos:</p>
+                        <ul>
+                            <li>Prisma color premier coloring kit.</li>
+                            <li>Colores faber Castell.</li>
+                            <li>Lienzos.</li>
+                            <li>Caballete.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tarjeta">
+                <div class="imagen">
+    
+                </div>
+                <div class="info">
+                    <h1>Juan Pablo Javier García Castillo</h1>
+                    <h2>Gca Juan</h2>
+                    <p class="fecha">7 junio 1999</p>
+                    <div class="descripcion">
+                        <p>Regalos:</p>
+                        <ul>
+                            <li>Xbox one.</li>
+                            <li>MacBook pro.</li>
+                            <li>Un departamento.</li>
+                            <li>Lo que sea.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tarjeta">
+                <div class="imagen">
+    
+                </div>
+                <div class="info">
+                    <h1>Juan Pablo Javier García Castillo</h1>
+                    <h2>Gca Juan</h2>
+                    <p class="fecha">7 junio 1999</p>
+                    <p class="descripcion">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta eveniet sit non atque cupiditate, beatae deserunt, laboriosam dolorem iste expedita ipsam autem aspernatur aperiam qui nihil in fugiat? Beatae, cumque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur dolorem nulla non laborum commodi accusamus numquam laboriosam placeat praesentium ducimus iste explicabo, minus quam, repudiandae vitae inventore nostrum cupiditate. Dolorem.
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates, facere iure laboriosam dolores totam labore similique veniam dicta provident numquam tempore modi doloremque corrupti vero earum soluta! Facilis, cupiditate. Alias.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="clear"></div>
+        </section>
+    </main>
+    <footer>Elaborado por: Juan Pablo Javier García Castillo</footer>
+</body>
+</html>

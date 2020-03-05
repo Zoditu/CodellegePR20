@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="Libs/jquery-3.4.1.js"></script>
+    <link rel="stylesheet" href="cumpl.css">
+    <script>    
+    //  HTTP
+    //  CRUD = create, read, update, delete = POST, GET, PUT, DELETE
+
+        $(function()
+        {
+            console.log(JSON.stringify(alumnos));
+        });
+
+        function GenerarTarjeta( e )
+        {
+            e.preventDefault();
+            var form = e.target;
+            var Nombre = $( form.elements[0]).val();
+            var apPaterno = $(form.elements[1]).val();
+            var apMaterno = $(form.elements[2]).val();
+            var fecha = $(form.elements[3]).val();
+            var regalos = $(form.elements[4]).val();
+        }
+    </script>
+    <title>1 de Marzo</title>
+</head>
+<body>
+    <main>
+    <form onsubmit="GenerarTarjeta( event );">
+        <label>Nombre: </label><input type="text"/>
+        <div></div>
+        <label>Apellido Paterno: </label><input type="text"/>
+        <div></div>
+        <label>Apellido Materno: </label><input type="text"/>
+        <div></div>
+        <label>Fecha de Nacimiento: </label><input type="date"/>
+        <div></div>
+        <label>Regalos: </label>
+        <div></div>
+        <textarea name="Regalos" id="" cols="30" rows="10"></textarea>
+        <div></div>
+        <button>Generar Tarjeta</button>
+    </form>
+    <div id="container"></div>
+    </main>
+</body>
+</html>

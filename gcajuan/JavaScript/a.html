@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        window.onload = function( event ){
+            var anchors = document.getElementsByTagName( "a");
+            for(var i = 0; i < anchors.length; i++){
+                var anchor = anchors[i];
+                var href = anchor.getAttribute( "href" );
+                console.log(href);
+            }
+        };
+    </script>
+</head>
+<body>
+    <h1 id="titulo">HOLA!</h1>
+    <a href="https://google.com"></a>
+    <a href="https://microsoft.com"></a>
+    <a href="https://bing.com"></a>
+
+</body>
+</html>

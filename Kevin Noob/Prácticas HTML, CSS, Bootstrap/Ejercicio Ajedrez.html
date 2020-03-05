@@ -1,0 +1,165 @@
+<!--
+    Hacer un tablero de ajedrez de 8x8
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio ajedrez</title>
+    <style>
+    
+    /*Define medidas de los cuadros*/
+    
+    body{
+        margin: 0;
+    }
+    
+    *{
+        box-sizing: border-box;
+    }
+
+    .cuadro{                
+        float: left;
+        width: 12.5%;
+        height: 12.5vh;
+        margin: 0;
+        position: relative;
+    }
+
+    .blanco{
+        background-color: white;
+    }
+
+    .negro{
+        background-color:black;
+    }
+
+    
+    .clear{
+        clear: both;
+    }
+
+    .circle{
+        border-radius: 100rem;
+        width: 50%;
+        height: 50%;
+        position: absolute;
+        left: calc(50% - 50% / 2);
+        top: calc(50% - 50% / 2);
+    }
+
+    .relative{
+        position:relative;
+    }
+    
+    .torre{
+        border: 0.2rem solid blue;
+    }
+
+    .alfil{
+        border: 0.2rem solid gray;
+    }
+
+    .caballo{
+        border: 0.2rem solid brown;
+    }
+
+    .reina{
+        border: 0.2rem solid red;
+    }
+
+    .rey{
+        border: 0.2rem solid yellow;
+    }
+
+    .peon{
+        border: 0.2rem solid darkcyan;
+    }
+
+    </style>
+</head>
+<body>
+        <section class="cuadro blanco relative"><div class="circle torre"></div></section>
+        <section class="cuadro negro relative"><div class="circle alfil"></div></section>
+        <section class="cuadro blanco relative"><div class="circle caballo"></div></section>
+        <section class="cuadro negro relative"><div class="circle reina"></div></section>
+        <section class="cuadro blanco relative"><div class="circle rey"></div></section>
+        <section class="cuadro negro relative"><div class="circle caballo"></div></section>
+        <section class="cuadro blanco relative"><div class="circle alfil"></div></section>
+        <section class="cuadro negro relative"><div class="circle torre"></div></section>
+        <section class="clear"></section>
+        
+        <section class="cuadro negro relative"><div class="circle peon"></div></section>
+        <section class="cuadro blanco relative"><div class="circle peon"></div></section>
+        <section class="cuadro negro relative"><div class="circle peon"></div></section>
+        <section class="cuadro blanco relative"><div class="circle peon"></div></section>
+        <section class="cuadro negro relative"><div class="circle peon"></div></section>
+        <section class="cuadro blanco relative"><div class="circle peon"></div></section>
+        <section class="cuadro negro relative"><div class="circle peon"></div></section>
+        <section class="cuadro blanco relative"><div class="circle peon"></div></section>
+        <section class="clear"></section>
+
+        <section class="cuadro blanco"></section>
+        <section class="cuadro negro"></section>
+        <section class="cuadro blanco"></section>
+        <section class="cuadro negro"></section>
+        <section class="cuadro blanco"></section>
+        <section class="cuadro negro"></section>
+        <section class="cuadro blanco"></section>
+        <section class="cuadro negro"></section>
+        <section class="clear"></section>
+        
+        <section class="cuadro negro"></section>
+        <section class="cuadro blanco"></section>
+        <section class="cuadro negro"></section>
+        <section class="cuadro blanco"></section>
+        <section class="cuadro negro"></section>
+        <section class="cuadro blanco"></section>
+        <section class="cuadro negro"></section>
+        <section class="cuadro blanco"></section>
+        <section class="clear"></section>
+
+        <section class="cuadro blanco"></section>
+        <section class="cuadro negro"></section>
+        <section class="cuadro blanco"></section>
+        <section class="cuadro negro"></section>
+        <section class="cuadro blanco"></section>
+        <section class="cuadro negro"></section>
+        <section class="cuadro blanco"></section>
+        <section class="cuadro negro"></section>
+        <section class="clear"></section>
+        
+        <section class="cuadro negro"></section>
+        <section class="cuadro blanco"></section>
+        <section class="cuadro negro"></section>
+        <section class="cuadro blanco"></section>
+        <section class="cuadro negro"></section>
+        <section class="cuadro blanco"></section>
+        <section class="cuadro negro"></section>
+        <section class="cuadro blanco"></section>
+        <section class="clear"></section>
+
+        <section class="cuadro blanco relative"><div class="circle peon"></div></section>
+        <section class="cuadro negro relative"><div class="circle peon"></div></section>
+        <section class="cuadro blanco relative"><div class="circle peon"></div></section>
+        <section class="cuadro negro relative"><div class="circle peon"></div></section>
+        <section class="cuadro blanco relative"><div class="circle peon"></div></section>
+        <section class="cuadro negro relative"><div class="circle peon"></div></section>
+        <section class="cuadro blanco relative"><div class="circle peon"></div></section>
+        <section class="cuadro negro relative"><div class="circle peon"></div></section>
+        <section class="clear"></section>
+        
+        <section class="cuadro negro relative"><div class="circle torre"></div></section>
+        <section class="cuadro blanco relative"><div class="circle alfil"></div></section>
+        <section class="cuadro negro relative"><div class="circle caballo"></div></section>
+        <section class="cuadro blanco relative"><div class="circle rey"></div></section>
+        <section class="cuadro negro relative"><div class="circle reina"></div></section>
+        <section class="cuadro blanco relative"><div class="circle caballo"></div></section>
+        <section class="cuadro negro relative"><div class="circle alfil"></div></section>
+        <section class="cuadro blanco relative"><div class="circle torre"></div></section>
+        <section class="clear"></section>
+</body>
+</html>

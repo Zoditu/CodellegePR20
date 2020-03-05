@@ -1,0 +1,28 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+*{
+    box-sizing: border-box;
+}
+.w100{width: 100%;}
+.h100{height: 100%;}
+.table{display: table;}
+.table-cell{ display: table-cell;}
+.vertical-align-middle{ vertical-align: middle;}
+.inline-block{display: inline-block;}
+.text-center{text-align: center;}
+.circle{
+    height: 5rem;
+    width: 5rem;
+    border-radius: 100%;
+    background: purple;
+}
+.white-circle{
+    height: 2rem;
+    width: 2rem;
+    border-radius: 100%;
+    background: white;
+}

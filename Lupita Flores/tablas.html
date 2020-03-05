@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas con divs</title>
+    <style>
+
+        html, body{
+            /*color de fondo, y fuente de texto utilizada*/
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background: black;
+            width: 100%;
+        }
+
+        div{
+            /* propiedades especificadas para los divs, altura, centrado*/
+            height: 30px;
+            vertical-align: bottom;
+            text-align: left;
+            font-size:medium;        
+        
+        }
+
+        .tabla{
+            display: table;
+            background-color: white;
+            width: 70%;
+            line-height: 2.5;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+            
+        }
+
+        .centrado{
+            align-content: center;
+            
+        }
+
+        .titulo1{
+            display: table-row;
+            font-weight: bold;
+            background: red;
+            color: white;         
+
+        }
+
+        .titulo2{
+            display: table-row;
+            font-weight: bold;
+            background:green;
+            color: white;         
+
+        }
+
+        .titulo3{
+            display: table-row;
+            font-weight: bold;
+            background:blue;
+            color: white;         
+
+        }
+
+
+        .fila{
+            display: table-row;
+        }
+
+        .celda{
+            display: table-cell;
+            padding: 1mm;
+            
+        }
+
+        .linea:nth-child(odd){
+            background: rgb(236, 232, 232);
+        }
+ 
+   
+    </style>
+</head>
+
+<body>
+
+    <!--TABLA 1-->
+    <div class="tabla centrado">
+        <!--NOMBRES DE COLUMNAS-->
+        <div class="titulo1">
+            <div class="celda">Name</div>
+            <div class="celda">Age</div>
+            <div class="celda">Ocupation</div>
+            <div class="celda">Location</div>
+        </div>
+
+<!--FILAS-->
+        <div class="fila linea">
+            <div class="celda">Luis Peters</div>
+            <div class="celda">25</div>
+            <div class="celda">Freelance Web Developer</div>
+            <div class="celda">Brookline, MA</div>
+        </div>
+        <div class="fila linea">
+            <div class="celda">Joseph Smith</div>
+            <div class="celda">27</div>
+            <div class="celda">Project Manager</div>
+            <div class="celda">Somerville, MA</div>
+        </div>
+        <div class="fila linea">
+            <div class="celda">Maxwell Johnson</div>
+            <div class="celda">26</div>
+            <div class="celda">UX Architect & Designer</div>
+            <div class="celda">Arfington, MA</div>
+        </div>
+        <div class="fila linea">
+            <div class="celda">Harry Harrison</div>
+            <div class="celda">25</div>
+            <div class="celda">Front-End Developer</div>
+            <div class="celda">Boston, MA</div>
+        </div>
+      
+   </div> 
+
+    <!--TABLA 2-->        
+
+   <div class="tabla centrado">
+    <div class="titulo2">
+        <div class="celda">Product</div>
+        <div class="celda">Unit Price</div>
+        <div class="celda">Quantity</div>
+        <div class="celda">Date Sold</div>
+        <div class="celda">Status</div>
+    </div>
+    <div class="fila linea">
+        <div class="celda">Solid oak work table</div>
+        <div class="celda">$800</div>
+        <div class="celda">10</div>
+        <div class="celda">03/15/2014</div>
+        <div class="celda">Walting for Pickup</div>
+    </div>
+    <div class="fila linea">
+        <div class="celda">Leather Iphone wallet</div>
+        <div class="celda">$45</div>
+        <div class="celda">120</div>
+        <div class="celda">03/15/2014</div>
+        <div class="celda">In Transit</div>
+    </div>
+    <div class="fila linea">
+        <div class="celda">27° Apple Thunderbolt wallet</div>
+        <div class="celda">$1000</div>
+        <div class="celda">25</div>
+        <div class="celda">02/10/2014</div>
+        <div class="celda">Delivered</div>
+    </div>
+    <div class="fila linea">
+        <div class="celda">Bose studio headphones</div>
+        <div class="celda">$60</div>
+        <div class="celda">90</div>
+        <div class="celda">01/14/2014</div>
+        <div class="celda">Delivered</div>
+    </div>
+</div>
+
+ <!--TABLA 3-->
+<div class="tabla centrado">
+    <div class="titulo3">
+        <div class="celda">Username</div>
+        <div class="celda">Email</div>
+        <div class="celda">Password</div>
+        <div class="celda">Active</div>
+    </div>
+
+
+    <div class="fila linea">
+        <div class="celda">ninjalug</div>
+        <div class="celda">misterninja@hotmail.com</div>
+        <div class="celda">**********</div>
+        <div class="celda">Yes</div>
+    </div>
+    <div class="fila linea">
+        <div class="celda">jsmith41</div>
+        <div class="celda">joseph.smith@gmail.com</div>
+        <div class="celda">**********</div>
+        <div class="celda">No</div>
+    </div>
+    <div class="fila linea">
+        <div class="celda">1337hax0r15</div>
+        <div class="celda">hackerdude1000@aot.com</div>
+        <div class="celda">**********</div>
+        <div class="celda">Yes</div>
+    </div>
+    <div class="fila linea">
+        <div class="celda">hairyharry19</div>
+        <div class="celda">harryharry@gmail.com</div>
+        <div class="celda">**********</div>
+        <div class="celda">Yes</div>
+    </div>
+
+</div>
+    
+</body>
+</html>

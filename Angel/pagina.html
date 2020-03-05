@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Página de compras</title>
+    <style>
+        #N { color:blue; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
+        #AP { color: fuchsia; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
+        #AM { color: coral; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;}
+        #C { color: springgreen; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;}
+        #P { color: violet; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;}
+        #E { color: navy; font-family: 'Courier New', Courier, monospace;}
+        #city { color: maroon; font-family: 'Courier New', Courier, monospace;}
+        #D { color: forestgreen; font-family: 'Courier New', Courier, monospace;}
+        #EC { color: lightcoral; font-family: 'Courier New', Courier, monospace;}
+        #NE { color: black; font-family: 'Courier New', Courier, monospace;}
+        #col { color: grey; font-family: 'Courier New', Courier, monospace;}
+        #CP { color: purple; font-family: 'Courier New', Courier, monospace;}
+        #T { color: blue; font-family: 'Courier New', Courier, monospace;}
+        #CCV { color: red; font-family: 'Courier New', Courier, monospace;}
+    </style>
+</head>
+<body>
+    <form action="">
+    <label id="N"> Nombre: </label>
+    <input type="text" name="usuario" required>
+    <br><br>
+    <label id="AP"> Apellido Paterno: </label>
+    <input type="text" name="AP" required>
+    <br><br>
+    <label id="AM"> Apellido Materno: </label>
+    <input type="text" name="AM" required>
+    <br><br>
+    <label id="C"> Celular: </label>
+    <input type="number" name="tel" min="100000" max="9999999999999" required>
+    <br><br>
+    <label id="P"> País: </label>
+    <input type="text" name="Country" required>
+    <br><br>
+    <label id="E"> Estado: </label>
+    <input type="text" name="State" required>
+    <br><br>
+    <label id="city"> Ciudad: </label>
+    <input type="text" name="City" required>
+    <br><br>
+    <label id="D"> Dirección: </label>
+    <input type="text" name="Adress" required>
+    <br><br>
+    <label id="EC"> Estado Civil: </label>
+    <select name="edoCivil">
+        <option value="Soltero"> Soltero</option>
+        <option value="Casado"> Casado</option>
+        <option value="UnionLibre"> Unión Libre</option>
+        <option value="Divorciado"> Divorciado</option>
+    </select>
+    <br><br>
+    <label id="NE"> Número exterior: </label>
+    <input type="number" name="NE" required>
+    <br><br>
+    <label id="col"> Colonia: </label>
+    <input type="text" name="Colonia" required>
+    <br><br>
+    <label id="CP"> Código Postal: </label>
+    <input type="number" name="zip" min="1" max="99999" required>
+    <br><br>
+    <label id="T"> Número de tarjeta: </label>
+    <input type="number" name="Tarj" required>
+    <br><br>
+    <label id="CCV"> CCV: </label>
+    <input type="password" name="ccv" min="111" max="999"required>
+    <br><br>
+    <button>Ingresar</button>
+</form>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="alumnos.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script>
+
+        window.onload = function(event){
+            var main = document.getElementById('contenedor');
+            for(var i = 0; i < alumnos.length; i++)
+            {
+                var alumno = alumnos [i];
+                main.innerHTML += 
+                '<div class="alumno relative">' +
+                    '<img class="img">' + alumno.img + '<img>'+
+                    '<aside class="infcump">' +
+                        '<h3 class="nomper">' + alumno.nombre +' ' + alumno.apellidoPaterno + ' ' +alumno.apellidoMaterno + '</h3>'+
+
+                        '<h4 class="fechacumple">' + alumno.fechaNac +'</h4>'+
+
+                        '<p class="regfav">' + alumno.regFav+'</p>' +
+
+                    '</aside>'+
+                '</div>';
+                /* console.log(alumno.nombre); */
+            }
+        };  
+    </script>
+</head>
+<body>
+    <main id="contenedor">
+        <section class="acumple">
+            <h2>Cumple años alumnos:</h2>
+            <!-- <div class="alumno relative">
+                <img src="" alt="" class="img">
+                <aside>
+                    <h3 class="nomper"></h3>
+                    <h4 class="fechacumple"></h4>
+                    <p class="regfav"></p>
+                </aside>
+            </div> -->
+        </section>
+    </main>
+</body>
+</html>

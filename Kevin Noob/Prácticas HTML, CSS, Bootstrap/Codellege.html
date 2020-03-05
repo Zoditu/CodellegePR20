@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+
+        var KN = {
+            nombre: 'Kevin Fernando',
+            apellidoPaterno: 'Navarro',
+            apellidoMaterno: 'Garza',
+            edad: 23,
+            fechaNac: '13-11-1996',
+            sexo: 'M',
+            saludo: 'Ke onda pa'
+        };
+
+        var EF = {
+            nombre: 'Erick Martin',
+            apellidoPaterno: 'Fernandez',
+            apellidoPaterno: 'Jimenez',
+            edad: 20,
+            fechaNac: '20-02-2000',
+            sexo: 'M',
+            saludo: 'Hola Erick'
+        };
+
+        var EC = {
+            nombre: 'Enrique Alejandro',
+            apellidoPaterno: 'Castro',
+            apellidoMaterno: 'González',
+            edad: 21,
+            fechaNac: '07-06-1998',
+            sexo: 'M',
+            saludo: 'Hola Enrique'
+        };
+
+        var GL = {
+            nombre: 'Guadalupe',
+            apellidoPaterno: 'Limón',
+            apellidoMaterno: 'Flores',
+            edad: 24,
+            fechaNac: '06-10-1995',
+            sexo: 'F',
+            saludo: 'Hola Limón'
+        };
+
+        var JV = {
+            nombre: 'Juan Pablo',
+            apellidoPaterno: 'Villanueva',
+            apellidoMaterno: 'Pámanes',
+            edad: 21,
+            fechaNac: '14-10-1998',
+            sexo: 'M',
+            saludo: 'Hola JP'
+        };
+
+        var DA = {
+            nombre: 'Darío André',
+            apellidoPaterno: 'Alfaro',
+            apellidoMaterno: 'Hernández',
+            edad: 23,
+            fechaNac: '21-02-1997',
+            sexo: 'M',
+            saludo: 'Hola Darío'
+        };
+
+        var GH = {
+            nombre: 'Guadalupe',
+            apellidoPaterno: 'Hernandez',
+            apellidoMaterno: 'Sánchez',
+            edad: 25,
+            fechaNac: '21-10-1994',
+            sexo: 'F',
+            saludo: 'hola Lupita'
+        };
+
+        var EJ = {
+            nombre: 'Elisa Paola',
+            apellidoPaterno: 'Juárez',
+            apellidoMaterno: 'Ávila',
+            edad: 20,
+            fechaNac: '20-05-1999',
+            sexo: 'F',
+            saludo: 'Hola Elisa'
+        };
+
+        var NH = {
+            nombre: 'Nayeli Atzin',
+            apellidoPaterno: 'Huerta',
+            apellidoMaterno: 'Castañeda',
+            edad: 21,
+            fechaNac: '25-08-1998',
+            sexo: 'F',
+            saludo: 'hola Naye'
+        };
+
+        var AB = {
+            nombre: 'Ángel Aldair',
+            apellidoPaterno: 'Bárcenas',
+            apellidoMaterno: 'Mora',
+            edad: 19,
+            fechaNac: '21-07-2000',
+            sexo: 'M',
+            saludo: 'Hola Ángel'
+        };
+
+        var JG = {
+            nombre: 'Juan Pablo Javier',
+            apellidoPaterno: 'García',
+            apellidoMaterno: 'Castillo',
+            edad: 20,
+            fechaNac: '07-06-1999',
+            sexo: 'M',
+            saludo: 'hola JuanPablo'
+        };
+
+        var Kevin = {
+            nombre: 'Kevin',
+            apellidoPaterno: 'Martín del Campo',
+            apellidoMaterno: 'Nomelose',
+            edad: 'veintialgo',
+            fechaNac: 'kiensabe',
+            sexo: 'M',
+            saludo: 'Hola Kevin'
+        }
+
+        var Codellege = {
+            generacion: 'Primavera 2020',
+            turno: 'Matutino',
+            alumnos: [KN, EF, EC, GL, JV, DA, GH, EJ, NH, AB, JG],
+            Maestros: [ Kevin ],
+            numAlumnos: function cantAlumnos(){
+                return this.alumnos.length;
+            },
+            saludo: function saludar(alumno){
+                console.log(alumno.saludo);
+            }
+        };
+
+
+        /*
+        Operadores
+            Matemáticos:
+                +, -, *, /, %
+            
+            Condicionales:
+                >, <, <=, >=, ==, === (Identidad, que sean iguales y del mismo tipo), !=, !==(No idéntico)
+            
+            Lógicos:
+                AND &&, OR ||, XOR ^, NOT !
+        */
+
+        //Redondeo a números enteros
+        var x = 7 / 4;
+        x = Math.floor( x );
+
+        console.log("---------------------");
+
+        function crearObjeto(){
+            var persona = new Object;
+
+            persona = {
+                nombreCompleto: 'Kevin Fernando Navarro Garza',
+                curso: 'UP una aventura de altura',
+                habilidad: function mostrarHabilidad(numero){
+                    console.log("La suma de las raíces cuadradas de dos lados de un triángulo isóceles es igual a la raíz cuadrada del lado restante equisde")
+                    return numero * 9;
+                },
+                condicion: function elegirOpcion(letra){
+                    if(letra == 'A'){
+                        console.log("Verde");
+                    }else if(letra == 'C'){
+                        console.log("Gris");
+                    }else if(letra == 'F'){
+                        console.log("Llorando por respeto");
+                    }else if(letra == 'Y' || letra == 'X'){
+                        console.log("Soy una condición bien mamalona");
+                    }else if(letra == 'y' || letra == 'x'){
+                        console.log("Yo soy más mamalona que la anterior");
+                    }
+                },
+            };
+            return persona;
+        }
+
+        var Kevin = crearObjeto();
+
+        console.log(Kevin.nombreCompleto);
+        console.log(Kevin.curso);
+        console.log(Kevin.habilidad(9));
+        Kevin.condicion("A");
+
+        console.log("-----------------------------------------------------");
+
+        //Evalúa identidad, no igualdad
+        switch( valor ){
+            case 'x':
+                console.log("ekis we");
+                break;
+            case 696969696969:
+                console.log("Olovorgo tas enfermo");
+                break;
+
+            default: console.log("Pinche perro gacho");
+        }
+
+        console.log("-----------------------------------------------------");
+
+        //Ciclos
+        while(true){
+
+        }
+
+        for(x=0;x<100;x++){
+            
+        }
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>

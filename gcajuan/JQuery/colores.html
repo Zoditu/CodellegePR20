@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html, body{
+           margin: 0;
+           padding: 0;
+           width: 100%;
+           height: 100%;
+       }
+
+       *{
+           box-sizing: border-box;
+       }
+
+       .cuadro{
+            width: 20%;
+            height: 20%;
+            float: left;
+       }
+       .negro{
+              
+              background: black;
+              
+        }
+        .blanco{
+              background: olive;
+        }
+        .morado{
+            background: purple;
+        }
+
+        #container{
+            height: 100%;
+        }
+    </style>
+    <script src="C:\Users\gcaju\Desktop\Codellege\libs\jquery-3.4.1.js"></script>
+    <script>
+
+
+        function CambiarColor(event){
+           $(event.target).removeClass('negro').addClass('morado');
+           console.log(event);
+        }
+    </script>
+</head>
+<body>
+    <main id="container">
+        <div class="cuadro negro" onclick="CambiarColor(event)"></div>
+        <div class="cuadro negro"></div>
+    </main>
+</body>
+</html>
