@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <link rel="stylesheet" href="estilo.css">
+    <script src="libs/jquery.js"></script>
+    <script>
+        $(function(){
+                 var ajax= new XMLHttpRequest;
+                 var html='';
+                 ajax.onreadystatechange = function()
+                 {
+                  //  console.log(this.readyState + ' - ' + this.status);
+                  if(this.readyState === 4)
+                  {
+                      if(this.status === 200)
+                      {
+                         // console.log(this.responseText);
+                          var json = JSON.parse(this.responseText);
+                          var alumnos = json.alumnos;
+                          /* $.each(alumnos,function(i, alumno){
+
+                           //  $(document.body).append('<h1>' + alumno.nombre + '</h1>');
+
+
+                           });
+                           */
+                         
+                          for(var i=0;i< alumnos.length; i++)
+                          {
+                            var alumno= alumnos[i];
+                                html += '<section class="filas">'+
+                                '<article class="tarjetas">'+
+                                    '<section class="imagen"></section>'+
+                                    '<section class="nombre estilo1">'+
+                                    '<p>'+alumno.nombre+ ' ' + alumno.apellidoPaterno+ ' ' + alumno.apellidoMaterno +'</p>'+'</section>'+
+                                    '<section class="fecha estilo1">'+
+                                        '<p>'+alumno.fechaNac +'</p>'+'</section>'+
+                                    '<section class="parrafo">'+
+                                        '<p class="estilo1">¿Que te gustaría que te regalran?</p>'+
+                                        '<p class="estilo2">'+alumno.regalo+'</p>'+
+                                    '</section>'+'</article>';
+
+                                    if(alumnos[i+1])
+                                    {
+                                        
+                                        ++i;
+                                        console.log(i);
+                                        alumno= alumnos[i];
+                                        html += 
+                                        '<article class="tarjetas">'+
+                                    '<section class="imagen"></section>'+
+                                    '<section class="nombre estilo1">'+
+                                    '<p>'+alumno.nombre+ ' ' + alumno.apellidoPaterno+ ' ' + alumno.apellidoMaterno +'</p>'+'</section>'+
+                                    '<section class="fecha estilo1">'+
+                                        '<p>'+alumno.fechaNac +'</p>'+'</section>'+
+                                    '<section class="parrafo">'+
+                                        '<p class="estilo1">¿Que te gustaría que te regalran?</p>'+
+                                        '<p class="estilo2">'+alumno.regalo+'</p>'+
+                                    '</section>'+'</article>';
+
+                                    }
+
+                        
+                                
+                                 html+= "</section>";
+
+                            
+
+                          }
+
+                          $('#contenido').append(html);
+                           
+                          
+                      }
+
+                  }
+                 };
+                 //http://127.0.0.1:666/ajax/alumnos.json 
+                 ajax.open('GET','alumnos.json',true);
+                 ajax.send();
+        });
+    </script>
+</head>
+<body>
+    <header class="encabezado">
+        <h1 id="encabezado_principal">
+            CUMPLEAÑOS
+        </h1>
+       
+</header>
+<main class="contenido" id="contenido">
+</body>
+</html>
