@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transformacion</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style>
+        html, body{
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            height: 100%;
+        }
+        *{box-sizing: border-box;}
+        .cuadro{
+            width: 10rem;
+            height: 10rem;
+            background: blue;
+            position: absolute;
+        }
+
+        .cuadro1{
+            width: 10rem;
+            height: 10rem;
+            background: green;
+            position: absolute;
+        }
+        .centro{
+            text-align: center;
+        }
+        .funcion{
+            transition: rotate(-20deg);
+            background-color: blue;
+            transition: rotate(1s);
+        }
+        .funcion:hover{
+            transition: rotate();
+            transition: rotate(1s);
+        }
+
+    </style>
+</head>
+<body>
+    <header></header>
+
+    <main class="container w-100 h-100">
+        <section class="row w-100 h-100">
+            
+                <div class="col-4"></div>
+                <div class="col-4 mx-auto " style="width:200px; display: inline-block;"><div class="cuadro funcion" style="display: inline-block;"><div class="cuadro1 funcion"></div></div></div>
+                <div class="colddcddcdd-4"></div>
+        </section>
+    </main>dcc 
+
+    <footer></footer>
+</body>
+</html>
