@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../libs/jquery-3.4.1.js"></script>
+    <title>Document</title>
+    <style>
+        html,body{
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            overflow:hidden;
+        }
+        *{
+            box-sizing: border-box;
+        }
+        .bolita{
+            width: 5rem;
+            height: 5rem;
+            position: absolute;
+            border-radius: 100%;
+            background: black;
+            left : calc(50% - 2.5rem);
+            top : calc(50% - 2.5rem);
+        }
+        /* .yllw{
+            background-color: yellow;
+        } */
+
+
+    </style>
+    <script>
+        var maxLeft = null;
+        var maxTop = null;
+        var width = null;
+        var height = null;
+        var distanceX = -15;
+        var distanceY = -15;
+        $(function(){
+            var bolita = $('#bolita');
+            width = bolita.outerWidth();
+            height = bolita.outerHeight();
+            maxLeft = $(window).innerWidth() - width;
+            maxTop = $(window).innerHeight() - height;
+
+            setInterval(function(){
+                var left = parseInt (bolita.css('left')) ;
+                var top = parseInt (bolita.css('top')) ;
+                if(left >= maxLeft || left <= 0)
+                {
+                    left =  left <= 0 ? 0 : maxLeft;
+                    distanceX *= -1;
+                    onLeftBounce (bolita,function (bolita){
+                        if(left <= 0){
+                            bolita.css('background', 'red');
+                        }else {
+                            bolita.css('background', 'green');
+                        }
+                    });
+                }
+
+                if(top >= maxTop || top <= 0){
+                    top =  top <= 0 ? 0 : maxTop;
+                    distanceY *= -1;
+                    onTopBounce (bolita,function (bolita){
+                        if(top <= 0){
+                            bolita.css('background', 'purple');
+                        }else {
+                            bolita.css('background', 'blue');
+                        }
+                    });
+
+                }
+                bolita.css('left', left + distanceX + 'px');
+                bolita.css('top', top + distanceY + 'px');
+            },1000/60);
+
+        });
+        $(window).on('resize', function (event){
+            maxLeft = this.innerWidth - width;
+            maxTop = this.innerHeight - height;
+        })
+        function onLeftBounce (bolita,callback){
+            callback(bolita);
+        }
+        function onTopBounce (bolita,callback){
+            callback(bolita);
+        }
+        function onBottomBounce (bolita,callback){
+            callback(bolita);
+        }
+        function onRightBounce (bolita,callback){
+            callback(bolita);
+        }
+        
+    </script>
+</head>
+<body>
+    <div id = "bolita" class="bolita"></div>
+    
+    
+</body>
+</html>
