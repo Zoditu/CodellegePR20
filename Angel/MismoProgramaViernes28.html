@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="Libs/jquery-3.4.1.js"></script>
+    <style>
+            html, body{
+            margin: 0rem;
+            padding: 0%;
+            width: 100%;
+            height: 100%;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: black;
+            }
+    
+            .contenedor{
+                width: 100%;
+                height: 100%;
+            }
+            .cuadro{
+                width: 20%;
+                height: 20%;
+                float: left;
+            }
+            .white{
+                background-color: white;
+            }
+            .black{
+                background-color: black;
+            }
+
+            .purple{
+                background: purple;
+            }
+
+            #container{
+                height: 100%;
+            }
+        </style>
+        <script>
+            /*$(function()
+            {
+                var main = $('#container');
+                main.css('height', '100%');
+                for(var i=0;i<25;i++)
+                {
+                    main.append(
+                        '<div onclick="alert(\'Indice: \' + ' + i + ')" class="cuadro ' + 
+                        (i%2==0 ? 'black' : 'white') + '"></div>'
+                    );
+                }
+            }); */
+            function CambiarColor(elemento)
+            {
+                $(elemento).removeClass('black').addClass('purple');
+            };
+        </script>
+</head>
+<body>
+    <main id="container">
+        <div class="cuadro black" onclick= "CambiarColor(this)"></div>
+        <div class="cuadro black"></div>
+    </main>
+</body>
+</html>
