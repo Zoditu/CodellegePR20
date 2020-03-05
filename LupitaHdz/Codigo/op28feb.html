@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Chessboard.css">
+    <title>Viernes28feb</title>
+    <script src="libs/jquery-3.4.1.js"></script>
+    <script>
+        /*
+        var x=0;
+        var y = null;
+        y = 
+            x === 1 ?'A':
+            x === 2 ? 'B':
+            x === 3 ? 'c':
+            x > 3 ? 'Z':
+            'X';
+        function A(num){
+            console.log('El num: ' +num)
+        }    
+        console.log(y); 
+        window.onload= function(event){
+            for ( var i=0; i< 25; i++){
+                document.body.innerHTML += '<div class="cuadro' + ( i%2 === 0 ? 'negro' : 'blanco') + '"></div>';
+            }
+        }
+        */
+
+        /*
+        function A(callback){
+            var documento = null;
+            setTimeout(function (){
+                documento = 'Un documento';
+                console.log ('Ya fue llamado el callback');
+                console.log('Documento: ' +documento)
+            }, 4500 );
+            console.log('Esto es asíncrono... Y está esperando al CallBack');
+            console.log('Documento: ' +documento);
+        }
+        A(function(){});
+        .............
+        
+
+        $(function(){
+            var h1_A = document.getElementById('A');
+            h1_A.innerText= 'HOLA!';
+
+        })
+        */
+       $(function(){
+           //var h1_A= $('#A');
+           //h1_A.html('Hola!');  // append es igual que contatenar
+
+          //$('#A').html('HOLA!');
+          $('.cuadro').removeClass('negro').addClass('morado');
+       })
+
+
+
+    </script>
+</head>
+<body>
+    <!--<h1 id="A"></h1>-->
+    
+    
+</body>
+</html>

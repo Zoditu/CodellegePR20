@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>jQuery3</title>
+    <script>
+      function GenerarTarjeta(event){
+        event.preventDefault();
+        var form=event.target;
+        var Nombre=form.elements[0];
+        var ap=form.elements[1];
+        var am=form.elements[2];
+        var fecha=form.elements[3];
+        var rg=form.elements[4];
+        console.log(Nombre.value);
+        console.log(ap.value);
+        console.log(am.value);
+        console.log(fecha.value);
+        console.log(rg.value);
+      }
+    </script>
+  </head>
+  <body>
+<form onsubmit="GenerarTarjeta(event);">
+  <label>Nombre:</label><input type="text">
+  <div></div>
+  <label>Apellido Paterno:</label><input type="text">
+  <div></div>
+  <label>Apellido Materno:</label><input type="text">
+  <div></div>
+  <label>Fecha de nacimiento:</label><input type="date">
+  <div></div>
+  <label>Regalos:</label>
+  <div></div>
+  <textarea rows="10" cols="30"></textarea>
+  <div></div>
+  <button>Generar Tarjeta</button>
+</form>
+  </body>
+</html>

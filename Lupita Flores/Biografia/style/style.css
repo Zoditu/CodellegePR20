@@ -1,0 +1,144 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body > header {
+    background: rgb(107, 107, 224);
+    border-bottom: 5px solid rgb(175, 172, 172);
+    height: 4rem;
+    width: 100%;
+    position: sticky;
+    left: 0;
+    top: 0;
+    
+
+}
+
+body > header * {
+    margin: 0;
+    padding: 0;
+
+}
+
+/*posicionar la imagen de logo en la pagina web*/
+.logo {
+    height: 5rem;
+    width: 5rem;
+    margin-left: 0.5rem;
+    background: transparent;
+
+}
+
+.logo img{
+    height: 5rem;
+    width: 5rem;
+    margin-left: 0rem; 
+}
+
+a:link{
+    color: white;
+    text-decoration: none;
+}
+
+a:visited{
+    color: yellow;
+    text-decoration: none;
+}
+
+body > header a::after{
+    content: " | ";
+
+}
+
+body > header a:last-child::after{
+    content: "";
+}
+
+.inline-block { display: inline-block;}
+.float-left { float: left;}
+.float-right{ float: right;}
+.clear{ clear: both;}
+
+.table {display: table;}
+.table-cell {display: table-cell;}
+.vertical-align-middle {vertical-align: middle;}
+.w100 {width: 100%;}
+.h100 {height: 100%;}
+
+.table-row {display: table-row;}
+.logo-cell{ width: 4.5rem;}
+.name-cell{ width: 24rem;}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+  font-family: 'Fjalla One', sans-serif;
+  font-weight: normal;
+}
+
+h1{
+    color: white;
+}
+
+a{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;   
+}
+
+p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: medium;
+}
+
+.titulos{
+    
+    color: blue;
+
+}
+
+.apartado{
+ 
+    position: relative;
+    height: 25rem;
+    width: 100%;
+    position: sticky;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+}
+
+.apartado-1{
+    width: 20rem;
+    margin: 1rem;
+    text-align: center;
+    float: left;
+    margin-left: 14rem;
+        
+    
+}
+
+.apartado img{
+    height: 15rem;
+    margin: 0;
+    width: 100%;
+}
+
+.seccion{
+    border-top: 5px solid blue;
+    text-align: center;
+}
+
+.seccion-detalles{
+
+}
+

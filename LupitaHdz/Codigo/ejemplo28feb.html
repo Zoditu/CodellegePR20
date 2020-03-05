@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="libs/jquery-3.4.1.js"></script>
+    <link rel="stylesheet" href="Chessboard.css">
+    <title>Ejemplo Chessboard</title>
+ 
+    <script>
+      //  window.onload = function(event){
+        
+        //     var main = document.body;
+        //     for( var i = 0; i<25; i++){
+        //         if(i %2 ==0){
+        //          main.innerHTML +='<div class="cuadro blanco"></div>';
+    
+        //         }else{
+        //             main.innerHTML += '<div class="cuadro negro"></div>';
+        //         }
+        //     }
+        //  }
+
+         $(function () {
+             var main =$('#contenedor');
+             main.css('height', '100%');
+             for( var i=0; i<25; i++)
+             {
+                 main.append(
+                
+                     '<div onclick="alert(\'Indice: \' + ' + i +')" class="cuadro ' 
+                     + (i%2 === 0 ? 'negro' : 'blanco') + '"></div>'
+                 );
+             }
+             
+         });
+
+
+       
+    </script>
+</head>
+<body>
+    <main id="contenedor"></main>
+    </main>
+</body>
+</html>

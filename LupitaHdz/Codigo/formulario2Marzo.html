@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="libs/jquery-3.4.1.js"></script>
+    <link rel="stylesheet" href="cumpl.css">
+    <title>Tarjeta</title>
+    <script>
+        function GenerarTarjeta( e )
+        {
+            event.preventDefault(); 
+            var form = e.target;
+
+            var nombre = form.elements[0];
+            var aPaterno = form.elements[1];
+            var aMaterno = form.elements[2];
+            var fecha = form.elements[3];
+            var regalos =form.elements[4];
+
+            var tarjeta='';
+            tarjeta += '<div class="rectangulo">'+
+                 '<div class="cuadro">'+'<img src="https://upload.wikimedia.org/wikipedia/en/e/ee/Unknown-person.gif" alt="" class="foto">'+'</div>'+
+                 '<div "class="datos tx"">'+'<h3 class="h3">'+nombre.value + ' ' +aPaterno.value+ ' '+aMaterno.value+ '</h3>'+
+                    '<footer>' +fecha.value+'</footer>' +'</div>'+
+                    '<div class="texto">'+ 'Wishlist: '+ regalos.value+ '</div>'+
+                 
+                 '</div>';
+
+            $('#contenedor').append(tarjeta)
+        }
+    </script>
+</head>
+<body>
+  
+    <form onsubmit="GenerarTarjeta( event );">
+        <label>Nombre: </label> <input type="text"/>
+        <div></div>
+        <label>Apellido Paterno: </label> <input type="text"/>
+        <div></div>
+        <label>Apellido Materno: </label> <input type="text"/>
+        <div></div>
+        <label>Fecha de nacimiento: </label> <input type="date"/>
+        <div></div>
+        <label>Regalos: </label>
+        <div></div>
+        <textarea  cols="30" rows="10"></textarea>
+        <div></div>
+        <button>Generar Tarjeta</button>
+    </form>
+    <div id="contenedor"></div>
+</body>
+</html>

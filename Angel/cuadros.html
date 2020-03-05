@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>cuadros</title>
+    <style>
+    html, body{
+    margin: 0rem;
+    padding: 0%;
+    width: 100%;
+    height: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black;
+    } 
+       .circulo-rojo{
+        width: 0.5rem;
+        height: 0.5rem;
+        background: red;
+        border-radius: 100%;
+        margin: 45%;
+    }
+
+    .cuadro-amarillo{
+        width: 5rem;
+        height: 5rem;
+        position: absolute;
+        border: 1px solid yellow;
+    }
+
+    .cuadro-amarillo:hover{
+        border-radius: 100%;
+        background: yellow;
+        transition: ease-out 1.5s;
+        z-index: 1000000000000000;
+    }
+
+    .cuadro-azul{
+        width: 5rem;
+        height: 5rem;
+        position: absolute;
+        border: 1px solid blue;
+        top: 50%;
+        left: 50%;
+    }
+
+    .cuadro-azul:hover{
+        border-radius: 100%;
+        background: blue;
+        transition: ease-out 1.5s;
+        z-index: 1000000000000000;
+    }
+
+    .cuadro-verde{
+        width: 5rem;
+        height: 5rem;
+        position: absolute;
+        border: 1px solid green;
+        top: 50%;
+        left: 50%;
+    }
+
+    .cuadro-verde:hover{
+        border-radius: 100%;
+        background: green;
+        transition: ease-out 1.5s;
+        z-index: 1000000000000000;
+    }
+
+    .cuadro-rojo{
+        width: 5rem;
+        height: 5rem;
+        position: absolute;
+        border: 1px solid red;
+        top: 50%;
+        left: 50%;
+    }
+
+    .cuadro-rojo:hover{
+        border-radius: 100%;
+        background: red;
+        transition: ease-out 1.5s;
+        z-index: 1000000000000000;
+    }
+    </style>
+</head>
+<body>
+    <div class="cuadro-amarillo"> <div class="circulo-rojo"></div>
+        <div class="cuadro-azul"> <div class="circulo-rojo"></div>
+            <div class="cuadro-verde"><div class="circulo-rojo"></div>
+                <div class="cuadro-rojo"></div>
+                </div> 
+            </div>
+        </div>
+    </div>
+</body>
+</html>

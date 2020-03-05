@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Card</title>
+
+    <style>
+
+        html, body{
+            color: white;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        *{
+            box-sizing: border-box;
+        }
+
+        .card{
+            border-radius: 1.5rem;
+            width: 35rem;
+            height: 20rem;
+            background-color: darkblue;
+            /*
+            Posicion en x
+            Posicion en y
+            difuminado
+            extensión (de la sombra)
+            color
+            */
+            box-shadow: 1.25rem 0.75rem 0.5rem 0.3rem dimgray ;
+            /*Dirección de la imagen*/
+            background: url('piel.jpg');
+            /*ancho y altura de la imagen respecto al elemento*/
+            background-size: 100% 100%;
+            /*
+            Hay que añadir una posición relative al contenedor para poder usar top y left para modificar
+            la posición de las líneas.
+            */
+            position: relative;
+            left: calc(50% - 35rem/2);
+            margin-top: 2%;
+            margin-bottom: 2%;
+        }
+
+        .line{
+            background: orange;
+            width: 8rem;
+            height: 0.5rem;
+            /*
+            Posición absoluta para que tome las coordenadas del padre (que debe tener relative)
+            */
+            position: absolute;
+            left: calc( 50% - 8rem/2)
+        }
+
+        .column{
+            background: orange;
+            width: 0.5rem;
+            height: 8rem;
+            position: absolute;
+            top: calc(50% - 8rem/2);
+        }
+
+        .left{
+            left: 0;
+        }
+
+        .right{
+            right: 0;
+        }
+
+        .top{
+            top: 0;
+        }
+
+        .bottom{
+            bottom: 0;
+        }
+
+        .name{
+            margin: 0;
+            font-size: 2rem;
+            font-weight: normal;
+        }
+
+        .position{
+            margin: 0;
+        }
+
+        .image{
+            top: 1.5rem;
+            left: 2rem;
+            height: 5rem;
+            width: 5rem;
+            position: absolute;
+        }
+
+        .partial{
+            float: left;
+            width: 50%;
+            height: 100%;
+        }
+
+        h2{
+            top: 8rem;
+            right: 19.5rem;
+            position: absolute;
+        }
+
+        h4{
+            top: 10.25rem;
+            right: 19.5rem;
+            position: absolute;
+            
+        }
+
+        .icon{
+            width: 2.5rem;
+            height: 2rem;
+        }
+
+        .mail{
+            top: calc(40% - 2.5rem/2);
+        }
+
+        .list{
+            font-size: 0.8rem;
+            top: 7rem;
+            position: absolute;
+            margin: 0;
+            padding: 0;
+            width: 50%;
+            height: 50%;
+            list-style: none;
+        }
+        
+        .address{
+            overflow-wrap: break-word;
+            word-wrap: break-word;
+        }
+
+        .backlogo{
+            position: absolute;
+            width: 10rem;
+            height: 10rem;
+            top: calc(50% - 10rem/2);
+            left: calc(50% - 10rem/2);
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <main>
+
+        <section class="card relative">
+            <div class="line top"></div>
+            <div class="line bottom"></div>
+            <div class="partial relative">
+                <img class="front image"src="http://www.pngpix.com/wp-content/uploads/2016/07/PNGPIX-COM-Microsoft-Logo-Icon-PNG-Transparent-500x500.png" alt="">
+                <h2 class="name">Kevin Navarro</h2>
+                <h4 class="position">Título</h4>
+            </div>
+            <div class="partial relative">
+                <ul class="list">
+                <li><img class="icon" src="https://image.flaticon.com/icons/svg/526/526900.svg" alt=""> nombre@email.com</li>
+                <li><img src="https://image.flaticon.com/icons/svg/1001/1001025.svg" alt="" class="icon"> 8118118118</li>
+                <li class="address"><img src="https://image.flaticon.com/icons/svg/609/609803.svg" alt="" class="icon"> Dirección de la empresa</li>
+                <li><img src="https://image.flaticon.com/icons/svg/2301/2301328.svg" alt="" class="icon">wwww.corporatedomain.com</li>
+                </ul>
+            </div>
+        </section>
+
+    <section class="card relative">
+        <div class="column left"></div>
+        <div class="column right"></div>
+        <img src="http://www.pngpix.com/wp-content/uploads/2016/07/PNGPIX-COM-Microsoft-Logo-Icon-PNG-Transparent-500x500.png" alt="" class="backlogo">
+    </section>
+
+    </main>
+</body>
+</html>

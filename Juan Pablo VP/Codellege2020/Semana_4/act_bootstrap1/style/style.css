@@ -1,0 +1,52 @@
+*{
+    box-sizing: border-box;
+}
+body, html{
+     margin: 0;
+     padding: 0;
+     height: 100%;
+     width: 100%;
+     color: white;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.card{
+    border: 1px solid rgb(7, 105, 7);
+    background-color: rgb(54, 54, 54);
+}
+.qr{
+    width: 6rem;
+    height: 6rem;
+    background-color: coral;
+}
+.img{
+    width: 10rem;
+    height: 10rem;
+}
+.top{
+    width: 4rem;
+    height: .5rem;
+    background-color: coral;
+    top:calc(2%);
+    right:calc(2%);
+}
+.right{
+    width: .5rem;
+    height: 4rem;
+    background-color: coral;
+    top:calc(2%);
+    right:calc(2%);
+}
+.bottom{
+    width: 4rem;
+    height: .5rem;
+    background-color: coral;
+    bottom:calc(2%);
+    left:calc(2%);
+}
+.left{
+    width: .5rem;
+    height: 4rem;
+    background-color: coral;
+    bottom:calc(2%);
+    left:calc(2%);
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="alumnos.js"></script>
+    <title>Document</title>
+
+    <script>
+        
+        window.onload = function(event){
+
+            // var h1_titulo = document.getElementById('titulo');
+            // h1_titulo.innerHTML = 'Textual 7u7';
+            // var anchors = document.getElementsByTagName('a');
+
+            // for(var i = 0; i < anchors.length ; i++){
+            //     var anchor = anchors[i];
+            //     console.log(anchor.getAttribute( 'href'));
+            //     anchor.setAttribute('href', 'http://youtube.com');
+            //     console.log(anchor.getAttribute( 'href'));
+            // }
+
+            // var tarjeta = document.getElementById('tarjeta');
+            // tarjeta.innerHTML += '<h1>InnerHTML</h1>';
+
+            var main = document.getElementById('contenedor');
+
+            for(var i = 0; i < alumnos.length ; i++){
+                var alumno = alumnos[i];
+                main.innerHTML += '' +
+                '<div class="tarjeta">' +
+                        '<figure></figure>'+
+                        '<h3>' + alumno.nombre + '</h3>' +
+                '</div>';
+            }
+
+        }
+
+    </script>
+
+</head>
+
+<body>
+    
+    <!-- <main>
+        <h1 id="titulo">Hola 7u7</h1>
+        <a href="http://google.com"></a>
+        <a href="http://microsoft.com"></a>
+        <a href="http://bing.com"></a>
+
+        <div id="tarjeta">
+            <p>No debe desaparecer prro</p>
+        </div>
+
+    </main>-->
+
+    <main id="contenedor">
+    </main>
+
+</body>
+
+
+</html>

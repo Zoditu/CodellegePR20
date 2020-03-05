@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Ejercicio 2 JQuery </title>
+    <script src="../libs/jquery-3.4.1.js"></script>
+    <script>
+
+        $(function(){
+            console.log(JSON.stringify(alumnos));
+        });
+        function GenerarTarjeta (e)
+        { //Agregar para que no se recargue nuevamente el sitio.
+            e.preventDefault();
+            var form = e.target;
+
+            var nombre = $(form.elements[0].val());
+            var aPaterno = form.elements[1];
+            var aMaterno = form.elements[2];
+            var fecha = form.elements[3];
+            var regalos = form.elements[4];
+            var genero = form.elements[5];
+           // var tarjeta = '';
+           //tarjeta += '<div class="tarjeta">' + nombre;
+
+           // console.log($(regalos).val());
+           //$('#contenedor').append(tarjeta);
+           //console.log(genero.options[genero.selectedIndex].value);
+           //console.log($(genero.value));
+           console.log(regalos.value || regalos.innerHTML);
+        }
+
+        //function Tarjeta (event){
+            
+        //}
+
+    </script>
+</head>
+<body>
+
+    <!--<form onsubmit="event.preventDefault();">-->
+        <form onsubmit=" GenerarTarjeta( event );"
+        <label> Nombre: </label> <input type="text">
+        <div></div>
+        <label> Apellido Paterno: </label> <input type="text">
+        <div></div>
+        <label> Apellido Materno: </label> <input type="text">
+        <div></div>
+        <label> Fecha Naciemiento: </label> <input type="date">
+        <div></div>
+        <label> Regalos: </label> <input type="text">
+        <div></div>
+        <textarea cols="30" rows="10"></textarea>
+        <div></div>
+        Genero: <select> 
+            <option> Hombre </option>
+            <option> Mujer</option>
+        </select>
+        <button onclick="Tarjeta(event);"> Generar Tarjeta </button>
+    </form>
+    
+</body>
+</html>

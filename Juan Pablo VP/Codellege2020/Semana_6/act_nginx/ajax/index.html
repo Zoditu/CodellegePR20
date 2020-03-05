@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../libs/jquery-3.4.1.js"></script>
+    <script>
+        $(function(){ //On load...
+            var ajax = new XMLHttpRequest;
+            ajax.onreadystatechange = function(){
+                if (this.readyState === 4){ //ya termino
+                    if(this.status === 200){ //Todo salio bien
+                        var json = JSON.parse( this.responseText );
+                        var alumnos = json.alumnos;
+
+
+                        $.each(alumnos, function(i,alumno){
+
+                            $(document.body).append(
+                                
+                                '<div class="alumno relative">' +
+                                /* '<img class="img">' + img + '<img>'+ */
+                                    '<aside class="infcump">' +
+                                        '<h3 class="nomper">' + alumno.nombre + ' ' + alumno.apellidoPaterno + ' ' + alumno.apellidoMaterno + '</h3>'+
+
+                                        '<h4 class="fechacumple">' + alumno.fechaNac + '</h4>'+
+
+                                        '<p class="regfav">' + alumno.regFav + '</p>' +
+
+                                    '</aside>'+
+                                '</div>'
+
+                            );
+                                
+                        });
+                        /* console.log(alumnos);
+                        for(var i = 0; i< alumnos.length; i++){
+                            var alumno = alumnos[i];
+                             document.body.innerHTML('<h1>' + alumno.nombre + '<h1>');
+                            
+                                var h1 = document.createElement('h1');
+                                h1.innerText = alumno.nombre;
+                                document.append(h1);  
+                            $(docuemnt.body).append('<h1>' + alumno.nombre + '<h1>');
+                            
+                        } */
+                    }
+                }
+
+
+                console.log(this.readyState + '-' + this.status);
+            };
+            //http://127.0.0.1:80/ajax/alumnos.json
+            ajax.open('GET', '../shared/alumnos.json', true);
+            ajax.send();
+        });
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>

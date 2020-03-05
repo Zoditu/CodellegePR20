@@ -1,0 +1,77 @@
+html, body{
+    margin:0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+*{
+    box-sizing: border-box;
+}
+body > header{
+    background:url('https://www.carlosvillarin.com/wp-content/uploads/degradados-top-9-carlos-villarin-freelance.jpg');
+    background-size: 100% 100%;
+    height: 4rem;
+    position: sticky;
+    left: 0;
+    top:0;
+    border-bottom: 3px solid gray;
+}
+
+body > header *{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    color: whitesmoke;
+}
+.logo{
+    height: 3rem;
+    width: 3rem;
+    margin-left: 0.5rem;
+}
+.inline-block{ display: inline-block;}
+.float-left{ float: left;}
+.float-right{ float: right;}
+.float-center{float: center;}
+.clear{clear: both;}
+
+.table{ display: table;}
+.table-cell{ display: table-cell;}
+.table-row{ display: table-row;}
+.vertical-align-middle{vertical-align: middle;}
+
+
+.w100{ width: 100%};
+.h100{ height: 100%;}
+
+.logo-cell{ width: 4.5rem;}
+.name-cell{ width: 45rem;}
+
+a:link{
+    color:white;
+    text-decoration: none;
+}
+a:visited{
+    color: white;
+    text-decoration: none;
+}
+
+
+body > header a::after{
+    content: " | ";
+}
+
+body > header a:last-child::after{
+    content: "";
+}
+.intro p{
+    padding: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.img{
+    width: 20rem;
+    height: 20rem;
+  
+}

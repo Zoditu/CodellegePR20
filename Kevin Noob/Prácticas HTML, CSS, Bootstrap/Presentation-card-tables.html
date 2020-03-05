@@ -1,0 +1,294 @@
+<!--
+    Se pueden crear tablas con CSS. Revisar CSS : display : table en MDN
+    display: table
+    display: table-cell
+    display: table-column
+    display: table-colgroup
+    display: table-header-group
+    display: table-row-group
+    display: table-footer-group
+    display: table-row
+    display: table-caption
+
+    ---------------------------------------------------------------------
+    LINE HEIGHT
+    Permite manipular la altura de línea con CSS
+    El atributo es
+    line-height: 0.5/50%;
+    hace que la línea se haga más chica o grande
+
+    ---------------------------------------------------------------------
+    Horizontal/Vertical Alignment
+    Usamos text-align para alinear nuestro texto de forma horizontal
+    (left, center, right)
+
+    Usamos vertical-align para alinear el texto de forma vertical
+    (top, middle, bottom)
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Card</title>
+
+    <style>
+
+        html, body{
+            color: white;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        *{
+            box-sizing: border-box;
+        }
+
+        .card{
+            border-radius: 1.5rem;
+            width: 35rem;
+            height: 20rem;
+            background-color: black;
+            /*
+            Posicion en x
+            Posicion en y
+            difuminado
+            extensión (de la sombra)
+            color
+            */
+            box-shadow: 1.25rem 0.75rem 0.5rem 0.3rem dimgray ;
+            /*
+            Hay que añadir una posición relative al contenedor para poder usar top y left para modificar
+            la posición de las líneas.
+            */
+            position: relative;
+            left: calc(50% - 35rem/2);
+            margin-top: 2%;
+            margin-bottom: 2%;
+            z-index: 100;
+        }
+
+        .line{
+            background: orange;
+            width: 8rem;
+            height: 0.5rem;
+            /*
+            Posición absoluta para que tome las coordenadas del padre (que debe tener relative)
+            */
+            position: absolute;
+            left: calc( 50% - 8rem/2)
+        }
+
+        .column{
+            background: orange;
+            width: 0.5rem;
+            height: 8rem;
+            position: absolute;
+            top: calc(50% - 8rem/2);
+            
+        }
+
+        .left{
+            left: 0;
+        }
+
+        .right{
+            right: 0;
+        }
+
+        .top{
+            top: 0;
+        }
+
+        .bottom{
+            bottom: 0;
+        }
+
+        .name{
+            margin: 0;
+            font-size: 2rem;
+            font-weight: normal;
+        }
+
+        .position{
+            margin: 0;
+        }
+
+        .image{
+            top: 1.5rem;
+            left: 2rem;
+            height: 5rem;
+            width: 5rem;
+            position: absolute;
+            z-index: 200;
+        }
+
+        .partial{
+            float: left;
+            width: 50%;
+            height: 100%;
+        }
+
+        h2{
+            top: 8rem;
+            right: 19.5rem;
+            position: absolute;
+            z-index: 200;
+
+        }
+
+        h4{
+            top: 10.25rem;
+            right: 19.5rem;
+            position: absolute;
+            z-index: 200;
+
+            
+        }
+
+        .icon{
+            width: 2.5rem;
+            height: 2rem;
+            z-index: 200;
+        }
+
+        .mail{
+            top: calc(40% - 2.5rem/2);
+        }
+
+        
+        .address{
+            overflow-wrap: break-word;
+            word-wrap: break-word;
+        }
+
+        .backlogo{
+            position: absolute;
+            width: 10rem;
+            height: 10rem;
+            top: calc(50% - 10rem/2);
+            left: calc(50% - 10rem/2);
+        }
+
+        .table{
+            display: table;
+            padding-top: 40%;
+            position: absolute;
+            padding-top: 15%;
+            z-index: 300;
+        }
+
+        .tHeader{
+            display: table-header-group;
+        }
+
+        .tRow{
+            display: table-row;
+        }
+        .tCell{
+            font-size: 0.9rem;
+            vertical-align: middle;
+            display: table-cell;
+        }
+
+        .circulomaj{
+            position: absolute;
+            background-color:#f34573;
+            width:20rem;
+            height: 20rem;
+            border-top-right-radius: 100%;
+            border-top-left-radius: 1.5rem;
+            border-bottom-left-radius: 1.5rem;
+            z-index: 50;
+        }
+
+        .circulomed{
+            position: absolute;
+            width:80%;
+            height:80%;
+            background-color: #226b80;
+            border-top-right-radius: 100%;
+            border-bottom-left-radius: 1.25rem;
+            bottom: 0;
+            z-index: 100;
+        }
+
+        .circuloint{
+            position: absolute;
+            width: 70%;
+            height: 70%;
+            background-color: #35b0ab;
+            border-top-right-radius: 100%;
+            border-bottom-left-radius: 1.25rem;
+            bottom: 0;
+            z-index: 100;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <main>
+
+        <section class="card relative">
+            <div class="circulomaj inset"><div class="circulomed"><div class="circuloint"></div></div>
+            </div>
+            <div class="partial relative">
+                <img class="front image"src="http://www.pngpix.com/wp-content/uploads/2016/07/PNGPIX-COM-Microsoft-Logo-Icon-PNG-Transparent-500x500.png" alt="">
+                <h2 class="name">Nombre</h2>
+                <h4 class="position">Título</h4>
+            </div>
+            <div class="partial relative">
+
+                <div class="table">
+                    <div class="tRow">
+                        <div class="tCell">
+                            <img class="icon" src="https://image.flaticon.com/icons/svg/526/526900.svg" alt="">
+                        </div>
+                        <div class="tCell">
+                            nombre@email.com
+                        </div>
+                    </div>
+                    <div class="tRow">
+                        <div class="tCell">
+                            <img src="https://image.flaticon.com/icons/svg/1001/1001025.svg" alt="" class="icon">
+                        </div>
+                        <div class="tCell">
+                            8118118118
+                        </div>
+                    </div>
+                    <div class="tRow">
+                        <div class="tCell">
+                            <img src="https://image.flaticon.com/icons/svg/609/609803.svg" alt="" class="icon">
+                        </div>
+                        <div class="tCell">
+                            Dirección de la empresa
+                        </div>
+                    </div>
+                    <div class="tRow">
+                        <div class="tCell">
+                            <img src="https://image.flaticon.com/icons/svg/2301/2301328.svg" alt="" class="icon">
+                        </div>
+                        <div class="tCell">
+                            wwww.corporatedomain.com
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </div>
+        </section>
+
+    <section class="card relative">
+        <img src="http://www.pngpix.com/wp-content/uploads/2016/07/PNGPIX-COM-Microsoft-Logo-Icon-PNG-Transparent-500x500.png" alt="" class="backlogo">
+    </section>
+
+    </main>
+</body>
+</html>

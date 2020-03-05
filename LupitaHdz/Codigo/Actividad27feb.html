@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="alumnos.js"></script>
+    <link rel="stylesheet" href="cumpl.css">
+    
+    <title>Actividad tarjeta de cumple</title>
+    <script>
+        window.onload = function(event){
+            var main = document.getElementById('contenedor');
+            for( var i = 0; i < alumnos.length; i++){
+                var alumno = alumnos[i];
+                main.innerHTML +=
+                '<div class="rectangulo">'+
+                 '<div class="cuadro">'+'<img src="https://upload.wikimedia.org/wikipedia/en/e/ee/Unknown-person.gif" alt="" class="foto">'+'</div>'+
+                 '<div "class="datos tx"">'+'<h3 class="h3">'+alumno.nombre + ' ' +alumno.apellidoPaterno+ ' '+alumno.apellidoMaterno+ '</h3>'+
+                    '<footer>' +alumno.fechaNac+'</footer>' +'</div>'+
+                    '<div class="texto">'+ 'Wishlist: '+ alumno.wishlist+ '</div>'+
+                 
+                 '</div>';              
+            }
+        }
+    </script>
+</head>
+<body>
+    <main id="contenedor">
+
+    </main>
+    
+</body>
+</html>
+
+

@@ -1,0 +1,33 @@
+*{
+    box-sizing: border-box;
+}
+body, html{
+     margin: 0;
+     padding: 0;
+     height: 100%;
+     width: 100%;
+     color: white;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container{
+    background-color: rgb(226, 166, 186);
+}
+.square{
+    width: 15rem;
+    height: 15rem;
+}
+.one{
+    background-color: indianred;
+    transform-origin: 10% 100%;
+    transform: rotate(0deg);
+    transition: transform 3s;
+
+}
+.one:hover{
+    transform-origin: 10% 100%;
+    transform: rotate(-50deg);
+    transition: transform 3s;
+}
+.two{
+    background-color: indigo;
+}

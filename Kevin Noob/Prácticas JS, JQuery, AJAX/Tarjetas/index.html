@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarjetas</title>
+
+    <script src="jquery-3.4.1.js"></script>
+
+    <style>
+
+        html, body{
+            color: #f1fcfc;
+            background-color: #72b5b7;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin:0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+        }
+
+        .block{
+            display: block;
+        }
+
+        h1{
+            text-align: center;
+            font-size: 3em;
+        }
+
+        h2{
+            padding-left: 4%;
+            font-size: 2rem;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        section{
+            color: rgb(93, 130, 252);
+            background-color: #f1fcfc;
+            float: left;
+            border-radius: 9%;
+            margin-left: 2%;
+            margin-top: 2%;
+            border: 2px outset #40e0d0;
+            width: 46vw;
+            height: 40vh;
+        }
+
+        .divTxt{
+            float: left;
+            width: 60%;
+            height: 100%;
+        }
+
+        .divImg{
+            float:left;
+            width:40%;
+            height:100%;
+        }
+        article{
+            float: left;
+            position: relative;
+        }
+
+        img{
+            border: 1px #40e0d0;
+            border-radius: 10%;
+            height: 100%;
+            width: 100%;
+        }
+
+
+        .texto{
+            margin:0;
+            padding:0;
+            padding-top: 1%;
+            text-align: center;
+        }
+
+        .txtDer{
+            padding-right: 5%;
+            text-align: end;
+        }
+
+        .txtIzq{
+            padding-left: 2%;
+            text-align: left;
+        }
+
+        .descripcion{
+            padding-left: 2%;
+            text-align: left;
+            width: 98%;
+            height: 58%;
+            overflow: scroll;
+            overflow-x: hidden;
+            overflow-y: auto;
+        }
+
+        .apodo{
+            font-style: italic;
+            padding-bottom: 2%;
+        }
+
+        .clear{
+            clear:left;
+        }
+
+    </style>
+
+    <script>
+
+        $(function(){ //On load
+            var ajax = new XMLHttpRequest();
+            console.log(ajax.readyState);
+
+            ajax.onreadystatechange = function(){
+
+                if(this.readyState === 4){
+                    if(this.status === 200){
+                        var json = JSON.parse(this.responseText);
+                        var alumnos = json.alumnos;
+
+                        $.each(alumnos, function(i, alumno){
+                            $(document.body).append('<section><div class="divImg"><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fih1.redbubble.net%2Fimage.661566904.1775%2Fraf%2C360x360%2C075%2Ct%2Cfafafa%3Aca443f4786.jpg&f=1&nofb=1" alt=""></div><div class="divTxt"><h3 class="texto">'+ alumno.nombre + '' + '</h3><p class="texto apodo">' + alumno.apellidoPaterno + ' ' + alumno.apellidoMaterno + '</p><p class="texto txtDer">'+
+                            alumno.fechaNac + '</p><p class="texto txtIzq">Regalos:</p><p class="texto descripcion">asvasd bajdv abkjdhbaiwuebp ubalsd cakcjn lkjn ribevubakshdbv</p></div></section>');
+                            
+                        });
+                    }
+                }
+            }
+            ajax.open('GET', 'alumnos.json', true);
+                ajax.send();
+        });
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>
