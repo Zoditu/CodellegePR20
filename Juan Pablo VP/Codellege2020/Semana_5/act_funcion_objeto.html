@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function Objeto(){
+            var Obj ={
+                nombreCompleto:'Juan Pablo Villanueva Pámanes',
+                curso: 'Codellege',
+                habilidad: function (x){
+                   x = 34 + 2 - (3/2);
+                   return x; 
+                },
+                condicion: function( A ){
+                    var A= true;
+                    var C = false;
+                    var F= false;
+                    var x = false;
+                    var y = false;
+                    if ( A == true ){
+                      console.log('verde');  
+                    }
+                    if (C == true){
+                        console.log('gris');
+                    }
+                    if(F == true){
+                        console.log('Llorando por respeto');
+                    }
+                    if (y || x){
+                        console.log('Condicion mamalona');
+                    }
+
+
+                    return A;
+                }
+            }
+            return Obj;
+
+        }
+        var ob = Objeto();
+
+        Objeto();
+        console.log(Objeto)
+
+    </script>    
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Selectores CSS</title>
+
+    <!--Estilo práctica 1
+    <style>
+        /*La programación en CSS se maneja por reglas, como las siguientes.*/
+        p{
+            color: green;
+        }
+
+        /*
+        Se pueden anidar elementos dentro de otros:
+        por ejemplo, el siguiente sólo modifica a los elementos p
+        que estén anidados dentro de un elemento div.
+        */
+        div p{
+            color: blue;
+        }
+
+        #A{
+            color:green;
+        }
+
+        .B{
+            color:yellow;
+        }
+
+        #C{
+            color:orange;
+        }
+
+        #D{
+            color:blue;
+        }
+        
+    </style>
+    -->
+
+    <style>
+
+        /*
+        Override al margen por default del documento HTML
+        Siempre se incluye en todas las hojas CSS
+        */
+        html, body{
+            margin: 0;
+            height: 100%;
+            padding: 0;
+            width: 100%;
+        }
+        
+        /*
+        Override al padding para evitar incremento de tamaño
+        Siempre se incluye en todas las hojas CSS
+        */
+        * {
+            box-sizing: border-box;
+        }
+
+        .titulo{
+            color:grey;
+            font-size: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .cuadro{
+            border: 2px solid black;
+            width: 150px;
+            height: 150px;
+            background-color: red;
+            float: left;
+        }
+
+        .clear{
+            clear:left;
+        }
+
+        .em{
+            font-size: 3em;
+        }
+
+        .rem{
+            font-size: 3rem;
+        }
+
+    </style>
+</head>
+<body>
+    <!--
+    <p>A</p>
+
+    <div>
+        <p>B</p>
+    </div>
+
+    -->
+    <!--
+    <p id="A">A</p>
+    <p class="B">B</p>
+    <p class="B">C</p>
+    <p id="D">D</p>
+    -->
+    <!--
+    <header>
+        <h1 class="titulo">CSS :D!</h1>
+    </header>
+    -->
+
+    <div class="cuadro"></div>
+    <div class="cuadro"></div>
+    <div class="clear"></div>
+    <br>
+    <div class="em">Soy EM</div>
+    <div class="rem">Soy REM</div>
+</body>
+</html>

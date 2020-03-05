@@ -1,0 +1,73 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+*{
+    box-sizing: border-box;
+}
+
+.cuadro-morado{
+    width: 10rem;
+    height: 10rem;
+    border: .2rem solid purple;
+    position: absolute;
+}
+.cuadro-morado:hover{
+    border-radius: 0;
+    background: orchid;
+    transition: background 0.3s, border-radius 1s;
+    z-index: 9999;
+}
+.circulo{
+    width: 1rem;
+    height: 1rem;
+    border-radius: 100%;
+    background: blue;
+    position: absolute;
+    left: calc(5rem - 1rem/2);
+    top: calc(5rem - 1rem/2);
+}
+.cuadro-negro{
+    width: 10rem;
+    height: 10rem;
+    border: .2rem solid black;
+    position: absolute;
+    left: calc(5rem - 1rem/2);
+    top: calc(5rem - 1rem/2);
+}
+.cuadro-negro:hover{
+    border-radius: 0;
+    background: yellow;
+    transition: background 0.3s, border-radius 1s;
+    z-index: 9999;
+}
+.cuadro-verde{
+    width: 10rem;
+    height: 10rem;
+    border: .2rem solid green;
+    position: absolute;
+    left: calc(10rem - 1rem/2);
+    top: calc(10rem - 1rem/2);
+}
+.cuadro-verde:hover{
+    border-radius: 0;
+    background: orange;
+    transition: background 0.3s, border-radius 1s;
+    z-index: 9999;
+}
+.cuadro-rojo{
+    width: 10rem;
+    height: 10rem;
+    border: .2rem solid red;
+    position: absolute;
+    left: calc(15rem - 1rem/2);
+    top: calc(15rem - 1rem/2);
+}
+.cuadro-rojo:hover{
+    border-radius: 0;
+    background:lightblue;
+    transition: background 0.3s, border-radius 1s;
+    z-index: 9999;
+}

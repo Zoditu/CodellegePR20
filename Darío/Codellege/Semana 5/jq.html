@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="libs/jquery-3.4.1.js"></script>
+    <script>
+
+        function A( callback )
+        {
+            var documento = null;
+            setTimeout( function(){
+                documento= 'Un documento';
+                console.log('Ya fue llamdo el callback');
+                console.log('Documento: ' + documento);
+            }, 2500);
+            console.log('Esto es asincrono... Y esta esperando al Callback');
+            console.log('Documento:' + documento);
+        }
+
+        A ( function(){});
+    </script>
+</head>
+<body>
+    <h1 id="A"></h1>
+</body>
+</html>

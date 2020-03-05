@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="libs/jquery-3.4.1.js"></script>
+    <title>Ejemplo2-Marzo</title>
+    <script>
+        function EventoSubmit(event)
+        {
+            event.preventDefault(); 
+            console.log(event);
+        }
+
+    </script>
+</head>
+<body>
+    <form onsubmit="EventoSubmit(event)">  
+        <input type="text" placeholder="Nombre">
+        <button onclick="alert('click');">Click me</button>
+    </form>
+    
+</body>
+</html>

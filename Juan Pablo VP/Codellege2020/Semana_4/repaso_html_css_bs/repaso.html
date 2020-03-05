@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <main class="container h-100 w-100">
+            <div class="row mx-auto">
+                <div class="col-12  mt-3 text-center">
+                    <h1>Ingreso Codellege</h1>
+                </div>
+                
+                <div class="row mx-auto">
+                    <form class="needs-validation m-5 p-4" novalidate>
+                        <div class="form-group">
+                          <label for="inputNombre">Nombre:</label>
+                          <input type="text" class="form-control" id="inputNombre"  placeholder="Nombre"  required>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputAPaterno">Apellido Paterno</label>
+                            <input type="text" class="form-control" id="inputAPaterno" placeholder="Apellido Paterno">
+                        </div>
+                        <div class="form-group">
+                            <label for="inputAMaterno">Apellido Materno</label>
+                            <input type="text" class="form-control" id="inputAMaterno" placeholder="Apellido Materno">
+                        </div>
+    
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                              <label for="inputEdad">Edad</label>
+                              <input type="Edad" class="form-control" id="inputEdad" placeholder="Edad">
+                        </div>
+    
+                        <div class="form-group col-md-6">
+                            <label for="inputSexo">Sexo</label>
+                            <select id="inputSexo" class="form-control">
+                              <option selected>Escoge..</option>
+                              <option>Hombre</option>
+                              <option>Mujer</option>
+                            </select>
+                        </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">Fecha</label>
+                            <input type="date" class="form-control" id="inputDate" placeholder="Fecha">
+                        </div>
+                        <div class="custom-control custom-checkbox mb-3">
+                            <input type="checkbox" class="custom-control-input" id="checkRules" required>
+                            <label class="custom-control-label" for="checkRules">He leído las reglas</label>
+                          </div>
+                          <!-- <button class="btn" type="submit">Submit</button> -->
+                      </form>
+                </div>
+            </div>
+
+
+    </main>
+
+    
+
+</body>
+</html>

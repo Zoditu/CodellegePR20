@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas Zebra</title>
+
+    <style>
+        html, body{
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            color: white;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        *{
+            box-sizing: border-box;
+        }
+
+        .seccion{
+            width: 100%;
+            height: 15rem;
+            position: relative;
+        }
+
+        .table{
+            display: table;
+            width: 70rem;
+            line-height: 2rem;
+            left: calc(50% - 70rem/2);
+            top: calc(50% - 10rem/2);
+        }
+
+        .tHead{
+            display:table-header-group;
+            font-weight: bold;
+        }
+
+        .tCell{
+            display: table-cell;
+            padding: 2px;
+            border: 1px solid #ddd;
+            border-collapse: collapse;
+        }
+
+        .tRow{
+            display: table-row;
+            background-color: white;
+            color: black;
+        }
+
+
+        #Occupation{
+            position: relative;
+
+        }
+
+        #Occupation .tHead{
+            background-color: rgb(219, 2, 2);
+        }
+
+        #Occupation .tRow:nth-child(odd), #Products .tRow:nth-child(odd), #Users .tRow:nth-child(odd){
+            background-color: lightgray;
+        }
+        
+        #Occupation .tRow:hover{
+            background-color: grey;
+        }
+
+        #Products .tRow:hover{
+            background-color: grey;
+        }
+
+        #Users .tRow:hover{
+            background-color: grey;
+        }
+
+        #Products{
+            position: relative;
+        }
+
+        #Products .tHead{
+            background-color: darkgreen;
+        }
+
+        #Users{
+            position: relative;
+        }
+
+        #Users .tHead{
+            background-color: darkblue;
+        }
+
+    </style>
+
+</head>
+<body>
+    <!--Tabla1-->
+    <section class="seccion">
+        <div class="table" id="Occupation">
+            <div class="tHead">
+                <div class="tCell">Name</div>
+                <div class="tCell">Age</div>
+                <div class="tCell">Occupation</div>
+                <div class="tCell">Location</div>
+            </div>
+            <div class="tRow">
+                <div class="tCell">Luke Peters</div>
+                <div class="tCell">25</div>
+                <div class="tCell">Freelance Web Developers</div>
+                <div class="tCell">Brookline, MA</div>
+            </div>
+            <div class="tRow">
+                <div class="tCell">Joseph Smith</div>
+                <div class="tCell">27</div>
+                <div class="tCell">Project Manager</div>
+                <div class="tCell">Somerville, MA</div>
+            </div>
+            <div class="tRow">
+                <div class="tCell">Maxwell Johnson</div>
+                <div class="tCell">26</div>
+                <div class="tCell">UX Architect & Designer</div>
+                <div class="tCell">Arlington MA</div>
+            </div>
+
+            <div class="tRow">
+                <div class="tCell">Harry Harrison</div>
+                <div class="tCell">25</div>
+                <div class="tCell">Front End Developer</div>
+                <div class="tCell">Boston, MA</div>
+            </div>
+        </div>
+    </section>
+
+    <!--Tabla2-->
+    <section class="seccion">
+        <div class="table" id="Products">
+            <div class="tHead">
+                <div class="tCell">Product</div>
+                <div class="tCell">Unit Price</div>
+                <div class="tCell">Quantity</div>
+                <div class="tCell">Date Sold</div>
+                <div class="tCell">Status</div>
+            </div>
+            <div class="tRow">
+                <div class="tCell">Solid oak work table</div>
+                <div class="tCell">$800</div>
+                <div class="tCell">10</div>
+                <div class="tCell">03/15/2014</div>
+                <div class="tCell">Waiting for Pickup</div>
+            </div>
+            <div class="tRow">
+                <div class="tCell">Leather iPhone Wallet</div>
+                <div class="tCell">$45</div>
+                <div class="tCell">120</div>
+                <div class="tCell">02/28/2014</div>
+                <div class="tCell">In Transit</div>
+            </div>
+            <div class="tRow">
+                <div class="tCell">27" Apple Thunderbolt Displays</div>
+                <div class="tCell">$1000</div>
+                <div class="tCell">25</div>
+                <div class="tCell">02/10/2014</div>
+                <div class="tCell">Delivered</div>
+            </div>
+
+            <div class="tRow">
+                <div class="tCell">Bose Studio Headphones</div>
+                <div class="tCell">$60</div>
+                <div class="tCell">90</div>
+                <div class="tCell">01/14/2014</div>
+                <div class="tCell">Delivered</div>
+            </div>
+        </div>
+    </section>
+
+    <!--Tabla3-->
+    <section class="seccion">
+        <div class="table" id="Users">
+            <div class="tHead">
+                <div class="tCell">Username</div>
+                <div class="tCell">Email</div>
+                <div class="tCell">Password</div>
+                <div class="tCell">Active</div>
+            </div>
+            <div class="tRow">
+                <div class="tCell">ninjalug</div>
+                <div class="tCell">misterninja@hotmail.com</div>
+                <div class="tCell">**********</div>
+                <div class="tCell">Yes</div>
+            </div>
+            <div class="tRow">
+                <div class="tCell">jsmith41</div>
+                <div class="tCell">joseph.smith@gmail.com</div>
+                <div class="tCell">**********</div>
+                <div class="tCell">No</div>
+            </div>
+            <div class="tRow">
+                <div class="tCell">1337hax0r15</div>
+                <div class="tCell">hackerdude1000@aol.com</div>
+                <div class="tCell">**********</div>
+                <div class="tCell">Yes</div>
+            </div>
+
+            <div class="tRow">
+                <div class="tCell">hairyharry19</div>
+                <div class="tCell">harryharry@gmail.com</div>
+                <div class="tCell">**********</div>
+                <div class="tCell">Yes</div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Formulario Codellege</title>
+    <style>
+        html, body{
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+        }
+        *{
+            box-sizing: border-box;
+         }
+    </style>
+
+</head>
+<body>
+    <main class="container">
+        <form>
+        <div class="form-group row">
+            <label for="inputname" class="col-sm-2 col-form-label">Nombre: </label>
+            <div class="col-sm-9">
+              <input type="text" class="form-control" id="inputname">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="inputApPat" class="col-sm-3 col-form-label">Apellido Paterno:</label>
+            <div class="col-sm-9">
+              <input type="text" class="form-control" id="inputApPat">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="inputApMat" class="col-sm-3 col-form-label">Apellido Materno:</label>
+            <div class="col-sm-5">
+              <input type="text" class="form-control" id="inputApMat">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="inputedad" class="col-sm-2 col-form-label">Edad:</label>
+            <div class="col-sm-2">
+              <input type="text" class="form-control" id="inputedad">
+            </div>
+            <div class="form-group col">
+                <label for="inputsexo" class="col-sm-3 col-form-label">Sexo:</label>
+                <div class="col-sm-3 mb-3 " >
+                    <select class="custom-select" >
+                        <option value="elegir">Choose...</option>
+                        <option value="hombre">Hombre</option>
+                        <option value="mujer">Mujer</option>
+                        
+                    </select>
+                  </div>
+            </div>
+            <div class="form-group row">
+                <label for="inputnac" class="col-sm-4 col-form-label">Fecha de Nacimiento:</label>
+                <div class="col-sm-4">
+                  <input type="text" class="form-control" id="inputnac">
+                </div>
+            
+      </form>
+    </main>
+    
+    
+</body>
+</html>

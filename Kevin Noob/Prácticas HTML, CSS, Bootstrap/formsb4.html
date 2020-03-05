@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Document</title>
+    <style>
+        html, body{
+            width: 100%;
+            height:100%;
+            margin: 0;
+            padding: 0;            
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .table{
+            display: table;
+            padding: 2%;
+        }
+
+        .tcell{
+            display:table-cell;
+            padding: 2%;
+            border-radius: 1rem;
+        }
+
+        .margin0{
+            margin-left:0;
+        }
+    </style>
+</head>
+<body>
+    <main class="container bg-dark h-100">
+        <div class="table">
+            <div class="tcell align-middle bg-light">
+                <h1 class="text-center">Ingreso Codellege</h1>
+                <br>
+                <div class="form">
+                    <div class="form-group row">
+                        <label for="name" class="col-2 col-form-label">Nombre:</label>
+                        <div class="col-10">
+                            <input class="form-control" type="text" name="nombre" id="name">
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label for="paterno" class="col-2 col-form-label">Ap. Paterno:</label>
+                        <div class="col-10">
+                            <input type="text" name="paterno" id="paterno" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label for="edad" class="col-2 col-form-label">Ap. Materno:</label>
+                        <div class="col-10">
+                            <input type="text" name="Apmaterno" id="materno" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label for="materno" class="col-2 col-form-label">Ap. Materno:</label>
+                        <div class="col-10">
+                            <input type="text" name="Apmaterno" id="materno" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-2 col-form-label">Edad:</label>
+                        <div class="col-4">
+                            <input type="number" name="number" id="edad" class="form-control" min="1" max="100">
+                        </div>
+                        <label for="Sexo" class="col-2 col-form-label">Sexo:</label>
+                        <div class="col-4">
+                            <select name="sexo" id="sex" class="form-control">
+                                <option value="" selected>Masculino</option>
+                                <option value="">Femenino</option>
+                                <option value="">Otro</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label for="fechaNac" class="col-2 col-form-label">Fecha Nac:</label>
+                        <div class="col-4">
+                            <input type="date" name="" id="" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label for="" class="col-2 form-check-label">He leído las reglas</label>
+                        <div class="col-4">
+                            <input type="checkbox" class="form-check-input margin0">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,176 @@
+<!--
+    11/02/2020
+Actividad Login
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *,  *:before, *:after {
+            box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+        html,body{ 
+            margin: 0;
+            padding:0;
+            width: 100%;
+            height: 100%;
+            font-family: 'Abel', sans-serif;
+            background-image: url('https://mir-s3-cdn-cf.behance.net/project_modules/fs/06cbad80054563.5cd5a2647416b.jpg');background-size: 100% 100%;
+        }
+        .login{
+            width: 25rem;
+            height: 30rem;
+            border-radius: .5rem;
+            background: #100812;
+            background-size: 100% 100%;
+            box-shadow: 0 10px 10px -5px;
+
+            position: absolute;
+            left: calc(50% - 25rem/2);
+            top: calc(50% - 30rem/2);
+        }
+        /*----HEADER LOGIN----*/
+        .header{
+
+            position: absolute;
+        }
+        .headerin{
+            margin: 2.5rem .5rem 0rem 2.5rem;
+            float: left;
+
+        }
+        .headerup{
+            margin: 2.5rem 0rem 0rem 1rem;
+            float: left;
+        }
+         a.h4h{
+            padding: .3rem .5rem .3rem .5rem;
+            border-radius: .2rem;
+            background-color: rgb(39, 39, 39);
+            text-decoration: none;
+            padding-bottom: .3rem;
+            color: white;
+        }
+
+        a.h4h:hover {
+            background-color: #100812 ;
+            text-decoration: none;
+            border-bottom: 2px solid #139DBA;
+        }
+        /*----MAIN LOGIN-----*/
+        .loginform{
+            left: calc(50% - 20rem/2);
+            top: calc(50% - 15rem/2);
+            position: absolute;
+        }
+        #email{
+            border: none;
+            background-color: white;
+            border-radius: 1rem;
+            height: 2rem;
+            width:19rem;
+            margin:1rem;
+            padding-left: .5rem;
+        }
+        #password{
+            border: none;
+            background-color: whte;
+            border-radius: 1rem;
+            margin: 1rem;
+            height: 2rem;
+            width: 19rem;
+            padding-left: .5rem;
+        } 
+        .label{
+            color: white;  
+        }
+        .btn{
+            color: white;
+            margin:.5rem;
+            background-color: #A41C5D;
+            border: 0;
+            border-radius: .3rem;
+            width: 19rem;
+            height: 2.5rem;
+        }
+        .btn:hover{
+           background-color: #c42170; 
+        }
+        /*------FOOTER LOGIN-----*/
+        .footerinfo{
+            position: absolute;
+            width: 20rem;
+            height: 5rem;
+            border-top: 1px solid #BD9EB9;
+
+            bottom: calc(3%);
+            left: calc(50% - 20rem/2);
+        }
+        .footerlink{
+            font-size: .7rem;
+
+            position: absolute;
+            bottom: calc(40%);
+            left: calc(30%);
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        /*----CHECKBOX DESIgn----*/
+
+
+    </style>
+</head>
+<body>
+    <header>
+
+    </header>
+    <main>
+        <section class="login">
+            <header class="header">
+                <div class="headerin">
+                    <a href="#" class="h4h">SIGN IN</a>
+                </div>
+                <div class="headerup">
+                    <a href="#" class="h4h">SIGN UP</a>
+                </div>
+            </header>
+            <main>
+                <div class="loginform">
+                    <form class="container">
+                        <label class="label">E-MAIL</label><br>
+                        <input type="text" name="email" id="email"required>
+                        <br>
+                        <label class="label">PASSWORD</label><br>
+                        <input type="password" name="password" id="password" required>
+                        <br>
+                        <div class="check">
+                            <input type="checkbox" class="jein">
+                            <label class="label">Keep me signed</label>
+                        </div>
+                        <br>
+                        <button class="btn">LOG IN</button>
+                    </form>
+                </div>
+            </main>
+            <footer class="footer">
+                <div class="footerinfo">
+                    <a class="footerlink" href="#">Forgot your password?</a>
+                </div>
+            </footer>
+        </section>
+    </main>
+    <footer>
+        
+
+        </div>
+    </footer>
+</body>
+</html>

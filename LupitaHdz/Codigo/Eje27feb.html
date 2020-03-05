@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio</title>
+    <script>
+        /*
+        window.onload =function(event)  //nos permite interactuar al cargar la pagina 
+        {
+            var h1_titulo= document.getElementById('titulo');
+            h1_titulo.innerHTML = 'otro texto';
+
+        };
+        window.onload = function(event)
+        {
+            var anchors = document.getElementsByTagName('a');
+            for( var i=0; i < anchors.length; i++)
+            {
+                var anchor = anchors[i];
+                console.log(anchor);
+                var href = anchor.getAttribute( 'href' );
+                //var href = anchor.setAttribute('href','http://algo.com') se modifica los href
+                console.log( href );
+
+            }
+        };
+        */
+        window.onload = function(event){
+            var tarjeta = document.getElementById('tarjeta');
+            tarjeta.innerHTML += '<h1 onclick="algo(\'A\')">InnerHTML</h1>'; //sobre escribe todo
+        };
+
+        
+        
+    </script>
+</head>
+<body>
+
+    <div id="tarjeta">
+        <h1>Esto no debe desaparecer</h1>
+    </div>
+
+    <!--<h1 id="titulo">Hola!</h1>
+    <a href="http://google.com"></a>
+    <a href="http://microsoft.com"></a>
+    <a href="http://bing.com"></a> -->
+
+       
+</body>
+
+    
+</html>

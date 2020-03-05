@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Document</title>
+    <script>
+    var array = ['A','B','C','D','E','F'];
+        var otro = new Array;
+        /*length: número de elementos que tiene el arreglo
+                console.log(array.length); */
+        array = array.slice(0,3).concat(array.slice(4, array.length));
+        /* array.push('D');  */    
+        console.log(array);
+
+        function x()
+        {
+            console.log("Estos son los pasos de la duncion")
+            var valor = 10 + 2 - 4;
+            return valor;
+        }
+
+        var valor = x();
+        console.log(valor);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

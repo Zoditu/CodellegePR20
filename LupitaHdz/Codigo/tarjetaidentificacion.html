@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Tarjeta de Identificación</title>
+    <style>
+        html,body{
+            width: 100%;
+            height: 100%;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }  
+        .tarjeta{
+           margin: 2rem;
+           border-radius: 1rem;
+           width: 38rem;
+           height: 23rem;
+           position: relative;
+           border: .2rem solid black;
+        }
+ 
+        .imagen{
+            width: 7rem;
+            height: 7rem;
+            border-radius: 100%;
+            
+            position: absolute; 
+            margin-top: 2rem;
+            margin-left: 2rem;
+        }
+        .line-height{
+            line-height: 2rem;
+        }
+        .titulo{
+            font-size: 2.5rem;
+            padding-top: 2rem;
+            padding-bottom: 1rem;
+        }
+        .cuadro{
+            width: 6rem;
+            height: 6rem;
+            position: absolute;
+            right: 0;
+            margin-right: 0.5rem;
+           
+        }
+        .line{
+            background:rgb(235, 97, 182);
+            width: 3rem;
+            height: 0.3rem;
+            position: absolute; 
+        }
+       
+        .top{
+            top: 0.5rem;
+            right: 0.5rem;
+        }
+        .linev{
+            background: rgb(235, 97, 182);
+            width: 0.3rem;
+            height: 3rem;
+            position: absolute; 
+        }
+
+        .dl{
+            left: 0.5rem;
+            bottom: 0.5rem;
+        }
+      
+
+
+    </style>
+</head>
+<body>
+    <header></header>
+    <main class="container bg-light tarjeta line-height">
+        <div class="line top"></div>
+        <div class="linev top"></div>
+        <div class="line dl"></div>
+        <div class="linev dl"></div>
+        <div class="row">
+            <div class="col-6"><div><img src="wm.png" alt="" class="imagen"></div></div>
+            <div class="col-6"><div class="titulo">CODELLEGE</div></div>
+        </div>
+        <div class="row">
+            <div class="col-6"></div>
+            <div class="col-6 s">Fecha de Nacimiento: 21/10/1994</div>
+        </div>
+        <div class="row">
+            <div class="col-6"></div>
+            <div class="col-6"></div>
+        </div>
+        <div class="row">
+            <div class="col-6"></div>
+            <div class="col-6"></div>
+        </div>
+        <div class="row">
+            <div class="col-6"></div>
+            <div class="col-6">Edad: 25 años</div>
+        </div>
+        <div class="row">
+            <div class="col-6">Guadalupe Hernández Sánchez</div>
+            <div class="col-6">Fecha Ingreso: 27/01/2020</div>
+        </div>
+        <div class="row">
+            <div class="col-6"></div>
+            <div class="col-6">Generación: Primavera 2020</div>
+        </div>
+        <div class="row">
+            <div class="col-6"></div>
+            <div class="col-6">Horario: Matutino</div>
+        </div>
+        <div class="row">
+            <div class="col-6"></div>
+            <div class="col-6">Tipo de sangre: B+</div>
+        </div>
+        <div class="row">
+            <div class="col-6"></div>
+            <div class="col-6"><div> <img src="QR.png" alt="" class="cuadro"></div></div>
+        </div>
+    </main>
+    <footer></footer>
+    
+    
+</body>
+</html>

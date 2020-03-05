@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="ejercicio-css2daclase.html"></script>   
+    <script>
+
+        /*switch(valor)
+        {
+            case "X":
+            console.log('Algo');
+            break;
+
+            case "Y":
+            console.log('Y');
+            break;
+        }*/
+        /*var x = 0;
+        while( true)
+        {
+            x++;
+            if(x==100)
+            {
+                break;
+            }
+        }*/
+        /*for(var i = 0 ; i < arreglo.length; i++)
+        {
+            var letra = arreglo[1]; //arreglo[0]
+            console.log('Imprimir el indice [' + i + ']->' + letra);
+        }*/
+       // window.onload = function( event ){
+        /*var h1_titulo = document.getElementById('Titulo');
+        h1_titulo.innerHTML = 'otro texto';*/
+        //}
+       // window.onload = function( event )
+        //{
+        //var anchor = document.getElementsByTagName('a');
+
+       /* for( var i = 0; i< anchors.length; i++){
+            var anchor = anchors[i];
+            //var href = anchor.getAttribute('href');
+            console.log('href');
+        }*/
+
+        /*var tarjeta = document.getElementById('tarjeta');
+        tarjeta.innerText = '<h1>InnerText</h1>'*/
+
+       // };
+
+        window.onload = function( event ){
+            var main = document.getElementById('tarjetas');
+            for(var i=0; i < tarjetas.length; i++){
+
+                var tarjeta = tarjetas[i];
+                main.innerHTML +=
+                '<div class = "tarjeta">' +
+                '<figure></figure>' +
+                '<h3>' + tarjeta.name + '' + tarjeta.apellidoParteno + '</h3>'+ '</div>'
+            }
+
+
+
+        }
+
+
+
+    </script>
+</head>
+<body>
+    <section id="tarjetas"></section>
+</body>
+</html>
