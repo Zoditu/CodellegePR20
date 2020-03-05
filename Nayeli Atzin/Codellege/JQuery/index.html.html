@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Ejercicio 1 JQuery </title>
+    <style>
+         html, body{
+            margin: 0px;
+            padding: 0px;
+            width: 100%;
+            height: 100%;
+        }
+        *{box-sizing: border-box;}
+        .blanco{background: white; float: left;}
+        .negro{background: black; float: left;}
+        .morado{background: purple; float: left;}
+        .square{width: 20%; height: 20%;}
+        #container{height: 100%;}
+    </style>
+
+    <script src="../libs/jquery-3.4.1.js"></script>
+    <script>
+      /*  $(function(){
+        var main =$('#container');
+        main.css ('height','100%');
+        for (var i = 0; i > 25; i++)
+    {
+        //Append: se usa para concatenar 
+        main.append(
+            '<div onclick="alert(\'indice: \' + ' + i + ')"' +
+             'class = ".square' + (i%2 === 0 ? 'negro' : 'blanco') + '"></div>'
+            );
+        }
+    });*/
+
+    function CambiarColor( element )
+    {
+        console.log(event.target)
+        //event.target
+        $(element).removeClass('negro').addClass('morado');
+        // this. alcance actual-> hace referencia al elemento 
+    }
+    </script>
+</head>
+<body>
+    <main id="container">
+        <div class="square negro" onclick="CambiarColor(event.target)"></div>
+        <div class="square negro"></div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Javascript </title>
+    <script src="libs/jquery-3.4.1.js"></script>
+    <script src="alumnos.js"></script>
+    <style>
+        html,body{
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        *{
+            box-sizing: border-box;
+        }
+    </style>
+    <script>
+
+        $(function(){
+            console.log(JSON.stringify( alumnos));
+        });
+
+        function GenerarTarjeta (e)
+        { 
+            e.preventDefault();
+            var form = e.target;
+
+            var nombre = $(form.elements[0].val());
+            var aPaterno = form.elements[1];
+            var aMaterno = form.elements[2];
+            var fecha = form.elements[3];
+            var regalos = form.elements[4];
+            var genero = form.elements[5];
+           
+           console.log(regalos.value || regalos.innerHTML);
+        }
+
+    </script>
+</head>
+<body>
+        <form onsubmit=" GenerarTarjeta( event );"
+        <label> Nombre: </label> <input type="text">
+        <div></div>
+        <label> Apellido Paterno: </label> <input type="text">
+        <div></div>
+        <label> Apellido Materno: </label> <input type="text">
+        <div></div>
+        <label> Fecha Naciemiento: </label> <input type="date">
+        <div></div>
+        <label> Regalos: </label> <input type="text">
+        <div></div>
+        <textarea cols="30" rows="10"></textarea>
+        <div></div>
+        Genero: <select> 
+            <option value="Hombre"> Hombre </option>
+            <option value="Mujer"> Mujer</option>
+        </select>
+        <button> Generar Tarjeta </button>
+    </form>
+    
+</body>
+</html>

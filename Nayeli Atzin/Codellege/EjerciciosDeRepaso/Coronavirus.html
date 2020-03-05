@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Tablero Ajedrez con JS </title>
+    <style>
+        html, body{
+            margin: 0px;
+            padding: 0px;
+            width: 100%;
+            height: 100%;
+        }
+        .white{
+            background: white;
+            float: left;
+        }
+        .black{
+            background: black;
+            float: left;
+        }
+        .square{
+            width: 20%;
+            height: 20%;
+            position: relative;
+        }
+    </style>
+    <script>
+        window.onload = function(event){
+            // USANDO OPERADORES TERNARIOS 
+            //for (var i = 0; i < 25; i++)
+            //{
+                //document.bpdy.innerHTML +=
+                // '<div class="cuadro' + (i%2 === 0 ? 'negro' : 'blanco') + '"></div>';
+            //}
+
+            var main = document.body;
+            for (var i =0; i < 25; i++) {
+                /* var square = square[i]
+                document.body.innerHTML+=
+                '<div class= "square>"'; */
+
+                    if (i % 2 == 0 ){
+                        main.innerHTML +=
+                        '<div class="square white">';
+                        }
+                        else
+                        {
+                            main.innerHTML +=
+                            '<div class="square black">'
+                        }
+                    }
+                };
+                
+    </script>
+    <script src="libs/jquery-3.4.1.js">
+        //simplifica y mejora algunas cosas de JS
+        // $('#A').html('Hola!');
+        //setTimeUp-> es un temporizador 
+
+        function EventoSubmit(event){
+            //No se recarga la pagina con el PreventDefault
+            event.preventDefault();
+            //
+            console.log(event);
+        }
+
+        $(document).ready(function(){
+        $("square").click(function(){
+        $(this).hide();
+    });
+});
+        </script>
+
+</head>
+<body>
+</body>
+</html>

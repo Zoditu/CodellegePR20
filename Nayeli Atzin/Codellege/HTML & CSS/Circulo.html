@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Circulo </title>
+
+    <style>
+        html, body{
+            margin:0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+        }
+        *{box-sizing: border-box;}
+        .circuloG{
+            width: 5rem;
+            height: 5rem;
+            background: yellow;
+            border-radius: 100%;
+                 }
+        
+        .circuloP{
+            width: 2rem;
+            height: 2rem;
+            background: orange;
+            border-radius: 100%;
+        }
+
+        .w100{width: 100%;}
+        .h100{height: 100%;}
+
+        .table{ display: table;}
+        .cell{display: table-cell;}
+        .vertical-align-middle{vertical-align: middle;}
+        .inline-block{display: inline-block;}
+        .text-center{text-align: center;}
+    </style>
+</head>
+<body>
+    <div class="table w100 h100">
+            <div class="cell vertical-align-middle text-center">
+                <div class="inline-block circuloG">
+                    <div class="table w100 h100">
+                        <div class="cell vertical-align-middle text-center">
+                            <div class="inline-block circuloP">
+                            </div>
+                        </div>
+                </div>
+            </div>
+    </div>
+    
+</body>
+</html>

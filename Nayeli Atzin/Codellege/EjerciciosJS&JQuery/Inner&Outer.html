@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Inner & Outer  </title>
+    <script src="/javascript/libs/jquery-3.4.1.js"></script>
+    <style>
+        html, body{
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+        *{box-sizing: border-box;}
+
+        /*.cuadrito{ width: 5rem; height: 5rem;}
+        .orange{background: orange;}
+        .yellow{background: yellow;}
+        .green{background: greenyellow;}
+        .blue{background: lightblue;}
+
+        .absolute{ position: absolute;}
+        .relative{position: relative;}
+
+        .left{ left: 95%;}
+        .top{ top:95%;}*/
+
+        .bolita{
+            width: 5rem;
+            height: 5rem;
+            position: absolute;
+            background: black;
+            border-radius: 100%;
+            left: calc(50% - 2.5rem);
+            top: calc(50% - 2.5rem);
+
+        }
+    </style>
+    <script>
+        var maxLeft = null;
+        var maxTop = null;
+        var width = null;
+        var height = null;
+        var distanceX = -15;
+        var distanceY = -15;
+
+        $(function(){
+        var bolita = $('#bolita');
+        width = bolita.outerWidth();
+        height = bolita.outerHeight();
+        maxLeft = $(window).innerWidth() - width;
+        maxTop = $(window).innerHeight() - height;
+
+        setInterval(function(){
+            var left = parseInt(bolita.css('left'));
+            var top = parseInt(bolita.css('top'));
+            if (left >= maxLeft || left <= 0)
+            {
+                left = left <= 0 ? 0 : maxLeft;
+                distanceX *= -1;
+                onLeftBounce(bolita, function(bolita){
+                    //Hacer lo que quieran con la bolita.
+                    //Cuando rebote en los límites de x.
+                    if (left <=0)
+                    {
+                        bolita.css('background','red');
+                    }
+                    else{
+                        bolita.css('background','blue');
+                    }
+                });
+            }
+            if (top >= maxTop || top <= 0)
+            { 
+                top = top <= 0 ? 0: maxTop;
+                distanceY *= -1;
+                onTopBounce(bolita, function(bolita){
+                    if (top <=0)
+                    {
+                        bolita.css('background','green');
+                    }
+                    else
+                    {
+                        bolita.css('background','yellow');  
+                    }
+                })
+            }
+
+            bolita.css('left', left + distanceX + 'px');
+            bolita.css('top', top + distanceY + 'px');
+        }, 1000/60);
+        });
+        
+        $(window).on('resize', function(event){
+            maxLeft = this.innerWidth - width;
+            maxTop = this.innerHeight - height;
+        });
+        
+        function onTopBounce(bolita, callback)
+        {
+            callback(bolita);
+        }
+
+        function onLeftBounce(bolita, callback)
+        {
+            callback(bolita);
+        }
+
+    </script>
+</head>
+<body>
+    <!--<div class="cuadrito orange absolute"></div>
+    <div class="cuadrito yellow relative left"></div>
+    <div class="cuadrito green absolute top"></div>
+    <div class="cuadrito blue relative left"></div>-->
+    <div id="bolita" class="bolita"></div>
+</body>
+</html>
