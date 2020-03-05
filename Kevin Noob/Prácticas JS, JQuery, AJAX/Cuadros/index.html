@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuadros</title>
+    <script src="jquery-3.4.1.js"></script>
+    <script>
+
+        var maxLeft = null;
+        var width = null;
+        var maxTop = null;
+        var height = null;
+        var distanceX = -30;
+        var distanceY = -30;
+
+        $(function(){
+
+            var bolita = $('#bolita'); //Regresa el objeto con id bolita
+            //console.log(bolita.width()); //Regresa el ancho del espacio interno para tener elementos dentro del circulo
+            //console.log(bolita.outerWidth()); //Regresa el ancho de lado a lado de la caja del elemento
+            //console.log(bolita.innerWidth()); //Regresa el ancho de borde a borde del elemento
+            width = bolita.outerWidth();
+            height = bolita.outerHeight();
+            maxLeft = $(window).innerWidth() - width;
+            maxTop = $(window).innerHeight() - height;
+
+            setInterval(function(){
+                var left = parseInt( bolita.css('left') );
+                var top = parseInt( bolita.css('top') );
+
+                if(left >= maxLeft || left <= 0){
+                    left = left <= 0? 0 : maxLeft;
+                    distanceX *= -1;
+                    onLeftBounce(bolita, function(bolita){
+                        if(left == 0){
+                            bolita.css('background', 'red');
+                        }else{
+                            bolita.css('background', 'green');
+                        }
+                    });
+                }
+
+                if(top >= maxTop || top <= 0){
+                    top = top <= 0? 0: maxTop;
+                    distanceY *= -1;
+
+                    onTopBounce(bolita, function(bolita){
+                        if(top == 0){
+                            bolita.css('background', 'blue');
+                        }else{
+                            bolita.css('background', 'yellow');
+                        }
+                    });
+
+
+                }
+
+                bolita.css('left', left + distanceX + 'px');
+                bolita.css('top', top + distanceY + 'px');
+            }, 1000/60); //1 movimiento entre 60 cuadros, 16 milisegundos
+        });
+
+        $(window).on('resize', function(event){
+                maxLeft = this.innerWidth - width; //this devuelve el target (window)
+                maxTop = this.innerHeight - height;
+
+        });
+
+        function onTopBounce( bolita, callback ){
+            callback( bolita );
+        };
+
+        function onLeftBounce( bolita, callback ){
+            callback( bolita );
+        }
+
+    </script>
+    <style>
+        html, body{
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
+            background: black;
+        }
+
+        *{
+            box-sizing: border-box;
+        }
+
+        .cuadro{
+            position: absolute;
+            width: 5rem;
+            height: 5rem;
+            background-color: black;
+            border-radius: 100%;
+        }
+
+        .top{
+            top: 30px;
+        }
+
+        .bottom{
+            bottom: 0;
+        }
+
+        .left{
+            left: 50px;
+        }
+
+        .right{
+            right: 0;
+        }
+
+    </style>
+</head>
+<body>
+    <div id='bolita' class="cuadro top left"></div>
+    <!-- <div class="cuadro top right"></div>
+    <div class="cuadro bottom left"></div>
+    <div class="cuadro bottom right"></div> -->
+    
+</body>
+</html>

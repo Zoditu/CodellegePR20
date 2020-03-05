@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+
+        // $(function(){ //Queries (Query)
+        //     $('#A').html('Hola!'); //Selector, modifica el html del elemento de id #A
+        //     $('.cuadro').removeClass('negro').addClass('morado'); //Remueve la clase negro de los elementos de la clase cuadro y añade la clase morado
+        //     //Clases
+        //     //#id
+        //     //<etiqueta>
+        // });
+
+        function EventoSubmit( event ){
+            event.preventDefault();
+            console.log( event );
+        };
+
+    </script>
+
+</head>
+<body>
+    <!-- onsubmit="EventoSubmit( event ); siempre debe ser llamado con un parámetro event -->
+    <form onsubmit="EventoSubmit( event );">
+        <input type="text" placeholder="Nombre" id="">
+
+        <button onclick="alert('click');">Encortoapa</button>
+    </form>
+    
+</body>
+</html>
