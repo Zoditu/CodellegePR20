@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var objeto = generador("Juan Pablo Javier García Castillo", "Primavera 2020", 3, "F");
+        console.log(objeto);
+        console.log(objeto.habilidad(3));
+        console.log(objeto.condicion("X"));
+
+
+        function generador(nombre, curso, x, condicion){
+            var objeto = {
+                nombreCompreto: nombre,
+                curso: curso,
+                habilidad: function(x){
+                    return x * Math.PI;
+                },
+                condicion: function(condicion){
+                    if (condicion == "A"){
+                        return "Verde";
+                    };
+                    if (condicion == "C"){
+                        return "Cris";
+                    };
+                    if (condicion == "F"){
+                        return "Llorando por respeto";
+                    };
+                    if(condicion == "y" || condicion == "x"){
+                        return "Soy una condicion bien mamalona";
+                    }else{
+                        return "NO";
+                    }
+                }
+            }
+            return objeto;
+
+        };
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

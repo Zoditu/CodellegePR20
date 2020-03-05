@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html, body{
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        *{
+            box-sizing: border-box;
+        }
+
+        .tabla{
+            display: table;
+        }
+        .fila{
+            display: table-row;
+        }
+        .columna{
+            display: table-cell;
+        }
+        .circulo{
+            border-radius: 100%;
+            display: inline-block;
+        }
+        .morado{
+            background: purple;
+            width: 5rem;
+            height: 5rem;
+
+        }
+        .centrado{
+            text-align: center;
+            vertical-align: middle;
+        }
+        .w100{
+            width: 100%;
+        }
+        .h100{
+            height: 100%;
+        }
+        .blanco{
+            background: white;
+            width: 2rem;
+            height: 2rem;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div class="tabla w100 h100">
+        <div class="columna centrado">
+            <div class="circulo morado">
+                <div class="tabla w100 h100">
+                    <div class="columna centrado">
+                        <div class="circulo blanco"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

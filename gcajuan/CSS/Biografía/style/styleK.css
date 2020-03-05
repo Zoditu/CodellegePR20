@@ -1,0 +1,69 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+header{
+    border-bottom: 2px solid black;
+    height: 4rem;
+    position: sticky;
+    width: 100%;
+    background: rgb(1, 129, 172);
+    left: 0;
+    top:0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.5rem;
+}
+
+
+
+body > header * {
+    margin: 0;
+    padding: 0;;
+}
+
+.logo{
+    height: 3rem;
+    width: 3rem;
+    margin-left: 0.5rem;
+    background: black;
+}
+
+.inline-block{
+    display: inline-block;
+}
+
+.table{
+    display: table;
+}
+.table-cell{
+    display: table-cell;
+}
+.vertical-align-middle{
+    vertical-align: middle;
+}
+.w100{
+    width: 100%;
+}
+.h100{
+    height: 100%;
+}
+.table-row{
+    display: table-row;
+}
+.float-left{
+    float: left;
+}
+.logo-cell{
+    display: table-cell;
+    width: 4.5rem;
+}
+.name-cell{
+    width: 45rem;
+}

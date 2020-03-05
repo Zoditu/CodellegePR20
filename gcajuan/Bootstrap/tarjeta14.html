@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style>
+        html, body{
+            width: 100%;
+            height: 100%;
+            background: #e83e8c;
+        }
+        .borde{
+            border: solid 0.2rem red;
+        }
+        .redondeado{
+            border-radius: 2rem;
+            z-index: 100;
+        }
+        main{
+            margin: 1rem;
+            background:palevioletred;
+        }
+        .cuadro{
+            margin: 2rem;
+            width: 15rem;
+            height: 15rem;
+            box-shadow: 0.1rem 0.1rem 0.2rem 0.01rem black;
+            left: calc(50% - 15rem/2);
+            z-index: 10;
+        }
+        .azul{
+            background: darkslategray;
+            z-index: 1;
+        }
+        .morado{
+            background: darkorchid;
+            transform: rotate(0deg) translateX(0rem);
+            transition: transform 1s;
+
+        }
+        .textoBlanco{
+            color: white
+        }
+        .padding{
+            padding: 0.4rem;
+        }
+        .morado:hover{
+            transform: rotate(-15deg) translateX(-15rem);
+            transition: transform 1s;
+        }
+        .contenedor{
+            height: 18rem;
+        }
+        img{
+            width: 15rem;
+            height: 15rem;
+            left: calc(50%-15rem/2);
+        }
+    </style>
+</head>
+<body>
+    <main class="container h-100 bg-danger borde redondeado">
+        <div class="row contenedor">
+            <div class="col">
+                <div class="cuadro mx-auto morado position-absolute">
+                    <h1 class="textoBlanco mx-auto padding">Tengo un mensaje para alguien especial...</h1>
+                </div>
+                <div class="cuadro mx-auto azul position-absolute">
+                    <h1 class="w-100 h-100 mx-auto ">Feliz día 🥰</h1>
+                </div>
+            </div>      
+        </div>
+        <div class="w-100 h-100">
+            <img class="mx-auto d-block" src="https://i0.wp.com/fondos-animados.com/gifs/gif-animados-de-amor-gratis.gif?fit=101%2C96" alt="TQM">
+        </div>
+        
+    </main>
+</body>
+</html>

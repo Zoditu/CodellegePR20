@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body, html{
+            color:aliceblue;
+            background: rgb(201, 172, 255);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .card{
+            margin-top: 5%;
+            display: inline-block;
+            position: relative;
+            align-self: center;
+            width: 30rem;
+            height: 90%;
+            background: rgb(0, 9, 63);
+            left: calc(50% - 35rem/2);
+            border-radius: 1.5rem;
+            border: 1px solid black;
+            box-shadow: 0.5rem 0.2rem 1rem 0.01rem black;
+        }
+        .login{
+            margin-top: 3.5rem;
+            margin-left: 3rem;
+            display: block;
+            height:fit-content;
+            margin-bottom: 5rem;
+        }
+        .login a{
+            font-size: 1.3rem;
+            text-decoration: none;
+            color: white;
+        }
+        .underline{
+            margin-right: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 0.2rem solid rgb(48, 78, 250);
+        }
+        form{
+            margin-left: 2.5rem;
+            margin-top: 2.8rem
+        }
+        .mainLabel{
+            margin-left: 0.5rem;
+            margin-top: 2rem;
+            display: block;
+        }
+        input{
+            margin-top: 0.5rem;
+            border-radius: 500rem;
+            background-color: rgb(93, 100, 128);
+            color: white;
+            border: 2px none;
+            padding: 0.5rem;
+            width: calc(100% - 4rem);
+        }
+
+        /* The switch - the box around the slider */
+        .switch {
+        position: relative;
+        display: inline-block;
+        width: 60px;
+        height: 34px;
+        }
+
+        /* Hide default HTML checkbox */
+        .switch input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+        }
+
+        /* The slider */
+        .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: -0.5rem;
+        right: 0.5rem;
+        bottom: 0;
+        background-color: rgb(93, 100, 128);
+        -webkit-transition: .4s;
+        transition: .4s;
+        }
+
+        .slider:before {
+        position: absolute;
+        content: "";
+        height: 26px;
+        width: 26px;
+        left: 4px;
+        bottom: 4px;
+        background-color: white;
+        -webkit-transition: .4s;
+        transition: .4s;
+        }
+
+        input:checked + .slider {
+        background-color: turquoise;
+        }
+
+        input:focus + .slider {
+        box-shadow: 0 0 1px turquoise;
+        }
+
+        input:checked + .slider:before {
+        -webkit-transform: translateX(26px);
+        -ms-transform: translateX(26px);
+        transform: translateX(26px);
+        }
+
+        /* Rounded sliders */
+        .slider.round {
+        border-radius: 34px;
+        }
+
+        .slider.round:before {
+        border-radius: 50%;
+        }
+
+        .keep{
+            height: auto;
+            margin-top: 2rem;
+            display: table;
+            margin-left: 0.6rem;
+        }
+        .centered{
+            display: table-cell;
+            margin-top: 2rem;
+            vertical-align:middle;
+        }
+        button{
+            margin-top: 2rem;
+            border-radius: 500rem;
+            background-color: rgb(40, 40, 247);
+            color: white;
+            border: 2px none;
+            padding: 0.5rem;
+            width: calc(100% - 3rem);
+            font-weight: bold;
+        }
+        hr{
+            width: calc(100% - 3rem);
+            margin-top: 3rem;
+            margin-right: 3rem;
+        }
+        .middle{
+            margin-top: 2rem;
+            align-items: center;
+            align-content: center;
+            text-align: center;
+            color: #ccc;
+            text-decoration: none;
+            margin-bottom: 2rem;
+        }
+        .fila{
+            display:table-row;
+        }
+        .columna{
+            display: table-cell;
+            vertical-align: middle;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="card">
+        <nav class="login">
+            <span class="underline">
+                <a href="">SIGN IN</a>
+            </span>
+            <a href="">SIGN UP</a>
+        </nav>
+        <form action="">
+            <label class="mainLabel" for="">USERNAME</label>
+            <input type="text" name="username" required>
+            <label class="mainLabel" for="">PASSWORD</label>
+            <input type="password" name="password" required>
+            <div class="keep">
+                <label class="switch">
+                    <input type="checkbox" name="keep">
+                    <span class="slider round"></span>
+                </label> 
+                <label class="centered">KEEP ME SIGNED IN</label>  
+            </div>
+            <button type="submit">SIGN IN</button>
+            <hr>
+        </form>
+        <div class="middle">
+            <a class="middle"href="">Forgot your password?</a>
+        </div>
+
+    </div>
+</body>
+</html>
