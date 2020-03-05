@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lovecard</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">    
+
+    <style>
+        html, body{
+            margin: 0;
+            padding: 0;
+            width:100%;
+            height: 100%;
+            background-color: #ffb6b9;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 1.5rem;
+        }
+
+        *{
+            box-sizing: border-box;
+        }
+
+        .card{
+            height: 100%;
+            background-color: #f4dada;
+        }
+
+        .relative{
+            position: relative;
+        }
+
+        .cuadrado{
+            height: 20rem;
+            width: 20rem;
+            background-color: #beebe9;
+            left: calc(50% - 20rem/2);
+            top: 10%;
+            position: absolute;
+            border-radius: 1rem;
+            transition: transform 1s;
+        }
+
+        .celeste{
+            background-color: #beebe9;
+            transform-origin: 0 100%;
+        }
+
+        .celeste:hover{
+            transform:rotate(-70deg);
+            transform-origin: 0 100%;
+        }
+
+        .cafe{
+            background-color: #f6eec7;
+        }
+
+        .table{
+            display: table;
+            height:100%;
+        }
+
+        .tcell{
+            display: table-cell;
+            vertical-align: middle;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+
+    <main class="container card relative">
+        <div class="cuadrado cafe text-center">
+            <div class="table">
+                <div class="tcell">
+                    Te amo!
+                </div>
+            </div>
+        </div>
+        <div class="cuadrado celeste">
+            <div class="table">
+                <div class="tcell">
+                    Hola...
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>

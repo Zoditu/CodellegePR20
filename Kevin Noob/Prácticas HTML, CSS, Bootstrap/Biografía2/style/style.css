@@ -1,0 +1,124 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+/*
+    El símbolo ">" hace alusión a que sólo afecta el primer elemento que encuentre dentro de la etiqueta/ v
+*/
+
+body > header{
+    background-color: grey;
+    height: 4rem;
+    position: sticky;
+    left:0;
+    top:0;
+    border-bottom: 3px solid black;
+}
+
+/*
+    Cualquier etiqueta que esté dentro de header v
+*/
+
+body > header *{
+    margin: 0;
+    padding: 0;
+}
+
+.logo{
+    height: 3rem;
+    width: 3rem;
+}
+
+.logocell{
+    width: 4.5rem
+}
+
+.name-cell{
+    width: 35rem;
+}
+
+a:link{
+    color: white;
+    text-decoration: none;
+}
+
+a:visited{
+    color:black;
+    text-decoration: none;
+}
+
+/*
+    a::after y a::before se usan para insertar caracteres después de un anchor tag
+    a:firstchild y a:lastchild se usa para modificar la selección de las reglas anteriores
+*/
+
+body > header a::after{
+    content: " | ";
+}
+
+body > header a:last-child::after{
+    content:"";
+}
+
+.inline-block{ display: inline-block; }
+.table{ display: table; 
+text-align: center;}
+.table-cell{ display:table-cell }
+.table-row{display:table-row}
+.vertical-align{ vertical-align: middle; }
+.w100{ width:100% }
+.h100{ height:100% }
+
+.introimg{
+    height: 25rem;
+    text-align: center;
+}
+
+.cuadroimg{
+    width: 30rem;
+    height: 25rem;
+    display: inline-block;
+}
+
+.imgintro{
+    width:100%;
+    height: 20rem;
+}
+
+.imgbio{
+    float: left;
+    height: 20rem;
+    width: 20rem;
+    padding: 1%
+}
+
+.bio{
+    padding: 1%;
+}
+
+.hobbie{
+    height: 13rem;
+    width: 100%;
+    display: inline-block;
+}
+
+.txthobbie{
+    width:40rem;
+}
+
+.imghobbie{
+    width:13rem;
+    height:13rem;
+}
+
+.vidhobbie{
+    width: 25rem;
+    height: 13rem;
+}
