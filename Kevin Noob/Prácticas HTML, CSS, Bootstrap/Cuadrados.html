@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        html, body{
+            width: 100%;
+            height:100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        .azul{
+            border: 2px solid blue;
+        }
+
+        .negro{
+            border: 2px solid black;
+        }
+
+        .verde{
+            border: 2px solid green;
+        }
+
+        .morado{
+            border: 2px solid purple;
+        }
+
+        .cuadrado{
+            width: 10rem;
+            height: 10rem;
+            position: absolute;
+        }
+
+        .azul:hover, .negro:hover, .verde:hover, .morado:hover{
+            background: gold;
+            transition: background 0.3s;
+            z-index: 999;
+        }
+
+        .centro{
+            left: 5rem;
+            top: 5rem;
+        }
+
+        .circulo{
+            width: 0.5rem;
+            height: 0.5rem;
+            border-radius: 100%;
+            background-color: red;
+            display:inline-block;
+            position: absolute;
+        }
+
+        .centrocir{
+            left: calc(50% - 0.5rem/2);
+            top: calc(50% - 0.5rem/2);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="cuadrado azul">
+        <div class="circulo centrocir"></div>
+        <div class="cuadrado negro centro">
+            <div class="circulo centrocir"></div>
+            <div class="cuadrado verde centro">
+                <div class="circulo centrocir"></div>
+                <div class="cuadrado morado centro"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
