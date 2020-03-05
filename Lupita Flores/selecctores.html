@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>CSS - Selectores</title>
+    <style>
+
+
+       /*esta regla sirve para que el margen abarca toda la pantalla del navegador*/
+
+        html, body{
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+
+
+        }
+
+                
+        * {
+            box-sizing: border-box;
+        }
+
+        .cuadro{
+            border: 2px solid black;
+            width: 20vw;
+            height: 20vw;
+            background: red;
+            float: left;
+            text-align: center;
+
+        }
+
+        .clear{
+            clear: both;
+        }
+
+        .em { font-size: 1em;}
+        .rem { font-size: 1rem;}
+
+
+
+        
+    </style>
+    
+</head>
+<body>
+    
+    <section>
+        <div class="cuadro">hola</div>
+        <div class="clear"></div>
+    </section>
+   
+</body>
+</html>

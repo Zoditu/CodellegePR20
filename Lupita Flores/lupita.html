@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <style>
+
+        html,body{
+            color:white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            
+        }
+
+        .card{
+            width: 35rem;
+            height: 20rem;
+            background-color: blue;           
+            border-radius: 1.5rem;          
+            box-shadow:1.25rem 0.75rem 3rem 0.1rem dimgrey ;            
+            background: url('fondo.jpg');          
+            background-size: 100% 100%;            
+            position: relative;
+        }
+
+        img{
+            height: 7rem ;
+            width: 7rem;
+            float: left;
+            margin-top: 3rem;
+            margin-left: 5rem;
+        }
+        
+
+        .line{
+            background: aqua;
+            width: 8rem;
+            height: 0.6rem;
+            position: absolute;
+            left: calc(50% - 8rem/2);
+        }
+
+        
+
+        .top{
+            top:0;
+        }
+
+
+        .bottom{
+            bottom: 0;
+        }
+
+
+        .presentacion{
+            margin-left: 3.5rem;
+            font-size: 1rem;
+            font-weight: normal;
+            float:left;
+            text-align: center;
+            font-size: x-large;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+
+
+            
+        }
+
+       
+        
+        .position{
+            margin: 0;
+        }
+
+        
+        .informacion{
+            width: 17.2rem;
+            height: 20rem;            
+            text-align:right;
+            
+            float:right;
+            margin: 0;
+            padding: 0;
+            
+
+        }
+
+        #iconos{
+            height: 2rem ;
+            width: 2rem;
+            margin-left: 4rem;
+            margin-top: 4rem;
+
+        }
+
+        .texto{
+            margin-left: 1rem;
+            margin-top: 4.5rem;
+            font-size: 1rem;
+            font-weight: normal;
+            float:left;
+            text-align: right;
+            font-size: small;
+            
+
+
+        }
+            
+            
+
+    </style>
+</head>
+<body>
+<section class="card">
+    
+
+     
+       <div class="presentacion"><p>LUPITA <strong>FLORES</strong><br> 
+        <em>Ilustradora</em></p></div>
+    </div>
+    
+    <div class="informacion">
+        <img src="imagenes/email.png" id="iconos"> <p class="texto">lupita.limonf@gmail.com</p>
+        <img src="imagenes/email.png" id="iconos"> <p class="texto">+528241066761</p>
+        
+    
+        </div>
+    
+          
+    
+    <div class="line top"></div>
+    <div class="line bottom"></div>
+
+    
+
+</section>
+</body>
+</html>
