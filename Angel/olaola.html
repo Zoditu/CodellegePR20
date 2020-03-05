@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Switch</title>
+    <script>
+        var enumerador = {Printer: '0', Screen: '1', KB: '2', VGA: '3', Mouse:'4'};
+        var valor = enumerador.Screen;
+        switch( valor )
+        {
+            case enumerador.Screen:
+                console.log ('Soy pantalla'); 
+                break;
+                
+            case enumerador.KB:
+            case enumerador.Mouse:
+            console.log ('Soy Teclado/Mouse'); 
+                break;
+            
+            case enumerador.Printer:
+                console.log('Soy la impresora');
+                break;
+            
+            case enumerador.VGA:
+                console.log('Soy la entrada VGA');
+                break;
+            
+            default:
+                console.log('No conozco esto: '+valor);
+                break;
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
