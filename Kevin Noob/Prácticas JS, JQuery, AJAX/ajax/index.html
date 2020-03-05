@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="jquery-3.4.1.js"></script>
+    <title>Eillacs</title>
+
+    <script>
+        $(function(){ //On load
+            var ajax = new XMLHttpRequest(); //
+            
+            ajax.onreadystatechange = function(){ //Dentro de aquí va el código con la petición
+
+                //console.log(this.readyState + '-' + this.status); //Imprime el estado por el que pasa (0 - 4)
+                if(this.readyState == 4){
+                    if(this.status == 200){
+                        //console.log( this.responseText ); Imprime la respuesta del servidor
+                        var json = JSON.parse(this.responseText); //Cambia de JSON a objeto de JavaScript
+                        console.log(json); 
+                        var alumnos = json.alumnos; //Obtiene el arreglo que está en la propiedad alumnos del arreglo JSON obtenido
+
+                        // for(var i = 0; i < alumnos.length ; i++){
+                        //     var alumno = alumnos[i];
+                        //     // var h1 = document.createElement('h1');
+                        //     // h1.innerText = alumno.nombre;
+                        //     // document.body.append( h1 );
+
+                        //     $(document.body).append('<h1>' + alumno.nombre + '</h1>');
+
+                        // }
+
+                        $.each(alumnos, function(i, alumno){
+                            $(document.body).append('<h1>' + alumno.nombre + '</h1>');
+                        });
+
+                    }
+                }
+
+            };
+            ajax.open('GET', 'alumnos.json', true); //Prepara la petición usando (tipo, archivo, async)
+            ajax.send(); //Manda la petición al server
+        });
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
